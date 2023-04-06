@@ -1,0 +1,962 @@
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 144rem;
+}.main-category-page-nfz {
+  width: 100%;
+  height: 232.5rem;
+  overflow: hidden;
+  position: relative;
+
+  .main-categries-page-iZe {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    .navbar-2-rA4 {
+      padding: 0.583rem 6.4rem 0.583rem 6.4rem;
+      width: 100%;
+      height: 7.2rem;
+      overflow: hidden;
+      position: relative;
+      background-color: #ffffff;
+      flex-shrink: 0;
+      box-sizing: border-box;
+
+      .container-yEg {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        width: 100%;
+
+        .logo-png-1-vfi {
+          flex-shrink: 0;
+          margin-right: 65.2rem;
+          width: 18rem;
+          height: 6.0335rem;
+          object-fit: cover;
+          vertical-align: top;
+        }
+        .column-3kL {
+          margin: 0.767rem 0rem 0.767rem 0rem;
+          height: calc(100% - 1.5335rem);
+          display: flex;
+          align-items: center;
+          background-color: #ffffff;
+          flex-shrink: 0;
+
+          .column-yP6 {
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            column-gap: 3.2rem;
+            align-items: center;
+            flex-shrink: 0;
+            margin: 1.05rem 3.2rem 1.05rem 0rem;
+            height: calc(100% - 2.1rem);
+
+            .home-Uak {
+              line-height: 1.5;
+              letter-spacing: 0.056rem;
+              color: #252525;
+              font-family: Quicksand, 'Source Sans Pro';
+              white-space: nowrap;
+              flex-shrink: 0;
+              font-size: 1.6rem;
+              font-weight: 700;
+            }
+            .product-bfN {
+              font-size: 1.6rem;
+              font-weight: 700;
+              line-height: 1.5;
+              letter-spacing: 0.056rem;
+              color: #252525;
+              font-family: Quicksand, 'Source Sans Pro';
+              white-space: nowrap;
+              flex-shrink: 0;
+            }
+            .about-wUL {
+              font-size: 1.6rem;
+              font-weight: 700;
+              line-height: 1.5;
+              letter-spacing: 0.056rem;
+              color: #252525;
+              font-family: Quicksand, 'Source Sans Pro';
+              white-space: nowrap;
+              flex-shrink: 0;
+            }
+            .contact-5aY {
+              flex-shrink: 0;
+              font-size: 1.6rem;
+              font-weight: 700;
+              line-height: 1.5;
+              letter-spacing: 0.056rem;
+              color: #252525;
+              font-family: Quicksand, 'Source Sans Pro';
+              white-space: nowrap;
+            }
+          }
+          .button-d6G {
+            display: flex;
+            align-items: center;
+            border: solid 0.2rem #252525;
+            border-radius: 10rem;
+            flex-shrink: 0;
+            box-sizing: border-box;
+            padding: 1.05rem 3.2rem 1.05rem 3.4rem;
+            height: 100%;
+
+            .cart-Abz {
+              letter-spacing: 0.16rem;
+              color: #252525;
+              font-family: Quicksand, 'Source Sans Pro';
+              font-weight: 700;
+              font-size: 1.6rem;
+              line-height: 1.5;
+              white-space: nowrap;
+              flex-shrink: 0;
+              margin-right: 0.7rem;
+            }
+            .item-0-gKS {
+              line-height: 1.5;
+              letter-spacing: 0.16rem;
+              color: #f47726;
+              font-family: Quicksand, 'Source Sans Pro';
+              white-space: nowrap;
+              flex-shrink: 0;
+              font-size: 1.6rem;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+    }
+    .layout-375-Zu2 {
+      box-sizing: border-box;
+      padding: 11.2rem 6.4rem;
+      align-items: center;
+      flex-shrink: 0;
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      background-color: #ffffff;
+
+      .section-title-twJ {
+        width: calc(100% - 82rem);
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+        margin: 0rem 41rem 8rem 41rem;
+
+        .main-category-ccQ {
+          font-size: 1.6rem;
+          font-weight: 400;
+          letter-spacing: 0.056rem;
+          flex-shrink: 0;
+          margin: 0rem 0rem 1.6rem 0.1rem;
+          line-height: 1.5;
+          color: #252525;
+          font-family: Quicksand, 'Source Sans Pro';
+          white-space: nowrap;
+        }
+        .content-jS8 {
+          flex-direction: column;
+          flex-shrink: 0;
+          width: 100%;
+          align-items: center;
+          display: flex;
+
+          .heading-goes-here-VgC {
+            text-align: center;
+            color: #252525;
+            flex-shrink: 0;
+            white-space: nowrap;
+            margin-bottom: 2.4rem;
+            font-size: 4.8rem;
+            font-weight: 400;
+            line-height: 1.2000000477;
+            letter-spacing: 0.048rem;
+            font-family: Russo One, 'Source Sans Pro';
+          }
+          .lorem-ipsum-dolor-sit-amet-consectetur-adipiscing-elit-ogt {
+            line-height: 1.5;
+            letter-spacing: 0.063rem;
+            color: #252525;
+            flex-shrink: 0;
+            text-align: center;
+            font-size: 1.8rem;
+            font-weight: 400;
+            font-family: Quicksand, 'Source Sans Pro';
+            white-space: nowrap;
+          }
+        }
+      }
+      .row-iJ4 {
+        align-items: center;
+        flex-shrink: 0;
+        width: 100%;
+        height: 84.2rem;
+        display: flex;
+
+        .card-4Mv {
+          margin-right: 3.2rem;
+          box-sizing: border-box;
+          height: 100%;
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+          box-shadow: 0 2.4rem 2.8rem rgba(0, 0, 0, 0.150000006);
+          padding-top: 12.9rem;
+          width: 64rem;
+          background-color: #ffffff;
+          flex-shrink: 0;
+
+          .content-zWU {
+            margin: 0rem 4.8rem 12.9rem 4.8rem;
+            width: calc(100% - 9.6rem);
+            display: flex;
+            flex-direction: column;
+            flex-shrink: 0;
+
+            .content-top-jDA {
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              flex-shrink: 0;
+              margin-bottom: 3.2rem;
+
+              .main-category-UgY {
+                font-weight: 400;
+                line-height: 1.5;
+                letter-spacing: 0.056rem;
+                color: #252525;
+                white-space: nowrap;
+                flex-shrink: 0;
+                margin-bottom: 0.8rem;
+                font-size: 1.6rem;
+                font-family: Quicksand, 'Source Sans Pro';
+              }
+              .main-category-zun {
+                font-weight: 400;
+                line-height: 1.2;
+                color: #252525;
+                margin-bottom: 2.4rem;
+                letter-spacing: 0.04rem;
+                font-family: Russo One, 'Source Sans Pro';
+                white-space: nowrap;
+                flex-shrink: 0;
+                font-size: 4rem;
+              }
+              .lorem-ipsum-dolor-sit-amet-consectetur-adipiscing-elit-suspendisse-varius-enim-in-eros-elementum-tristique-vHe {
+                flex-shrink: 0;
+                max-width: 54.4rem;
+                font-size: 1.6rem;
+                font-weight: 400;
+                line-height: 1.5;
+                letter-spacing: 0.056rem;
+                color: #252525;
+                font-family: Quicksand, 'Source Sans Pro';
+              }
+            }
+            .button-zoJ {
+              height: 4rem;
+              display: flex;
+              width: 10.2rem;
+              font-weight: 700;
+              color: #000000;
+              border: solid 0.2rem #252525;
+              font-size: 1.6rem;
+              letter-spacing: 0.16rem;
+              font-family: Quicksand, 'Source Sans Pro';
+              white-space: nowrap;
+              justify-content: center;
+              border-radius: 10rem;
+              line-height: 1.5;
+              align-items: center;
+              box-sizing: border-box;
+              flex-shrink: 0;
+            }
+          }
+          .placeholder-image-544 {
+            width: 64rem;
+            height: 36rem;
+            object-fit: cover;
+            vertical-align: top;
+            flex-shrink: 0;
+          }
+        }
+        .column-NYx {
+          flex-shrink: 0;
+          width: 64rem;
+          height: 100%;
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+
+          .row-KUC {
+            height: 40.5rem;
+            display: flex;
+            align-items: center;
+            flex-shrink: 0;
+            margin-bottom: 3.2rem;
+            width: 100%;
+
+            .card-fnx {
+              box-sizing: border-box;
+              padding-top: 2.4rem;
+              width: 30.4rem;
+              height: 100%;
+              display: flex;
+              flex-direction: column;
+              margin-right: 3.2rem;
+              align-items: center;
+              box-shadow: 0 2.4rem 2.8rem rgba(0, 0, 0, 0.150000006);
+              background-color: #ffffff;
+              flex-shrink: 0;
+
+              .content-ouA {
+                flex-direction: column;
+                flex-shrink: 0;
+                margin: 0rem 5.8rem 2.4rem 2.4rem;
+                width: calc(100% - 8.2rem);
+                display: flex;
+
+                .content-top-wEg {
+                  flex-shrink: 0;
+                  margin-bottom: 2.4rem;
+                  width: 100%;
+                  row-gap: 0.8rem;
+                  display: flex;
+                  flex-direction: column;
+
+                  .main-category-55z {
+                    font-family: Quicksand, 'Source Sans Pro';
+                    white-space: nowrap;
+                    flex-shrink: 0;
+                    font-size: 1.6rem;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    letter-spacing: 0.056rem;
+                    color: #252525;
+                  }
+                  .main-category-c5v {
+                    color: #252525;
+                    font-family: Russo One, 'Source Sans Pro';
+                    white-space: nowrap;
+                    flex-shrink: 0;
+                    font-size: 2.4rem;
+                    font-weight: 400;
+                    line-height: 1.3999999364;
+                    letter-spacing: 0.024rem;
+                  }
+                  .lorem-ipsum-dolor-sit-amet-consectetur-adipiscing-elit-wP6 {
+                    font-size: 1.6rem;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    letter-spacing: 0.056rem;
+                    color: #252525;
+                    font-family: Quicksand, 'Source Sans Pro';
+                    flex-shrink: 0;
+                    max-width: 22.2rem;
+                  }
+                }
+                .button-T6Y {
+                  letter-spacing: 0.16rem;
+                  font-family: Quicksand, 'Source Sans Pro';
+                  white-space: nowrap;
+                  border: solid 0.2rem #252525;
+                  border-radius: 10rem;
+                  width: 10.2rem;
+                  font-weight: 700;
+                  flex-shrink: 0;
+                  height: 4rem;
+                  display: flex;
+                  box-sizing: border-box;
+                  font-size: 1.6rem;
+                  align-items: center;
+                  justify-content: center;
+                  line-height: 1.5;
+                  color: #000000;
+                }
+              }
+              .placeholder-image-8Ta {
+                width: 30.4rem;
+                height: 17.1rem;
+                object-fit: cover;
+                vertical-align: top;
+                flex-shrink: 0;
+              }
+            }
+            .card-34k {
+              display: flex;
+              flex-direction: column;
+              box-sizing: border-box;
+              padding-top: 2.4rem;
+              width: 30.4rem;
+              align-items: center;
+              height: 100%;
+              box-shadow: 0 2.4rem 2.8rem rgba(0, 0, 0, 0.150000006);
+              background-color: #ffffff;
+              flex-shrink: 0;
+
+              .content-nHE {
+                display: flex;
+                flex-direction: column;
+                flex-shrink: 0;
+                margin: 0rem 5.8rem 2.4rem 2.4rem;
+                width: calc(100% - 8.2rem);
+
+                .content-top-KY4 {
+                  margin-bottom: 2.4rem;
+                  width: 100%;
+                  row-gap: 0.8rem;
+                  display: flex;
+                  flex-direction: column;
+                  flex-shrink: 0;
+
+                  .main-category-GCQ {
+                    font-family: Quicksand, 'Source Sans Pro';
+                    white-space: nowrap;
+                    flex-shrink: 0;
+                    font-size: 1.6rem;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    letter-spacing: 0.056rem;
+                    color: #252525;
+                  }
+                  .main-category-19z {
+                    font-weight: 400;
+                    line-height: 1.3999999364;
+                    letter-spacing: 0.024rem;
+                    color: #252525;
+                    font-family: Russo One, 'Source Sans Pro';
+                    white-space: nowrap;
+                    flex-shrink: 0;
+                    font-size: 2.4rem;
+                  }
+                  .lorem-ipsum-dolor-sit-amet-consectetur-adipiscing-elit-YQp {
+                    letter-spacing: 0.056rem;
+                    color: #252525;
+                    font-family: Quicksand, 'Source Sans Pro';
+                    flex-shrink: 0;
+                    max-width: 22.2rem;
+                    font-size: 1.6rem;
+                    font-weight: 400;
+                    line-height: 1.5;
+                  }
+                }
+                .button-rwJ {
+                  font-weight: 700;
+                  justify-content: center;
+                  border-radius: 10rem;
+                  flex-shrink: 0;
+                  height: 4rem;
+                  font-size: 1.6rem;
+                  line-height: 1.5;
+                  letter-spacing: 0.16rem;
+                  color: #000000;
+                  font-family: Quicksand, 'Source Sans Pro';
+                  display: flex;
+                  box-sizing: border-box;
+                  width: 10.2rem;
+                  border: solid 0.2rem #252525;
+                  align-items: center;
+                  white-space: nowrap;
+                }
+              }
+              .placeholder-image-YZE {
+                object-fit: cover;
+                vertical-align: top;
+                flex-shrink: 0;
+                width: 30.4rem;
+                height: 17.1rem;
+              }
+            }
+          }
+          .row-Sec {
+            display: flex;
+            align-items: center;
+            flex-shrink: 0;
+            width: 100%;
+            height: 40.5rem;
+
+            .card-zw2 {
+              box-sizing: border-box;
+              height: 100%;
+              box-shadow: 0 2.4rem 2.8rem rgba(0, 0, 0, 0.150000006);
+              background-color: #ffffff;
+              margin-right: 3.2rem;
+              padding-top: 2.4rem;
+              width: 30.4rem;
+              align-items: center;
+              display: flex;
+              flex-direction: column;
+              flex-shrink: 0;
+
+              .content-wLU {
+                margin: 0rem 5.8rem 2.4rem 2.4rem;
+                width: calc(100% - 8.2rem);
+                display: flex;
+                flex-direction: column;
+                flex-shrink: 0;
+
+                .content-top-gJ4 {
+                  display: flex;
+                  flex-direction: column;
+                  flex-shrink: 0;
+                  margin-bottom: 2.4rem;
+                  width: 100%;
+                  row-gap: 0.8rem;
+
+                  .main-category-8fr {
+                    font-family: Quicksand, 'Source Sans Pro';
+                    white-space: nowrap;
+                    flex-shrink: 0;
+                    font-size: 1.6rem;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    letter-spacing: 0.056rem;
+                    color: #252525;
+                  }
+                  .main-category-rLx {
+                    font-weight: 400;
+                    line-height: 1.3999999364;
+                    letter-spacing: 0.024rem;
+                    color: #252525;
+                    font-family: Russo One, 'Source Sans Pro';
+                    white-space: nowrap;
+                    flex-shrink: 0;
+                    font-size: 2.4rem;
+                  }
+                  .lorem-ipsum-dolor-sit-amet-consectetur-adipiscing-elit-Be8 {
+                    font-family: Quicksand, 'Source Sans Pro';
+                    flex-shrink: 0;
+                    max-width: 22.2rem;
+                    font-size: 1.6rem;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    letter-spacing: 0.056rem;
+                    color: #252525;
+                  }
+                }
+                .button-toS {
+                  width: 10.2rem;
+                  color: #000000;
+                  font-family: Quicksand, 'Source Sans Pro';
+                  white-space: nowrap;
+                  line-height: 1.5;
+                  display: flex;
+                  justify-content: center;
+                  border-radius: 10rem;
+                  border: solid 0.2rem #252525;
+                  box-sizing: border-box;
+                  height: 4rem;
+                  font-size: 1.6rem;
+                  font-weight: 700;
+                  letter-spacing: 0.16rem;
+                  align-items: center;
+                  flex-shrink: 0;
+                }
+              }
+              .placeholder-image-Nic {
+                flex-shrink: 0;
+                width: 30.4rem;
+                height: 17.1rem;
+                object-fit: cover;
+                vertical-align: top;
+              }
+            }
+            .card-5N8 {
+              flex-shrink: 0;
+              box-sizing: border-box;
+              padding-top: 2.4rem;
+              height: 100%;
+              display: flex;
+              flex-direction: column;
+              width: 30.4rem;
+              align-items: center;
+              box-shadow: 0 2.4rem 2.8rem rgba(0, 0, 0, 0.150000006);
+              background-color: #ffffff;
+
+              .content-Dz8 {
+                margin: 0rem 5.8rem 2.4rem 2.4rem;
+                width: calc(100% - 8.2rem);
+                display: flex;
+                flex-direction: column;
+                flex-shrink: 0;
+
+                .content-top-xRv {
+                  flex-direction: column;
+                  flex-shrink: 0;
+                  margin-bottom: 2.4rem;
+                  width: 100%;
+                  row-gap: 0.8rem;
+                  display: flex;
+
+                  .main-category-JVn {
+                    white-space: nowrap;
+                    flex-shrink: 0;
+                    font-size: 1.6rem;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    letter-spacing: 0.056rem;
+                    color: #252525;
+                    font-family: Quicksand, 'Source Sans Pro';
+                  }
+                  .main-category-2wa {
+                    color: #252525;
+                    font-family: Russo One, 'Source Sans Pro';
+                    white-space: nowrap;
+                    flex-shrink: 0;
+                    font-size: 2.4rem;
+                    font-weight: 400;
+                    line-height: 1.3999999364;
+                    letter-spacing: 0.024rem;
+                  }
+                  .lorem-ipsum-dolor-sit-amet-consectetur-adipiscing-elit-NkY {
+                    flex-shrink: 0;
+                    max-width: 22.2rem;
+                    font-size: 1.6rem;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    letter-spacing: 0.056rem;
+                    color: #252525;
+                    font-family: Quicksand, 'Source Sans Pro';
+                  }
+                }
+                .button-hH2 {
+                  height: 4rem;
+                  font-family: Quicksand, 'Source Sans Pro';
+                  white-space: nowrap;
+                  border: solid 0.2rem #252525;
+                  flex-shrink: 0;
+                  width: 10.2rem;
+                  font-size: 1.6rem;
+                  line-height: 1.5;
+                  color: #000000;
+                  box-sizing: border-box;
+                  font-weight: 700;
+                  align-items: center;
+                  justify-content: center;
+                  letter-spacing: 0.16rem;
+                  display: flex;
+                  border-radius: 10rem;
+                }
+              }
+              .placeholder-image-nZN {
+                width: 30.4rem;
+                height: 17.1rem;
+                object-fit: cover;
+                vertical-align: top;
+                flex-shrink: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    .cta-28-s52 {
+      background-color: #ffffff;
+      flex-shrink: 0;
+      box-sizing: border-box;
+      padding: 11.2rem 35.2rem;
+      width: 100%;
+      height: 54rem;
+      overflow: hidden;
+      position: relative;
+
+      .content-bmi {
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+
+        .content-ZTe {
+          width: 100%;
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+          flex-shrink: 0;
+          margin-bottom: 4rem;
+
+          .medium-length-heading-goes-here-KSp {
+            margin-bottom: 2.4rem;
+            font-weight: 400;
+            line-height: 1.2000000477;
+            letter-spacing: 0.048rem;
+            max-width: 71.5rem;
+            text-align: center;
+            font-size: 4.8rem;
+            color: #252525;
+            font-family: Russo One, 'Source Sans Pro';
+            flex-shrink: 0;
+          }
+          .lorem-ipsum-dolor-sit-amet-consectetur-adipiscing-elit-suspendisse-varius-enim-in-eros-elementum-tristique-dTW {
+            color: #252525;
+            max-width: 73.6rem;
+            line-height: 1.5;
+            font-weight: 400;
+            letter-spacing: 0.063rem;
+            font-family: Quicksand, 'Source Sans Pro';
+            flex-shrink: 0;
+            text-align: center;
+            font-size: 1.8rem;
+          }
+        }
+        .actions-JpY {
+          margin: 0 11.15rem;
+          width: calc(100% - 22.3rem);
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+          flex-shrink: 0;
+
+          .form-etQ {
+            align-items: center;
+            flex-shrink: 0;
+            margin-bottom: 1.6rem;
+            width: 100%;
+            height: 4.8rem;
+            display: flex;
+
+            .text-input-CQ8 {
+              font-family: Roboto, 'Source Sans Pro';
+              border-radius: 1.5rem;
+              box-sizing: border-box;
+              font-weight: 400;
+              line-height: 1.5;
+              border: solid 0.2rem #252525;
+              background-color: #ffffff;
+              margin-right: 1.6rem;
+              padding: 1.2rem;
+              font-size: 1.6rem;
+              color: #4f4f4f;
+              white-space: nowrap;
+              width: 36.7rem;
+              height: 100%;
+              flex-shrink: 0;
+            }
+            .button-U6k {
+              font-size: 1.6rem;
+              font-weight: 700;
+              justify-content: center;
+              box-sizing: border-box;
+              color: #252525;
+              font-family: Quicksand, 'Source Sans Pro';
+              border: solid 0.2rem #252525;
+              width: 13rem;
+              line-height: 1.5;
+              align-items: center;
+              flex-shrink: 0;
+              height: 100%;
+              letter-spacing: 0.16rem;
+              white-space: nowrap;
+              display: flex;
+              border-radius: 10rem;
+            }
+          }
+          .by-clicking-sign-up-youre-confirming-that-you-agree-with-our-terms-and-conditions-kpx {
+            white-space: nowrap;
+            display: flex;
+            align-items: baseline;
+            flex-shrink: 0;
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #8c8c8c;
+            font-family: Roboto, 'Source Sans Pro';
+
+            .by-clicking-sign-up-youre-confirming-that-you-agree-with-our-terms-and-conditions-kpx-sub-0 {
+            }
+            .by-clicking-sign-up-youre-confirming-that-you-agree-with-our-terms-and-conditions-kpx-sub-1 {
+              color: #8c8c8c;
+              font-family: Roboto, 'Source Sans Pro';
+              font-size: 1.2rem;
+              font-weight: 400;
+              line-height: 1.5;
+              text-decoration-line: underline;
+            }
+            .by-clicking-sign-up-youre-confirming-that-you-agree-with-our-terms-and-conditions-kpx-sub-2 {
+            }
+          }
+        }
+      }
+    }
+    .footer-9-Lwa {
+      align-items: center;
+      display: flex;
+      background-color: #ffffff;
+      box-sizing: border-box;
+      padding: 8rem 7.9rem 8rem 8rem;
+      position: relative;
+      flex-shrink: 0;
+      width: 100%;
+      overflow: hidden;
+      flex-direction: column;
+
+      .content-sAp {
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+        margin: 0rem 47.55rem 6.4rem 47.45rem;
+        width: calc(100% - 95rem);
+        align-items: center;
+
+        .logo-oaG {
+          margin: 0rem 4.05rem 3.2rem 4.05rem;
+          width: calc(100% - 8.1rem);
+          overflow: hidden;
+          position: relative;
+          flex-shrink: 0;
+
+          .logo-png-1-wRa {
+            width: 25rem;
+            height: 8.4rem;
+            object-fit: cover;
+            vertical-align: top;
+          }
+        }
+        .links-gPA {
+          align-items: center;
+          flex-shrink: 0;
+          width: 100%;
+          display: flex;
+
+          .home-3Di {
+            white-space: nowrap;
+            flex-shrink: 0;
+            margin-right: 3.2rem;
+            font-size: 1.6rem;
+            font-weight: 700;
+            line-height: 1.5;
+            letter-spacing: 0.056rem;
+            color: #252525;
+            font-family: Quicksand, 'Source Sans Pro';
+          }
+          .products-y7N {
+            font-size: 1.6rem;
+            font-weight: 700;
+            letter-spacing: 0.056rem;
+            color: #252525;
+            font-family: Quicksand, 'Source Sans Pro';
+            white-space: nowrap;
+            margin-right: 3.1rem;
+            flex-shrink: 0;
+            line-height: 1.5;
+          }
+          .about-6xg {
+            font-family: Quicksand, 'Source Sans Pro';
+            margin-right: 3.2rem;
+            font-size: 1.6rem;
+            font-weight: 700;
+            line-height: 1.5;
+            letter-spacing: 0.056rem;
+            color: #252525;
+            white-space: nowrap;
+            flex-shrink: 0;
+          }
+          .contact-EZ6 {
+            flex-shrink: 0;
+            font-size: 1.6rem;
+            font-weight: 700;
+            line-height: 1.5;
+            letter-spacing: 0.056rem;
+            color: #252525;
+            font-family: Quicksand, 'Source Sans Pro';
+            white-space: nowrap;
+          }
+        }
+      }
+      .credits-N9W {
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+        width: 100%;
+
+        .divider-Xo6 {
+          margin-bottom: 3.2rem;
+          width: 128rem;
+          height: 0.1rem;
+          background-color: #252525;
+          flex-shrink: 0;
+        }
+        .row-fuJ {
+          width: 100%;
+          height: 2.1rem;
+          display: flex;
+          align-items: center;
+          flex-shrink: 0;
+
+          .relume-all-right-reserved-dbE {
+            margin-right: 68rem;
+            font-weight: 400;
+            line-height: 1.5;
+            letter-spacing: 0.049rem;
+            font-family: Quicksand, 'Source Sans Pro';
+            white-space: nowrap;
+            font-size: 1.4rem;
+            color: #000000;
+            flex-shrink: 0;
+          }
+          .footer-links-Yy6 {
+            height: 100%;
+            display: flex;
+            column-gap: 2.4rem;
+            align-items: center;
+            flex-shrink: 0;
+
+            .privacy-policy-JSU {
+              flex-shrink: 0;
+              font-size: 1.4rem;
+              font-weight: 500;
+              line-height: 1.5;
+              letter-spacing: 0.049rem;
+              color: #000000;
+              font-family: Quicksand, 'Source Sans Pro';
+              white-space: nowrap;
+            }
+            .terms-of-service-dUk {
+              font-size: 1.4rem;
+              font-weight: 500;
+              line-height: 1.5;
+              letter-spacing: 0.049rem;
+              color: #000000;
+              font-family: Quicksand, 'Source Sans Pro';
+              white-space: nowrap;
+              flex-shrink: 0;
+            }
+            .cookies-settings-ZtC {
+              font-family: Quicksand, 'Source Sans Pro';
+              white-space: nowrap;
+              flex-shrink: 0;
+              font-size: 1.4rem;
+              font-weight: 500;
+              line-height: 1.5;
+              letter-spacing: 0.049rem;
+              color: #000000;
+            }
+          }
+        }
+      }
+    }
+  }
+}
