@@ -56,6 +56,7 @@ body {
   border-radius: var(--bs-border-radius);
   background-color: white;
   color: #bfe9f9;
+  cursor: pointer;
 }
 #category3 div {
   font-size: 23px;
