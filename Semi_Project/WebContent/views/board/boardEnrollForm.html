@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../resources/css/bootstrap.min.css">
+
+    <!-- 외부방식 board.css -->
+    <link rel="stylesheet" href="../../resources/css/board.css">
+
+    <!-- 구글 감자플리워 폰트 적용 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">
+
+    <!-- 폰트어썸 아이콘 적용 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+
+    <div id="outer">
+
+        <!-- header 부분 -->
+        <div id="header">
+
+        </div>
+
+        <!-- 왼쪽여백 -->
+        <div id="left"></div>
+
+        <!-- 가운데 내용 -->
+        <div id="center">
+            <h1 id="centertitle">OO게시판</h1>
+
+            <hr>
+
+            <form action="" method="post">
+                <h6>카테고리 :
+                    <select name="category">
+                        <option value="10">잡담</option>
+                        <option value="20">질문</option>
+                        <option value="30">정보</option>
+                        <option value="40">축하</option>
+                        <option value="50">고민/상담</option>
+                    </select>
+                </h6>
+                <h5 class="black boardtitle" style="font-size: 18px;">
+                    제목 : <input type="text" name="title" size="80" placeholder="제목을 입력하세요">
+                </h5>
+            </form>
+
+            <hr>
+
+            <!-- HTML 폼 -->
+            <form action="" method="post">
+                <textarea id="mytextarea" name="content" placeholder="내용을 입력하세요">
+                    입력하는 부분입니다. <br>
+                    <br>
+                    입력하는 부분입니다. <br>
+                    <br>
+                    입력하는 부분입니다. <br>
+                    <br>
+                    입력하는 부분입니다. <br>
+                    <br>
+                    입력하는 부분입니다. <br>
+                    <br>
+                    입력하는 부분입니다. <br>
+                    <br>
+                    입력하는 부분입니다. <br>
+                    <br>
+                    입력하는 부분입니다. <br>
+                    <br>
+                </textarea>
+                <div id="form-submit">
+                    <button type="button" class="btn btn-outline-success btn-sm">작성하기</button>
+                    <button type="button" class="btn btn-outline-danger btn-sm">취소하기</button>
+                </div>
+            </form>
+
+            <!-- CKEditor 편집기 스크립트 파일 포함 -->
+            <script src="https://cdn.ckeditor.com/ckeditor5/30.0.0/classic/ckeditor.js"></script>
+
+            <!-- CKEditor 편집기 초기화 -->
+            <script>
+                ClassicEditor
+                    .create(document.querySelector('#mytextarea'), {
+                        toolbar: ['heading', '|', 'bold', 'italic', 'link', 'bulletedList', 'numberedList', 'blockQuote', 'insertTable', 'undo', 'redo', 'imageUpload']
+                    })
+                    .then(editor => {
+                        console.log(editor);
+                    })
+                    .catch(error => {
+                        console.error(error);
+                    });
+            </script>
+
+            <br>
+
+            <!-- 오른쪽여백 -->
+            <div id="right"></div>
+
+            <!-- footer부분 -->
+            <div id="footer"></div>
+
+        </div>
+
+</body>
+
+</html>
