@@ -2,13 +2,14 @@
 .button-container {
     display: flex;
     justify-content: center;
+    margin-top : 50px;
     margin-bottom: 10px;
-  }
+}
 
 .button-container button {
     margin-left: 5px;
 }
-  
+
 #outer {
     width: 1000px;
     position: absolute;
@@ -40,7 +41,7 @@
     margin-bottom: 3px;
 }
 
-.centertitle {
+#centertitle {
     color: black;
     margin-top: 30px;
     margin-bottom: 0px;
@@ -153,10 +154,11 @@ hr {
 }
 
 
-/********** boardDetailView.html **********/
+/********** boardDetailView **********/
 
 #recommend {
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 i.fas.fa-user {
@@ -167,7 +169,7 @@ pre {
     font-family: 'Gamja Flower', cursive;
     font-size: 16px;
     line-height: 1.5;
-  }
+}
 
 .btn-margin {
     margin-left: 5px;
@@ -190,26 +192,63 @@ pre {
 p {
     margin-bottom: 5px;
 }
-  
+
 
 
 /***** 좋아요버튼 호버 시 빙글뱅글 *****/
 .clear-button {
-    border : none;
+    border: none;
     background-color: transparent;
 }
 
 #like:hover i,
 #dislike:hover i {
     animation: fa-spin 1s infinite linear;
-  }
-  
-  @keyframes fa-spin {
+}
+
+@keyframes fa-spin {
     0% {
-      transform: rotate(0);
+        transform: rotate(0);
     }
+
     100% {
-      transform: rotate(360deg);
+        transform: rotate(360deg);
     }
-  }
-  
+}
+
+/***** boardEnrollForm *****/
+#form-submit {
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+#form-submit button {
+    margin-right: 10px;
+}
+
+#center hr:nth-of-type(1) {
+    margin-bottom: 10px;
+}
+
+#center hr:nth-of-type(2) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/***** noticeListView *****/
+#listhead-notice {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#listhead-notice h1 {
+    display: inline-block;
+}
+
+#listhead-notice .search-container {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 30px;
+}
