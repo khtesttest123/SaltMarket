@@ -33,3 +33,9 @@
 .footerDiv1{margin:0 !important;}
 .footerUl1{margin-right:30px;}
 .footerP1{margin-left:25px;}
+
+/* main */
+.mainBtn1{
+    background-color: #BFE9F9;
+    border:1px solid #BFE9F9;
+}
