@@ -1,11 +1,5 @@
 @charset "utf-8";
 
-/* font */
-    <!-- 구글 Gowun Dodum 폰트 적용 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
-
 /* header */
 @media (max-width: 1800px) {
     .container {
@@ -29,6 +23,8 @@
 .nav2{padding-right: 50px !important;}
 
 /* footer */
+.wrapF1{font-family: 'Gowun Dodum', sans-serif;}
+
 #footer_1 a{
     color: black;
     text-decoration: none;
@@ -41,6 +37,8 @@
 .footerP1{margin-left:25px;}
 
 /* main */
+.wrapM1{font-family: 'Gowun Dodum', sans-serif;}
+.wrap22{font-family: 'Gowun Dodum', sans-serif;}
 .mainBtn1{
     background-color: #BFE9F9;
     border:1px solid #BFE9F9;
