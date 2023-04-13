@@ -11,7 +11,14 @@
 
 body {
   background-color: white;
-  font-family: "Gamja Flower", cursive;
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+.wrap1 {
+  margin-top: 25px;
+}
+footer {
+  font-family: "Gowun Dodum", sans-serif;
 }
 .btn-primary {
   background-color: rgb(191, 233, 249);
