@@ -11,5 +11,9 @@ public class hi {
 		for(int i = 0; i <10; i++) {
 			System.out.println(i);
 		}
+
+		System.out.println("재훈이 테스트");
+		
+
 	}
 }
