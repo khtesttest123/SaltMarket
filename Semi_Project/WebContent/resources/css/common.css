@@ -1,5 +1,11 @@
 @charset "utf-8";
 
+/* font */
+    <!-- 구글 Gowun Dodum 폰트 적용 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+
 /* header */
 @media (max-width: 1800px) {
     .container {
