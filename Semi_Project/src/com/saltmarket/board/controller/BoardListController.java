@@ -1,23 +1,27 @@
-package com.saltmarket.freeboard.controller;
+package com.saltmarket.board.controller;
 
 import java.io.IOException;
+import java.util.ArrayList;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.saltmarket.board.model.service.FreeboardService;
+
 /**
  * Servlet implementation class BoardListController
  */
 @WebServlet("/list.bo")
-public class FreeboardListController extends HttpServlet {
+public class BoardListController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
     /**
      * Default constructor. 
      */
-    public FreeboardListController() {
+    public BoardListController() {
         // TODO Auto-generated constructor stub
     }
 
@@ -50,6 +54,9 @@ public class FreeboardListController extends HttpServlet {
 		 
 		 PageInfo pi = new PageInfo(listCount, currentPage, pageLimit, 
 				  boardLimit, maxPage, startPage, endPage);
+		 
+		 
+		 
 		 
 		 ArrayList<Board> list = new BoardService().selectList(pi);
 		 
