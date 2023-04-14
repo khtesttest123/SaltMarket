@@ -1,5 +1,14 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8" import="com.saltmarket.common.model.vo.PageInfo, java.util.ArrayList, com.saltmarket.freeboard.model.vo.Freeboard" %>
+    <%
+    	PageInfo pi = (PageInfo)request.getAttribute("pi");
+    	ArrayList<Freeboard> list = (ArrayList<Freeboard>)request.getAttribute("list");
+    	
+    	int currentPage = pi.getCurrentPage();
+    	int startPage = pi.getStartPage();
+    	int endPage = pi.getEndPage();
+    	int maxPage = pi.getMaxPage();
+    %>
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -13,7 +22,6 @@
     
         <!-- 외부방식 board.css -->
         <link rel="stylesheet" href="<%= request.getContextPath() %>/resources/css/board.css">
-        
     
         <!-- 구글 Gowun Dodum 폰트 적용 -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -114,94 +122,24 @@
                         </tr>
                     </thead>
                     <tbody>
+                    <% if(list.isEmpty()) { %>
+                    	<tr>
+                    		<td colspan="6">
+                    		조회된 리스트가 없습니다.
+                    		</td>
+                    	</tr>
+                	 <% } else { %>
+            			<% for(Freeboard b : list) { %>
                         <tr>
-                            <td>01</td>
-                            <td>수다</td>
-                            <td>제목입니다.</td>
-                            <td>재훈재훈</td>
-                            <td>57</td>
-                            <td>2023-04-08</td>
+	                        <td><%= b.getFreeboardNo() %></td>
+	            			<td><%= b.getCategory() %></td>
+	            			<td><%= b.getBoardTitle() %></td>
+	            			<td><%= b.getUserName() %></td>
+	            			<td><%= b.getBoardViews() %></td>
+	            			<td><%= b.getCreatedDate() %></td>
                         </tr>
-                        <tr>
-                            <td>01</td>
-                            <td>수다</td>
-                            <td>제목입니다.</td>
-                            <td>재훈재훈</td>
-                            <td>57</td>
-                            <td>2023-04-08</td>
-                        </tr>
-                        <tr>
-                            <td>01</td>
-                            <td>수다</td>
-                            <td>제목입니다.</td>
-                            <td>재훈재훈</td>
-                            <td>57</td>
-                            <td>2023-04-08</td>
-                        </tr>
-                        <tr>
-                            <td>01</td>
-                            <td>수다</td>
-                            <td>제목입니다.</td>
-                            <td>재훈재훈</td>
-                            <td>57</td>
-                            <td>2023-04-08</td>
-                        </tr>
-                        <tr>
-                            <td>01</td>
-                            <td>수다</td>
-                            <td>제목입니다.</td>
-                            <td>재훈재훈</td>
-                            <td>57</td>
-                            <td>2023-04-08</td>
-                        </tr>
-                        <tr>
-                            <td>01</td>
-                            <td>수다</td>
-                            <td>제목입니다.</td>
-                            <td>재훈재훈</td>
-                            <td>57</td>
-                            <td>2023-04-08</td>
-                        </tr>
-                        <tr>
-                            <td>01</td>
-                            <td>수다</td>
-                            <td>제목입니다.</td>
-                            <td>재훈재훈</td>
-                            <td>57</td>
-                            <td>2023-04-08</td>
-                        </tr>
-                        <tr>
-                            <td>01</td>
-                            <td>수다</td>
-                            <td>제목입니다.</td>
-                            <td>재훈재훈</td>
-                            <td>57</td>
-                            <td>2023-04-08</td>
-                        </tr>
-                        <tr>
-                            <td>01</td>
-                            <td>수다</td>
-                            <td>제목입니다.</td>
-                            <td>재훈재훈</td>
-                            <td>57</td>
-                            <td>2023-04-08</td>
-                        </tr>
-                        <tr>
-                            <td>01</td>
-                            <td>수다</td>
-                            <td>제목입니다.</td>
-                            <td>재훈재훈</td>
-                            <td>57</td>
-                            <td>2023-04-08</td>
-                        </tr>
-                        <tr>
-                            <td>01</td>
-                            <td>수다</td>
-                            <td>제목입니다.</td>
-                            <td>재훈재훈</td>
-                            <td>57</td>
-                            <td>2023-04-08</td>
-                        </tr>
+                        <% } %>
+                      <%} %>
                     </tbody>
                 </table>
                 <div class="button-container">

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+
+	<entry key="selectListCount">
+		SELECT COUNT(*) COUNT
+           FROM FREE_BOARD
+        WHERE DELETE_STATUS = 'Y'
+	</entry>
+	
+	<entry key="selectList">
+		SELECT *
+		FROM
+		(
+		    SELECT ROWNUM RNUM
+		        , A.*
+		    FROM (SELECT FREE_BOARD_NO
+		         , CATEGORY
+		         , BOARD_TITLE
+		         , USER_NAME
+		         , BOARD_VIEWS
+		         , CREATED_DATE
+		      FROM FREE_BOARD F
+		      JOIN USER_INFO U ON (U.USER_NO = F.USER_NO)
+		     WHERE DELETE_STATUS = 'Y'
+		     ORDER BY CREATED_DATE DESC
+		     ) A
+		 )
+		 WHERE RNUM BETWEEN ? AND ?
+	</entry>
+	
+</properties>
