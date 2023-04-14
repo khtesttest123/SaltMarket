@@ -8,7 +8,7 @@ public class Product {
 	private String productStatus;//	PRODUCT_STATUS	CHAR(1 BYTE)
 	private int price;			//	PRICE	NUMBER
 	private Date createdAt;		//	CREATED_AT	DATE
-	private String delteStatus;	//	DELETE_STATUS	CHAR(1 BYTE)
+	private String deleteStatus;	//	DELETE_STATUS	CHAR(1 BYTE)
 	private String description;	//	DESCRIPTION	VARCHAR2(1000 BYTE)
 	private int categoryNo;		//	CATEGORY_NO	NUMBER
 	private int userNo;			//	USER_NO	NUMBER
@@ -24,7 +24,7 @@ public class Product {
 		this.productStatus = productStatus;
 		this.price = price;
 		this.createdAt = createdAt;
-		this.delteStatus = delteStatus;
+		this.deleteStatus = delteStatus;
 		this.description = description;
 		this.categoryNo = categoryNo;
 		this.userNo = userNo;
@@ -71,12 +71,12 @@ public class Product {
 		this.createdAt = createdAt;
 	}
 
-	public String getDelteStatus() {
-		return delteStatus;
+	public String getDeleteStatus() {
+		return deleteStatus;
 	}
 
-	public void setDelteStatus(String delteStatus) {
-		this.delteStatus = delteStatus;
+	public void setDeleteStatus(String deleteStatus) {
+		this.deleteStatus = deleteStatus;
 	}
 
 	public String getDescription() {
@@ -114,7 +114,7 @@ public class Product {
 	@Override
 	public String toString() {
 		return "Product [productNo=" + productNo + ", productName=" + productName + ", productStatus=" + productStatus
-				+ ", price=" + price + ", createdAt=" + createdAt + ", delteStatus=" + delteStatus + ", description="
+				+ ", price=" + price + ", createdAt=" + createdAt + ", deleteStatus=" + deleteStatus + ", description="
 				+ description + ", categoryNo=" + categoryNo + ", userNo=" + userNo + ", regionNo=" + regionNo + "]";
 	}
 	

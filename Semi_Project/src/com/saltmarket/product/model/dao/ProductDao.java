@@ -66,8 +66,14 @@ public class ProductDao {
 			rset = pstmt.executeQuery();
 			
 			while(rset.next()) {
-				list.add(new Product(rset.getInt("")
-								   , rset.getString("")));
+				Product p = new Product();
+				p.setProductNo(rset.getInt("PRODUCT_NO"));
+				p.setProductName(rset.getString("PRODUCT_NAME"));
+				p.setPrice(rset.getInt("PRICE"));
+				p.setDeleteStatus(rset.getString("DELETE_STATUS"));
+				p.setCategoryNo(rset.getInt("CATEGORY_NO"));
+				p.setUserNo(rset.getInt("USER_NO"));
+				p.setRegionNo(rset.getInt("REGION_NO"));
 			}
 			
 		} catch (SQLException e) {

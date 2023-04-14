@@ -58,7 +58,10 @@ public class ProductListController extends HttpServlet {
 		
 		ArrayList<Product> list = new ProductService().selectList(pi);
 		
+		request.setAttribute("pi", pi);
+		request.setAttribute("list", list);
 		
+		request.getRequestDispatcher("views/product/productListView.jsp").forward(request, response);
 	}
 
 	/**

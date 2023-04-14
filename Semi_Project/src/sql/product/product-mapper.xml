@@ -6,4 +6,25 @@
 		  FROM PRODUCT
 		 WHERE STATUS = 'Y'
 	</entry>
+	<entry key="selectList">
+		SELECT * 
+		  FROM (
+		      SELECT ROWNUM RNUM
+		         , A.*
+		      FROM (SELECT PRODUCT_NO
+		                 , PRODUCT_NAME
+		                 , PRICE
+		                 , DELETE_STATUS
+		                 , CATEGORY_NO
+		                 , USER_NO
+		                 , REGION_NO
+		              FROM PRODUCT
+		              JOIN CATEGORY USING (CATEGORY_NO)
+		              JOIN USER_INFO USING (USER_NO)
+		             WHERE PRODUCT_STATUS = 'Y'
+		             ORDER BY CREATED_AT DESC
+		            ) A
+		        )
+		 WHERE RNUM BETWEEN ? AND ?
+	</entry>
 </properties>
