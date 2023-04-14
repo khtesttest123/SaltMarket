@@ -65,6 +65,14 @@
       </div>
       <br><br>
 
+      <div class="card mb-3">
+        <img src="https://www.nongmin.com/-/raw/srv-nongmin/data2/content/image/2022/02/13/.cache/512/20220213191115.jpg" class="card-img-top" alt="..." height="200px">
+        <div class="card-body">
+          <h5 class="card-title" align="center">가장 많이 팔린 매물</h5>
+        </div>
+      </div>
+      <br><br>
+      
       <h1>인기가게들의 최신상품</h1>
       <br><br>
       <div class="row">

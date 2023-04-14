@@ -49,7 +49,7 @@
         <div class="container">
                 
             <div class="row">
-                <div class="col-sm-4"><img src="https://cdn.pixabay.com/photo/2018/05/13/16/57/dog-3397110__480.jpg" class="img1"></div>
+                <div class="col-sm-4"><img src="resources/image/logo.png" width="140" heigh="140"></div>
                 <div class="col-sm-4">
                     <div class="input-group mb-3">
                         <h1 class="h1h1">소금마켓</h1>
