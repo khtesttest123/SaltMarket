@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -124,7 +126,7 @@
                 </div>
 
                 <span style="display : inline-block; font-size: 25px; font-weight: bolder; color: black; width: 1209px;">자주 묻는 질문 TOP 5</span> 
-                <a href="mToM.html" style="text-align: end; font-size: 25px; text-decoration: none; color: black;">전체보기 &gt;</a>
+                <a href="" style="text-align: end; font-size: 25px; text-decoration: none; color: black;">전체보기 &gt;</a>
 
                 <br><br>
 
