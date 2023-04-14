@@ -26,10 +26,15 @@
 
     body { font-family: 'Gowun Dodum', sans-serif; }
 
-    #login_form {
+    #login_area, #user-info {
         width: 200px;
         text-align: center;
         margin: auto;
+    }
+
+    #user-info, .form-group a {
+        text-decoration: none;
+        color: black;
     }
 
     .btn {
@@ -39,18 +44,21 @@
     }
 
     .form-group input { margin: 5px; }
-    .form-group a { text-decoration: none; color: black; }
 </style>
 </head>
 <body>
+
+	<%@ include file="../common/header.jsp" %>
+	
     <br><br>
-    <div id="login_form">
-        <form action="" method="">
+    <div id="login_area">
+        <!-- 로그인 하기 전에 보여지는 로그인 form -->
+        <form id="login-form" action="/saltmarket/login.me" method="post">
             <div class="form-group">
-                <input type="text" id="id" class="form-control" placeholder="아이디">
+                <input type="text" name="userId" class="form-control" placeholder="아이디" required>
             </div>
             <div class="form-group">
-                <input type="password" id="pwd" class="form-control" placeholder="비밀번호">
+                <input type="password" name="userPwd" class="form-control" placeholder="비밀번호" required>
             </div>
             <br>
             <div class="form-group">
@@ -60,6 +68,24 @@
             <br>
             <button type="submit" class="btn btn-secondary">로그인</button>
         </form>
+
+        <!-- 로그인 성공 후 보여질 화면 -->
+        <!--
+        <div id="user-info">
+            <b>xxx님</b> 환영합니다. <br><br>
+            <div align="center">
+                <a href="">마이페이지</a>
+                <a href="">로그아웃</a>
+            </div>
+        </div>
+        -->
     </div>
+    
+    <%@ include file="../common/footer.jsp" %>
+    
 </body>
 </html>
+
+
+
+

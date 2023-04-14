@@ -35,6 +35,8 @@ public class Member {
 		this.gradeNo = gradeNo;
 		this.regionNo = regionNo;
 	}
+	
+	
 
 	public int getUserNo() {
 		return userNo;
