@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.saltmarket.common.model.vo.PageInfo;
 import com.saltmarket.freeboard.model.service.FreeboardService;
+import com.saltmarket.freeboard.model.vo.Freeboard;
 
 /**
  * Servlet implementation class BoardListController
@@ -59,15 +60,10 @@ public class FreeboardListController extends HttpServlet {
 		 PageInfo pi = new PageInfo(listCount, currentPage, pageLimit, 
 				  boardLimit, maxPage, startPage, endPage);
 		 
-		 
-		 
-		 
-		 ArrayList<Board> list = new freeboardService().selectList(pi);
+		 ArrayList<Freeboard> list = new FreeboardService().selectList(pi);
 		 
 		 request.setAttribute("pi", pi);
 		 request.setAttribute("list", list);
-		 
-		 
 		 
 		 request.getRequestDispatcher("views/board/boardListView.jsp").forward(request, response);
 		 
