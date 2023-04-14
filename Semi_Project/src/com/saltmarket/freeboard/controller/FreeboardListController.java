@@ -1,4 +1,4 @@
-package com.saltmarket.board.controller;
+package com.saltmarket.freeboard.controller;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -9,19 +9,20 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.saltmarket.board.model.service.FreeboardService;
+import com.saltmarket.common.model.vo.PageInfo;
+import com.saltmarket.freeboard.model.service.FreeboardService;
 
 /**
  * Servlet implementation class BoardListController
  */
 @WebServlet("/list.bo")
-public class BoardListController extends HttpServlet {
+public class FreeboardListController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
     /**
      * Default constructor. 
      */
-    public BoardListController() {
+    public FreeboardListController() {
         // TODO Auto-generated constructor stub
     }
 
@@ -29,6 +30,7 @@ public class BoardListController extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
 		
 		int listCount;
 		int currentPage;
@@ -39,8 +41,10 @@ public class BoardListController extends HttpServlet {
 		int startPage;
 		int endPage;
 		
-		listCount = new BoardService().selectListCount();
+		listCount = new FreeboardService().selectListCount();
 		currentPage = Integer.parseInt(request.getParameter("currentPage"));
+		
+		System.out.println(currentPage);
 		
 		pageLimit = 10;
 		boardLimit = 10;
@@ -58,10 +62,12 @@ public class BoardListController extends HttpServlet {
 		 
 		 
 		 
-		 ArrayList<Board> list = new BoardService().selectList(pi);
+		 ArrayList<Board> list = new freeboardService().selectList(pi);
 		 
 		 request.setAttribute("pi", pi);
 		 request.setAttribute("list", list);
+		 
+		 
 		 
 		 request.getRequestDispatcher("views/board/boardListView.jsp").forward(request, response);
 		 
