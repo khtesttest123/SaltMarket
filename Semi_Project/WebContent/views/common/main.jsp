@@ -72,6 +72,36 @@
         </div>
       </div>
       <br><br>
+      <div class="row row-cols-1 row-cols-md-3 g-1">
+        <div class="col">
+          <div class="card">
+            <img src="https://www.nongmin.com/-/raw/srv-nongmin/data2/content/image/2022/02/13/.cache/512/20220213191115.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">슈프림 더블니23ss</h5>
+              <p class="card-text">400,000 원</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="https://www.nongmin.com/-/raw/srv-nongmin/data2/content/image/2022/02/13/.cache/512/20220213191115.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">무스너클 발리스틱</h5>
+              <p class="card-text">200,000 원</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="https://www.nongmin.com/-/raw/srv-nongmin/data2/content/image/2022/02/13/.cache/512/20220213191115.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">크롬하츠 안경 딥3 블랙실버</h5>
+              <p class="card-text">2,150,000 원</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br><br>
       
       <h1>인기가게들의 최신상품</h1>
       <br><br>
@@ -298,11 +328,11 @@
             </div>
             <div class="col">
                 <div class="card">
-                <img src="https://www.nongmin.com/-/raw/srv-nongmin/data2/content/image/2022/02/13/.cache/512/20220213191115.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">소니 zv-1 카메라</h5>
-                    <p class="card-text">620,000 원</p>
-                </div>
+                  <img src="https://www.nongmin.com/-/raw/srv-nongmin/data2/content/image/2022/02/13/.cache/512/20220213191115.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title">소니 zv-1 카메라</h5>
+                      <p class="card-text">620,000 원</p>
+                  </div>
                 </div>
             </div>
         </div>
