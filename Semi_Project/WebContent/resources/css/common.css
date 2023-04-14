@@ -1,25 +1,6 @@
 @charset "utf-8";
 
-/* header */
-@media (max-width: 1800px) {
-    .container {
-        min-width: 1350px;
-    }
-}
-@media (min-width: 1400px) {
-    .container {
-        max-width: 1350px;
-    }
-}
-.goods_search{display: flex;}
-.svg1{display: none;}
-.wrap22{font-family: 'Gamja Flower', cursive;}
-.sellDiv{margin-left:0px;}
-.svg2{margin-left:300px; color:#BFE9F9}
-.h1h1{padding-left:130px;}
-.svg3{margin-left:40px; color:#BFE9F9}
-.nav1{background-color: #BFE9F9 !important;}
-.nav2{padding-right: 50px !important;}
+
 
 /* footer */
 .wrapF1{font-family: 'Gowun Dodum', sans-serif;}
@@ -41,4 +22,41 @@
 .mainBtn1{
     background-color: #BFE9F9;
     border:1px solid #BFE9F9;
+}
+
+
+/* header */
+@media (max-width: 1800px) {
+    .container {
+        min-width: 1350px;
+    }
+}
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1350px;
+    }
+}
+.goods_search{display: flex;}
+.svg1{display: none;}
+.wrap22{font-family: 'Gowun Dodum', sans-serif;}
+.sellDiv{margin-left:0px;}
+.svg2{margin-left:300px; color:#BFE9F9}
+.h1h1{padding-left:130px;}
+.svg3{margin-left:40px; color:#BFE9F9}
+.nav1{background-color: #BFE9F9 !important;}
+.nav2{padding-right: 70px !important;}
+.navbar{
+    background-color: #BFE9F9 !important;
+}
+.bg-light{
+    background-color: #BFE9F9 !important;
+}
+/* 스타일 안먹혀서 인라인으로 부여 */
+.spanH1{margin: left 280px !important;}
+.dropdown-toggle::after {
+    display: none !important;
+}
+.dropdown-menu{
+    border: none;
+    margin-top: 10px !important;
 }
