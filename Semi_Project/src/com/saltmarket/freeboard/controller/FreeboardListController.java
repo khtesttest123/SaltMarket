@@ -45,8 +45,6 @@ public class FreeboardListController extends HttpServlet {
 		listCount = new FreeboardService().selectListCount();
 		currentPage = Integer.parseInt(request.getParameter("currentPage"));
 		
-		System.out.println(currentPage);
-		
 		pageLimit = 10;
 		boardLimit = 10;
 		maxPage = (int)Math.ceil((double)listCount / boardLimit);
