@@ -4,8 +4,11 @@ import static com.saltmarket.common.JDBCTemplate.close;
 import static com.saltmarket.common.JDBCTemplate.getConnection;
 
 import java.sql.Connection;
+import java.util.ArrayList;
 
+import com.saltmarket.common.model.vo.PageInfo;
 import com.saltmarket.product.model.dao.ProductDao;
+import com.saltmarket.product.model.vo.Product;
 
 public class ProductService {
 
@@ -15,5 +18,12 @@ public class ProductService {
 		close(conn);
 		
 		return listCount;
+	}
+	public ArrayList<Product> selectList(PageInfo pi){
+		Connection conn = getConnection();
+		ArrayList<Product> list = new ProductDao().selectList(conn, pi);
+		close(conn);
+		
+		return list;
 	}
 }

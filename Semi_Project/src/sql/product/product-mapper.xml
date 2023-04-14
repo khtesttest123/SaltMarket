@@ -2,7 +2,7 @@
 <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 <properties>
 	<entry key="selectListCount">
-		SELECT COUNT(*) PRODUCTCOUNT
+		SELECT COUNT(*) PCOUNT
 		  FROM PRODUCT
 		 WHERE STATUS = 'Y'
 	</entry>
