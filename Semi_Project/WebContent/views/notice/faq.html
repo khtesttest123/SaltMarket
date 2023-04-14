@@ -24,15 +24,23 @@
 
         <!-- 구글 아이콘 -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
-
-
         <style>
             
-            .col-qs{
-                display: flex;
-                justify-content: center;
+
+            @media (max-width: 3000px) {
+                .containerQNA {
+                    min-width: 970px;
+                    
+                }
             }
+            @media (min-width: 1400px) {
+                .containerQNA {
+                    max-width: 970px;
+                    
+                }
+            }
+
+            
             #searchs{
                 display: flex;
                 justify-content: center;
@@ -58,30 +66,31 @@
                 background: linear-gradient(to bottom,lightgray, white);
             }
             
+            .container3{
+                height: 1000px;
+                max-width: 1000px;
+                background: linear-gradient(to bottom,lightgray, white);
+            }
             #its{
                 background: linear-gradient(to bottom,lightgray, white);
             }
             
+            
             .nav-left:hover a{
                 color: black !important;
                 font-size: 28px;
-                
-                
             }
-            
-            
-            
 
         </style>
     </head>
-    <body style="height: 1300px;">
+    <body style="height: 1600px;">
         
 
         <div id="up" style="box-shadow: 1px 2px 10px 5px gray; position: relative;">
             <div class="container container1" style="padding: 40px; " >
                 <div class="row ">
                     <div class="col col-qs">
-                        <h2 style="color: black; font-size:45px; font-weight: 900;">소금마켓 상담센터</h2>
+                        <h2 style="color: black; font-size:45px; font-weight: 900; text-align: center;">소금마켓 상담센터</h2>
                     </div>
                 </div>
                 <br>
@@ -111,12 +120,12 @@
         
         <div id="its">
             <div class="container container2" style="height: 1100px; display: flex;">
-                <div style="width: 300px; margin-right: 80px; margin-top: 80px; height: 280px;">
+                <div style=" width: 300px; margin-right: 80px; margin-top: 80px; height: 280px;">
                     <div class="nav-left" style="height: 70px; font-size:27px; border-bottom: 1.5px solid gray; padding: 13px; cursor: pointer;">
                         <a  href="cs.html" style="display: inline-block; width: 100%; height: 100%; text-decoration: none; color: gray;">상담센터 가기</a>
                     </div>
                     <div class="nav-left" style="height: 70px; font-size:27px; border-bottom: 1.5px solid gray; padding: 13px;">
-                        <a href="faq.html" style="display: inline-block; width: 100%; height: 100%; text-decoration: none; color: gray; ">1:1 문의</a>
+                        <a href="mToM.html" style="display: inline-block; width: 100%; height: 100%; text-decoration: none; color: gray; ">1:1 문의</a>
                     </div>
                     <div class="nav-left" style="height: 70px; font-size:27px; border-bottom: 1.5px solid gray; padding: 13px;">
                         <span style="color: black; font-weight: 900;">자주 묻는 질문</span>
@@ -132,50 +141,164 @@
                     </div>
                 </div>
 
-                <div style="background-color: white; margin-top: 80px; box-shadow: 5px 5px 10px 5px gray; width: 1000px;">
-                    <form action="">
-                        <div style="display: flex; flex-direction: column; padding: 40px; ">
-                            <div style="height: 150px; display: flex;">
-                                <span style="width: 140px;" >유형</span>
-                                <select name="" id="" style="width: 400px; height: 50px;">
-                                    <option value="">선택</option>
-                                    <option value="">선택</option>
-                                    <option value="">선택</option>
-                                    <option value="">선택</option>
-                                </select>
-                            </div>
-                            <div style="height: 100px; display: flex;">
-                                <span style="width: 140px;">제목</span>
-                                <input type="text" style="width: 700px; height: 50px; ">
-                            </div>
-                            <div style="height: 300px; display: flex">
-                                <span style="width:140px">문의 내용</span>
-                                <textarea name="" id="" cols="30" rows="10" style="width: 700px; height: 200px; resize: none;" required  ></textarea>
-                            </div>
-                            <div  style="height: 300px; display: flex; flex-wrap: nowrap;">
-                                <span style="width: 140px;">사진 첨부</span>
-                                <div style="border: 1px solid rgb(133, 133, 133); width: 200px; height: 200px; margin-right: 50px; border-radius: 1px;">
-                                    <img id="contentImg1" width="100%" height="100%">
-                                </div>
-                                <div style="border: 1px solid rgb(133, 133, 133); width: 200px; height: 200px; margin-right: 50px; border-radius: 1px;">
-                                    <img id="contentImg2" width="100%" height="100%">
-                                </div>
-                                <div style="border: 1px solid rgb(133, 133, 133); width: 200px; height: 200px; margin-right: 50px; border-radius: 1px;">
-                                    <img id="contentImg3" width="100%" height="100%">
+                
+                <div class="container containerQNA" style="background: linear-gradient(to bottom,lightgray, white); padding: 0px;">
+                    <div  style="background-color: white; margin-top: 80px; box-shadow: 5px 5px 10px 5px gray; width: 970;">
+                        <div class="accordion" id="accordionExample" style="margin : 20px; padding: 20px;  ">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne1" aria-expanded="false" aria-controls="collapseOne" style="height: 70px;">
+                                        <span class="material-symbols-outlined">
+                                            question_mark
+                                            </span>
+                                        [분쟁해결절차] 사기꾼의 주요 사기패턴 유형이 궁금해요.
+                                    </button>
+                                </h2>
+                                <div id="collapseOne1" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample" >
+                                    <div class="accordion-body">
+                                    <strong>주요사기 패턴을 알려드려요!</strong> #최근 빈번하게 발생하는 사기유형
+                                    </div>
                                 </div>
                             </div>
-
-                            <div class="file-area">
-                                <input type="file" id="file1" name="file1" onchange="loadImg(this, 1);"> 
-                                <input type="file" id="file2" name="file2" onchange="loadImg(this, 2);">
-                                <input type="file" id="file3" name="file3" onchange="loadImg(this, 3);">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne1" aria-expanded="false" aria-controls="collapseOne" style="height: 70px;">
+                                        <span class="material-symbols-outlined">
+                                            question_mark
+                                            </span>
+                                        [분쟁해결절차] 사기꾼의 주요 사기패턴 유형이 궁금해요.
+                                    </button>
+                                </h2>
+                                <div id="collapseOne1" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample" >
+                                    <div class="accordion-body">
+                                    <strong>주요사기 패턴을 알려드려요!</strong> #최근 빈번하게 발생하는 사기유형
+                                    </div>
+                                </div>
                             </div>
-                            <div style="height: 300px; display: flex ; justify-content: center;">
-                                <button style="width: 265px; height: 60px; background-color: black; color: white; font-size: 20px; font-weight: 900;">등록하기</button>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne1" aria-expanded="false" aria-controls="collapseOne" style="height: 70px;">
+                                        <span class="material-symbols-outlined">
+                                            question_mark
+                                            </span>
+                                        [분쟁해결절차] 사기꾼의 주요 사기패턴 유형이 궁금해요.
+                                    </button>
+                                </h2>
+                                <div id="collapseOne1" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample" >
+                                    <div class="accordion-body">
+                                    <strong>주요사기 패턴을 알려드려요!</strong> #최근 빈번하게 발생하는 사기유형
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne1" aria-expanded="false" aria-controls="collapseOne" style="height: 70px;">
+                                        <span class="material-symbols-outlined">
+                                            question_mark
+                                            </span>
+                                        [분쟁해결절차] 사기꾼의 주요 사기패턴 유형이 궁금해요.
+                                    </button>
+                                </h2>
+                                <div id="collapseOne1" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample" >
+                                    <div class="accordion-body">
+                                    <strong>주요사기 패턴을 알려드려요!</strong> #최근 빈번하게 발생하는 사기유형
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne1" aria-expanded="false" aria-controls="collapseOne" style="height: 70px;">
+                                        <span class="material-symbols-outlined">
+                                            question_mark
+                                            </span>
+                                        [분쟁해결절차] 사기꾼의 주요 사기패턴 유형이 궁금해요.
+                                    </button>
+                                </h2>
+                                <div id="collapseOne1" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample" >
+                                    <div class="accordion-body">
+                                    <strong>주요사기 패턴을 알려드려요!</strong> #최근 빈번하게 발생하는 사기유형
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne1" aria-expanded="false" aria-controls="collapseOne" style="height: 70px;">
+                                        <span class="material-symbols-outlined">
+                                            question_mark
+                                            </span>
+                                        [분쟁해결절차] 사기꾼의 주요 사기패턴 유형이 궁금해요.
+                                    </button>
+                                </h2>
+                                <div id="collapseOne1" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample" >
+                                    <div class="accordion-body">
+                                    <strong>주요사기 패턴을 알려드려요!</strong> #최근 빈번하게 발생하는 사기유형
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne1" aria-expanded="false" aria-controls="collapseOne" style="height: 70px;">
+                                        <span class="material-symbols-outlined">
+                                            question_mark
+                                            </span>
+                                        [분쟁해결절차] 사기꾼의 주요 사기패턴 유형이 궁금해요.
+                                    </button>
+                                </h2>
+                                <div id="collapseOne1" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample" >
+                                    <div class="accordion-body">
+                                    <strong>주요사기 패턴을 알려드려요!</strong> #최근 빈번하게 발생하는 사기유형
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne1" aria-expanded="false" aria-controls="collapseOne" style="height: 70px;">
+                                        <span class="material-symbols-outlined">
+                                            question_mark
+                                            </span>
+                                        [분쟁해결절차] 사기꾼의 주요 사기패턴 유형이 궁금해요.
+                                    </button>
+                                </h2>
+                                <div id="collapseOne1" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample" >
+                                    <div class="accordion-body">
+                                    <strong>주요사기 패턴을 알려드려요!</strong> #최근 빈번하게 발생하는 사기유형
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne1" aria-expanded="false" aria-controls="collapseOne" style="height: 70px;">
+                                        <span class="material-symbols-outlined">
+                                            question_mark
+                                            </span>
+                                        [분쟁해결절차] 사기꾼의 주요 사기패턴 유형이 궁금해요.
+                                    </button>
+                                </h2>
+                                <div id="collapseOne1" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample" >
+                                    <div class="accordion-body">
+                                    <strong>주요사기 패턴을 알려드려요!</strong> #최근 빈번하게 발생하는 사기유형
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne1" aria-expanded="false" aria-controls="collapseOne" style="height: 70px;">
+                                        <span class="material-symbols-outlined">
+                                            question_mark
+                                            </span>
+                                        [분쟁해결절차] 사기꾼의 주요 사기패턴 유형이 궁금해요.
+                                    </button>
+                                </h2>
+                                <div id="collapseOne1" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample" >
+                                    <div class="accordion-body">
+                                    <strong>주요사기 패턴을 알려드려요!</strong> #최근 빈번하게 발생하는 사기유형
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </form>
+                    </div>
                 </div>
+                
             </div>
         </div>
         
