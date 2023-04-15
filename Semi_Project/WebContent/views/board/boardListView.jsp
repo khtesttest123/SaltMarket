@@ -1,7 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"
 	import="com.saltmarket.common.model.vo.PageInfo, java.util.ArrayList, com.saltmarket.freeboard.model.vo.Freeboard"%>
-<% PageInfo pi=(PageInfo)request.getAttribute("pi"); ArrayList<Freeboard> list = (ArrayList<Freeboard>)request.getAttribute("list");
+<% 
+	PageInfo pi=(PageInfo)request.getAttribute("pi");
+	ArrayList<Freeboard> list = (ArrayList<Freeboard>)request.getAttribute("list");
 
             int currentPage = pi.getCurrentPage();
             int startPage = pi.getStartPage();
@@ -18,20 +20,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Document</title>
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet"
-	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<!-- 온라인 방식 -->
+
 
 <!-- 외부방식 board.css -->
 <link rel="stylesheet"
 	href="<%= request.getContextPath() %>/resources/css/board.css">
-
-<!-- 구글 Gowun Dodum 폰트 적용 -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-	href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap"
-	rel="stylesheet">
 
 
 <!-- 폰트어썸 아이콘 적용 -->
@@ -49,15 +46,24 @@
 	border: none !important;
 }
 #current-button:disabled {
-    opacity: 1 !important;
-    background-color: #6ad4fd !important;
+	opacity: 1 !important;
+	background-color: #6ad4fd !important;
+}
+hr {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
 }
 </style>
 </head>
 
 <body>
 
-	<%@ include file="../common/header.jsp" %>
+	<%@ include file="../common/header.jsp"%>
+
+
+
+
+
 
 	<div id="outer">
 		<div id="left"></div>
@@ -65,8 +71,6 @@
 		<div id="center">
 
 			<h1 id="centertitle">오늘의 BEST</h1>
-
-			<hr>
 
 			<div id="bestdiv">
 				<table align="center" class="bestlist-area bestlist-area1">
@@ -118,16 +122,20 @@
 
 			<br>
 
-			<hr>
-
 			<div id="listhead">
 				<div class="category">
-					<button class="btn btn-primary btn-sm">전체</button>
-					<button class="btn btn-outline-primary btn-sm">잡담</button>
-					<button class="btn btn-outline-primary btn-sm">질문</button>
-					<button class="btn btn-outline-primary btn-sm">정보</button>
-					<button class="btn btn-outline-primary btn-sm">축하</button>
-					<button class="btn btn-outline-primary btn-sm">고민/상담</button>
+					<button class="btn btn-outline-primary btn-sm"
+						onclick="location.href='<%= contextPath %>/freeboardlist.bo?category=전체'">전체</button>
+					<button class="btn btn-outline-primary btn-sm"
+						onclick="location.href='<%= contextPath %>/freeboardlist.bo?category=잡담'">잡담</button>
+					<button class="btn btn-outline-primary btn-sm"
+						onclick="location.href='<%= contextPath %>/freeboardlist.bo?category=질문'">질문</button>
+					<button class="btn btn-outline-primary btn-sm"
+						onclick="location.href='<%= contextPath %>/freeboardlist.bo?category=정보'">정보</button>
+					<button class="btn btn-outline-primary btn-sm"
+						onclick="location.href='<%= contextPath %>/freeboardlist.bo?category=축하'">축하</button>
+					<button class="btn btn-outline-primary btn-sm"
+						onclick="location.href='<%= contextPath %>/freeboardlist.bo?category=고민/상담'">고민/상담</button>
 				</div>
 
 				<div class="search-container">
@@ -138,11 +146,11 @@
 			<table align="center" class="list-area">
 				<thead>
 					<tr>
-						<th width="70">글번호</th>
-						<th width="70">카테고리</th>
+						<th width="30">No</th>
+						<th width="100">카테고리</th>
 						<th width="300">제목</th>
 						<th width="100">작성자</th>
-						<th width="50">조회수</th>
+						<th width="60">조회수</th>
 						<th width="100">작성일</th>
 					</tr>
 				</thead>
@@ -165,77 +173,99 @@
 					<%} %>
 				</tbody>
 			</table>
-			
-			
+
 			<div class="paging-area">
-			
+
 				<%-- 이전 페이지섹션으로 이동  --%>
 				<% if(currentPage == 1) { %>
-					<button type="button" class="btn btn-outline-primary btn-sm" disabled>&lt;&lt;</button>
-					<button type="button" class="btn btn-outline-primary btn-sm" disabled>&lt;</button>
+				<button type="button" class="btn btn-outline-primary btn-sm"
+					disabled>&lt;&lt;</button>
+				<button type="button" class="btn btn-outline-primary btn-sm"
+					disabled>&lt;</button>
 				<% } else if(currentPageSection == 1) { %>
-					<button type="button" class="btn btn-outline-primary btn-sm"
-						onclick="location.href = '<%= contextPath %>/freeboardlist.bo?currentPage=1';">
-						&lt;&lt;
-					</button>
-					<button type="button" class="btn btn-outline-primary btn-sm"
-						onclick="location.href = '<%= contextPath %>/freeboardlist.bo?currentPage=<%= currentPage - 1 %>';">
-						&lt;
-					</button>
+				<button type="button" class="btn btn-outline-primary btn-sm"
+					onclick="location.href = '<%= contextPath %>/freeboardlist.bo?currentPage=1';">
+					&lt;&lt;</button>
+				<button type="button" class="btn btn-outline-primary btn-sm"
+					onclick="location.href = '<%= contextPath %>/freeboardlist.bo?currentPage=<%= currentPage - 1 %>';">
+					&lt;</button>
 				<% } else { %>
-					<button type="button" class="btn btn-outline-primary btn-sm"
-						onclick="location.href = '<%= contextPath %>/freeboardlist.bo?currentPage=<%= (currentPageSection - 2) * 10 + 1 %>';">
-						&lt;&lt;
-					</button>
-					<button type="button" class="btn btn-outline-primary btn-sm"
-						onclick="location.href = '<%= contextPath %>/freeboardlist.bo?currentPage=<%= currentPage - 1 %>';">
-						&lt;
-					</button>
+				<button type="button" class="btn btn-outline-primary btn-sm"
+					onclick="location.href = '<%= contextPath %>/freeboardlist.bo?currentPage=<%= (currentPageSection - 2) * 10 + 1 %>';">
+					&lt;&lt;</button>
+				<button type="button" class="btn btn-outline-primary btn-sm"
+					onclick="location.href = '<%= contextPath %>/freeboardlist.bo?currentPage=<%= currentPage - 1 %>';">
+					&lt;</button>
 				<% } %>
-				
+
 				<%-- 페이징처리  --%>
 				<% for(int p = startPage; p <= endPage; p++) { %>
-					<% if(p != currentPage) { %>
-						<button type="button" class="btn btn-outline-primary btn-sm"
-							onclick="location.href = '<%= contextPath %>/freeboardlist.bo?currentPage=<%= p %>';">
-							<%= p %>
-						</button>
-					<% } else { %>
-						<button id="current-button" type="button" class="btn btn-outline-primary btn-sm" disabled><%= p %></button>
-					<% } %>
+				<% if(p != currentPage) { %>
+				<button type="button" class="btn btn-outline-primary btn-sm"
+					onclick="location.href = '<%= contextPath %>/freeboardlist.bo?currentPage=<%= p %>';">
+					<%= p %>
+				</button>
+				<% } else { %>
+				<button id="current-button" type="button"
+					class="btn btn-outline-primary btn-sm" disabled><%= p %></button>
 				<% } %>
-				
+				<% } %>
+
 				<%-- 다음 페이지섹션으로 이동  --%>
 				<% if(currentPageSection < maxPageSection ) { %>
-					<button type="button" class="btn btn-outline-primary btn-sm"
-						onclick="location.href = '<%= contextPath %>/freeboardlist.bo?currentPage=<%= currentPage + 1 %>';">
-						&gt;
-					</button>					
-					<button type="button" class="btn btn-outline-primary btn-sm"
-						onclick="location.href = '<%= contextPath %>/freeboardlist.bo?currentPage=<%= currentPageSection * pageLimit + 1 %>';">
-						&gt;&gt;
-					</button>
+				<button type="button" class="btn btn-outline-primary btn-sm"
+					onclick="location.href = '<%= contextPath %>/freeboardlist.bo?currentPage=<%= currentPage + 1 %>';">
+					&gt;</button>
+				<button type="button" class="btn btn-outline-primary btn-sm"
+					onclick="location.href = '<%= contextPath %>/freeboardlist.bo?currentPage=<%= currentPageSection * pageLimit + 1 %>';">
+					&gt;&gt;</button>
 				<% } else if(currentPage == maxPage) { %>
-					<button type="button" class="btn btn-outline-primary btn-sm" disabled>&gt;</button>
-					<button type="button" class="btn btn-outline-primary btn-sm" disabled>&gt;&gt;</button>
+				<button type="button" class="btn btn-outline-primary btn-sm"
+					disabled>&gt;</button>
+				<button type="button" class="btn btn-outline-primary btn-sm"
+					disabled>&gt;&gt;</button>
 				<% } else { %>
-					<button type="button" class="btn btn-outline-primary btn-sm"
-						onclick="location.href = '<%= contextPath %>/freeboardlist.bo?currentPage=<%= currentPage + 1 %>';">
-						&gt;
-					</button>	
-					<button type="button" class="btn btn-outline-primary btn-sm"
-						onclick="location.href = '<%= contextPath %>/freeboardlist.bo?currentPage=<%= maxPage %>';">
-						&gt;&gt;
-					</button>
+				<button type="button" class="btn btn-outline-primary btn-sm"
+					onclick="location.href = '<%= contextPath %>/freeboardlist.bo?currentPage=<%= currentPage + 1 %>';">
+					&gt;</button>
+				<button type="button" class="btn btn-outline-primary btn-sm"
+					onclick="location.href = '<%= contextPath %>/freeboardlist.bo?currentPage=<%= maxPage %>';">
+					&gt;&gt;</button>
 				<% } %>
-				
+
 			</div>
 		</div>
 
 		<div id="right"></div>
 
 	</div>
+	
+	
+	<%@ include file="../common/footer.jsp"%>
+	
+	
+	
 
+<script>
+    window.onload = function() {
+  var scrollPos = sessionStorage.getItem('scrollPos');
+  if (scrollPos !== null) {
+    window.scrollTo(0, scrollPos);
+    sessionStorage.removeItem('scrollPos');
+  }
+}
+
+window.onbeforeunload = function() {
+  sessionStorage.setItem('scrollPos', window.scrollY);
+}
+
+function goToPage(url) {
+  var scrollPos = window.scrollY;
+  sessionStorage.setItem('scrollPos', scrollPos);
+  location.href = url;
+}
+
+</script>
 </body>
 
 </html>

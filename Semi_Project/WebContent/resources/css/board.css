@@ -47,11 +47,6 @@
     font-size: 35px;
 }
 
-hr {
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
 #board-info {
     display: flex;
     align-items: center;
@@ -71,13 +66,14 @@ hr {
 #bestdiv {
     display: flex;
     justify-content: center;
-    margin-bottom: 0px;
-    
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    margin-top: 5px;
 }
 
 .bestlist-area {
-    margin-top: 20px;
-    margin-bottom: 0px;
+    margin-top: 3px;
+    margin-bottom: 3px;
 }
 
 .bestlist-area1 {
@@ -109,15 +105,13 @@ hr {
     text-overflow: ellipsis;
 }
 
-
-
 .bestlist-area>tbody>tr:hover {
     background-color: rgb(243, 243, 243);
     cursor: pointer;
 }
 
 #listhead {
-    margin-top: 20px;
+    margin-top: 0px;
 }
 
 .list-area {
@@ -131,7 +125,8 @@ hr {
 }
 
 .list-area td {
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid lightgray;
+    text-shadow: 0.1px 0.1px black;
 }
 
 .list-area>tbody>tr:hover {
@@ -159,6 +154,15 @@ hr {
 
 .list-area th {
     background-color: lightgray;
+}
+
+.list-area tbody td {
+    padding: 4px;
+    font-size: 14px;
+    max-width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 
@@ -233,15 +237,6 @@ p {
 
 #form-submit button {
     margin-right: 10px;
-}
-
-#center hr:nth-of-type(1) {
-    margin-bottom: 10px;
-}
-
-#center hr:nth-of-type(2) {
-    margin-top: 10px;
-    margin-bottom: 10px;
 }
 
 /***** noticeListView *****/
