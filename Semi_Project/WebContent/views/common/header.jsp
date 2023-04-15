@@ -97,7 +97,7 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link nav2  dropdown-toggle" href="<%= contextPath %>" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">자유/나눔게시판</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="javascript:void(0)">자유게시판</a></li>
+                                <li><a class="dropdown-item" href="<%= contextPath %>/freeboardlist.bo?currentPage=1">자유게시판</a></li>
                                 <li><a class="dropdown-item" href="javascript:void(0)">나눔게시판</a></li>
                             </ul>
                         </li>
