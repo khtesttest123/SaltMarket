@@ -16,7 +16,7 @@ import com.saltmarket.freeboard.model.vo.Freeboard;
 /**
  * Servlet implementation class BoardListController
  */
-@WebServlet("/list.bo")
+@WebServlet("/freeboardlist.bo")
 public class FreeboardListController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
