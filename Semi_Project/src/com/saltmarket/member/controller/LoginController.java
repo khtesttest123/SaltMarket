@@ -42,21 +42,19 @@ public class LoginController extends HttpServlet {
 		m.setUserId(userId);
 		m.setUserPwd(userPwd);
 		
-		System.out.println(m);
-		
 		Member loginUser = new MemberService().loginMember(m);
 		
 		// 결과 응답화면 지정
 		if(loginUser == null) { // 실패 => 에러페이지
 			
 			request.setAttribute("errorMsg", "로그인에 실패했습니다.");
-			
 			RequestDispatcher view = request.getRequestDispatcher("views/common/errorPage.jsp");
 			view.forward(request, response);
 			
 		} else { // 성공 => 메인페이지
 			
-			
+			request.getSession().setAttribute("loginUser", loginUser);
+			response.sendRedirect(request.getContextPath());
 		}
 		
 	}

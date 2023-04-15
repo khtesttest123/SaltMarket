@@ -4,7 +4,7 @@
 
 	<entry key="loginMember">
 		SELECT *
-		FROM MEMBER
+		FROM USER_INFO
 		WHERE USER_ID = ?
 		  AND USER_PWD = ?
 		  AND STATUS = 'Y'

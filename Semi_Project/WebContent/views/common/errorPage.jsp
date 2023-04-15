@@ -11,10 +11,12 @@
 </head>
 <body>
 
-	<%@ include file="../common/main.jsp" %>
+	<%@ include file="../common/header.jsp" %>
 	
 	<br><br>
 	<h1 align="center" style="color : red;"><%= errorMsg %></h1>
+	
+	<%@ include file="../common/footer.jsp" %>
 
 </body>
 </html>
