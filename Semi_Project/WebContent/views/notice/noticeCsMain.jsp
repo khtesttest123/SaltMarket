@@ -1,12 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    <!DOCTYPE html>
+
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>상담센터</title>
+        <title>고객센터</title>
         <!-- 부트스트랩 CDN -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
@@ -27,6 +28,7 @@
         <!-- 구글 아이콘 -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
+        <script src="https://ajax.googleapis.com/ajax/libs/cesiumjs/1.78/Build/Cesium/Cesium.js"></script> <!--온라인 방식-->
 
         <style>
             
@@ -62,22 +64,19 @@
             #its{
                 background: linear-gradient(to bottom,lightgray, white);
             }
-            
-            
-            
 
         </style>
     </head>
     <body>
         <div id="up" style="box-shadow: 1px 2px 10px 5px gray; position: relative;">
-            <div class="container container1" style="padding: 40px; " >
+            <div class="container container1" style="padding: 40px;" >
                 <div class="row ">
                     <div class="col col-qs">
-                        <h2 style="color: black; font-size:45px; font-weight: 900;">소금마켓 상담센터</h2>
+                        <h2 style="color: black; font-size:45px; font-weight: 900;">소금마켓 고객센터</h2>
                     </div>
                 </div>
                 <br>
-                <div class="row">
+                <div class="row" style="margin-bottom: 12px;">
                     <div id= searchs>
                         <form class="d-flex" >
                             <input class="form-control me-sm-2" type="search" placeholder="Search" data-listener-added_ae804d24="true" >
@@ -85,16 +84,15 @@
                         </form>
                     </div>    
                 </div>
-                <br>
                 <div class="row searchss">
                     <div style="display: flex; justify-content: center;">
-                        <div class="col" style="width: 800px;">
-                            <a href="" style="text-decoration: none; color:gray; font-size: 23px;">#하이</a>
-                            <a href="" style="text-decoration: none; color:gray; font-size: 23px;">#하이</a>
-                            <a href="" style="text-decoration: none; color:gray; font-size: 23px;">#하이</a>
-                            <a href="" style="text-decoration: none; color:gray; font-size: 23px;">#하이</a>
-                            <a href="" style="text-decoration: none; color:gray; font-size: 23px;">#하이</a>
-                            <a href="" style="text-decoration: none; color:gray; font-size: 23px;">#하이</a>
+                        <div class="col" style="width: 800px; margin-bottom: 2px;">
+                            <a href="" style="text-decoration: none; color:gray; font-size: 21px;">#하이</a>
+                            <a href="" style="text-decoration: none; color:gray; font-size: 21px;">#하이</a>
+                            <a href="" style="text-decoration: none; color:gray; font-size: 21px;">#하이</a>
+                            <a href="" style="text-decoration: none; color:gray; font-size: 21px;">#하이</a>
+                            <a href="" style="text-decoration: none; color:gray; font-size: 21px;">#하이</a>
+                            <a href="" style="text-decoration: none; color:gray; font-size: 21px;">#하이</a>
                         </div>
                     </div>
                 </div>
@@ -104,36 +102,50 @@
         <div id="its">
             <div class="container container2" style="height: 1700px;">
                 <br>
-                <div style="display: flex; width: 1000px; justify-content: center; ">
-                    <div style="width: 320px;"></div>
+                <div style="display: flex; width: 1300px; justify-content: center; ">
+                    <div style="width: 50px;"></div>
                     <div style="  margin: 20px; width: 170px; text-align: center; height: 170px;  border-radius: 100%; background-color: white; box-shadow: 1px 8px 10px 5px gray; ">
-                        <a href="" style="width: 100%; height: 100%;">
-                            <span class="material-symbols-outlined" style="font-size: 165px;">
+                        <a href="mTomEnrollForm.html" style="width: 100%; height: 100%;">
+                            <span class="material-symbols-outlined" style="font-size: 165px; color: #1C8FED;">
                                 communication
                             </span>
                         </a>
+                        <p style="margin-top:20px;">1:1문의 하러가기</p>
                     </div>
                     <div style="  margin: 20px; width: 170px; text-align: center; height: 170px;  border-radius: 100%; background-color: white; box-shadow: 1px 8px 10px 5px gray;">
-                        <a href="" style="width: 100%; height: 100%;">
-
+                        <a href="mTomListView.html" style="width: 100%; height: 100%;">
+                            <span class="material-symbols-outlined" style="font-size: 120px;  padding: 23px 7px 0px 0px ;color: #1C8FED;">
+                                clinical_notes
+                            </span>
                         </a>
+                        <p style="margin-top:41px;">내 문의 보러가기</p>
+                    </div>
+                    <div onclick="scroll1()" style="  margin: 20px; width: 170px; text-align: center; height: 170px;  border-radius: 100%; background-color: white; box-shadow: 1px 8px 10px 5px gray;">
+                        <div href="" style="width: 100%; height: 100%;">
+                            <span class="material-symbols-outlined" style="font-size: 140px;  padding: 10px 0px 0px 0px; color: #1C8FED;">
+                                support_agent
+                            </span>
+                        </div>
+                        <p style="margin-top:20px;">고객센터 번호보기</p>
                     </div>
                     <div style="  margin: 20px; width: 170px; text-align: center; height: 170px;  border-radius: 100%; background-color: white; box-shadow: 1px 8px 10px 5px gray;">
-                        <a href="" style="width: 100%; height: 100%;">
-
+                        <a href="../common/main.jsp" style="width: 100%; height: 100%;">
+                            <img src="../../resources/image/logo-removebg-preview.png" style="width: 100%; height: 100%;" alt="">
                         </a>
+                        <p style="margin-top:20px;">소금마켓 가기</p>
                     </div>
                 </div>
 
+                <br><br>
                 <span style="display : inline-block; font-size: 25px; font-weight: bolder; color: black; width: 1209px;">자주 묻는 질문 TOP 5</span> 
-                <a href="" style="text-align: end; font-size: 25px; text-decoration: none; color: black;">전체보기 &gt;</a>
+                <a href="faq.html" style="text-align: end; font-size: 25px; text-decoration: none; color: black;">전체보기 &gt;</a>
 
                 <br><br>
 
-                <div id="box1" style="height:500px; background-color: white; box-shadow: 5px 5px 10px 5px gray;  border-bottom-right-radius: 20px;">
+                <div style="padding: 20px; background-color: white; box-shadow: 5px 5px 10px 5px gray;  border-bottom-right-radius: 20px;">
                     <br>
                     <div style="display: flex; justify-content: center;">
-                        <div style="border: 1.5px solid black; width: 1284px; margin-top:20px;"></div>
+                        <div style="border: 1.5px solid black; width: 1284px;"></div>
                     </div>
                     <div class="accordion" id="accordionExample" style="margin : 20px; ">
                         <div class="accordion-item">
@@ -227,7 +239,7 @@
                 
                 <div style="margin-top: 80px;">
                     <span style="display : inline-block; font-size: 25px; font-weight: bolder; color: black; width: 1209px;">공지사항</span> 
-                    <a href="" style="text-align: end; font-size: 25px; text-decoration: none; color: black;">전체보기 &gt;</a>
+                    <a href="notice.html" style="text-align: end; font-size: 25px; text-decoration: none; color: black;">전체보기 &gt;</a>
                 </div>
                 <br>
                 <div id="box1" style="height:400px; background-color: white; box-shadow: 5px 5px 10px 5px gray; border-bottom-right-radius: 20px; ">
@@ -250,7 +262,7 @@
                             </span>
                         </div>
                         <div style="margin-left:30px">
-                            <p style="font-size: 25px; color: black; margin-bottom: 10px ;"> 상담센터 1588-1588</p>
+                            <p style="font-size: 25px; color: black; margin-bottom: 10px ;"> 고객센터 1670-2910</p>
                             <div style="display: flex; height: 33px;" >
                                 <p style="font-size: 20px; color: black; margin-right: 10px;">월 ~ 금요일 </p>
                                 <p style="font-size: 20px; "> 09:00 ~ 18:00</p>
@@ -281,9 +293,13 @@
                     </div>
                 </div>
             </div>
-        </div>
-        
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js%22%3E"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+        </div> 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+        <script>
+            function scroll1(){
+                window.scrollTo(0, document.body.scrollHeight);
+            }
+        </script>
     </body>
 </html>
