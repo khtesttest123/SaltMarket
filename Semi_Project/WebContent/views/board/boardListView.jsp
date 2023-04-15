@@ -7,6 +7,9 @@
             int startPage = pi.getStartPage();
             int endPage = pi.getEndPage();
             int maxPage = pi.getMaxPage();
+            int pageLimit = pi.getPageLimit();
+            int currentPageSection = ((currentPage - 1) / pageLimit) + 1;
+            int maxPageSection = ((maxPage - 1) / pageLimit) + 1;
             %>
 <!DOCTYPE html>
 <html lang="en">
@@ -40,11 +43,14 @@
 	color: black !important;
 	border: none !important;
 }
-
 .btn:hover {
 	background-color: #6ad4fd !important;
 	color: black !important;
 	border: none !important;
+}
+#current-button:disabled {
+    opacity: 1 !important;
+    background-color: #6ad4fd !important;
 }
 </style>
 </head>
@@ -159,27 +165,76 @@
 					<%} %>
 				</tbody>
 			</table>
-			<div class="button-container">
-				<button type="button" class="btn btn-outline-primary btn-sm">&lt;</button>
-				<button type="button" class="btn btn-outline-primary btn-sm">1</button>
-				<button type="button" class="btn btn-outline-primary btn-sm">2</button>
-				<button type="button" class="btn btn-outline-primary btn-sm">3</button>
-				<button type="button" class="btn btn-outline-primary btn-sm">4</button>
-				<button type="button" class="btn btn-outline-primary btn-sm">5</button>
-				<button type="button" class="btn btn-outline-primary btn-sm">6</button>
-				<button type="button" class="btn btn-outline-primary btn-sm">7</button>
-				<button type="button" class="btn btn-outline-primary btn-sm">8</button>
-				<button type="button" class="btn btn-outline-primary btn-sm">9</button>
-				<button type="button" class="btn btn-outline-primary btn-sm">10</button>
-				<button type="button" class="btn btn-outline-primary btn-sm">&gt;</button>
+			
+			
+			<div class="paging-area">
+			
+				<%-- 이전 페이지섹션으로 이동  --%>
+				<% if(currentPage == 1) { %>
+					<button type="button" class="btn btn-outline-primary btn-sm" disabled>&lt;&lt;</button>
+					<button type="button" class="btn btn-outline-primary btn-sm" disabled>&lt;</button>
+				<% } else if(currentPageSection == 1) { %>
+					<button type="button" class="btn btn-outline-primary btn-sm"
+						onclick="location.href = '<%= contextPath %>/freeboardlist.bo?currentPage=1';">
+						&lt;&lt;
+					</button>
+					<button type="button" class="btn btn-outline-primary btn-sm"
+						onclick="location.href = '<%= contextPath %>/freeboardlist.bo?currentPage=<%= currentPage - 1 %>';">
+						&lt;
+					</button>
+				<% } else { %>
+					<button type="button" class="btn btn-outline-primary btn-sm"
+						onclick="location.href = '<%= contextPath %>/freeboardlist.bo?currentPage=<%= (currentPageSection - 2) * 10 + 1 %>';">
+						&lt;&lt;
+					</button>
+					<button type="button" class="btn btn-outline-primary btn-sm"
+						onclick="location.href = '<%= contextPath %>/freeboardlist.bo?currentPage=<%= currentPage - 1 %>';">
+						&lt;
+					</button>
+				<% } %>
+				
+				<%-- 페이징처리  --%>
+				<% for(int p = startPage; p <= endPage; p++) { %>
+					<% if(p != currentPage) { %>
+						<button type="button" class="btn btn-outline-primary btn-sm"
+							onclick="location.href = '<%= contextPath %>/freeboardlist.bo?currentPage=<%= p %>';">
+							<%= p %>
+						</button>
+					<% } else { %>
+						<button id="current-button" type="button" class="btn btn-outline-primary btn-sm" disabled><%= p %></button>
+					<% } %>
+				<% } %>
+				
+				<%-- 다음 페이지섹션으로 이동  --%>
+				<% if(currentPageSection < maxPageSection ) { %>
+					<button type="button" class="btn btn-outline-primary btn-sm"
+						onclick="location.href = '<%= contextPath %>/freeboardlist.bo?currentPage=<%= currentPage + 1 %>';">
+						&gt;
+					</button>					
+					<button type="button" class="btn btn-outline-primary btn-sm"
+						onclick="location.href = '<%= contextPath %>/freeboardlist.bo?currentPage=<%= currentPageSection * pageLimit + 1 %>';">
+						&gt;&gt;
+					</button>
+				<% } else if(currentPage == maxPage) { %>
+					<button type="button" class="btn btn-outline-primary btn-sm" disabled>&gt;</button>
+					<button type="button" class="btn btn-outline-primary btn-sm" disabled>&gt;&gt;</button>
+				<% } else { %>
+					<button type="button" class="btn btn-outline-primary btn-sm"
+						onclick="location.href = '<%= contextPath %>/freeboardlist.bo?currentPage=<%= currentPage + 1 %>';">
+						&gt;
+					</button>	
+					<button type="button" class="btn btn-outline-primary btn-sm"
+						onclick="location.href = '<%= contextPath %>/freeboardlist.bo?currentPage=<%= maxPage %>';">
+						&gt;&gt;
+					</button>
+				<% } %>
+				
 			</div>
 		</div>
 
 		<div id="right"></div>
 
 	</div>
-
-
 
 </body>
 
