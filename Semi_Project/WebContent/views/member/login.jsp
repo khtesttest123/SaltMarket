@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8" import="com.saltmarket.member.model.vo.Member" %>
+<%
+	Member loginUser = (Member)session.getAttribute("loginUser");
+%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -52,33 +55,35 @@
 	
     <br><br>
     <div id="login_area">
-        <!-- 로그인 하기 전에 보여지는 로그인 form -->
-        <form id="login-form" action="/saltmarket/login.me" method="post">
-            <div class="form-group">
-                <input type="text" name="userId" class="form-control" placeholder="아이디" required>
-            </div>
-            <div class="form-group">
-                <input type="password" name="userPwd" class="form-control" placeholder="비밀번호" required>
-            </div>
-            <br>
-            <div class="form-group">
-                <a href="">아이디/비밀번호 찾기</a><br>
-                <a href="">회원가입</a>
-            </div>
-            <br>
-            <button type="submit" class="btn btn-secondary">로그인</button>
-        </form>
-
-        <!-- 로그인 성공 후 보여질 화면 -->
-        <!--
-        <div id="user-info">
-            <b>xxx님</b> 환영합니다. <br><br>
-            <div align="center">
-                <a href="">마이페이지</a>
-                <a href="">로그아웃</a>
-            </div>
-        </div>
-        -->
+    
+    	<% if(loginUser == null) { %>
+	        <!-- 로그인 하기 전에 보여지는 로그인 form -->
+	        <form id="login-form" action="<%= contextPath %>/login.me" method="post">
+	            <div class="form-group">
+	                <input type="text" name="userId" class="form-control" placeholder="아이디" required>
+	            </div>
+	            <div class="form-group">
+	                <input type="password" name="userPwd" class="form-control" placeholder="비밀번호" required>
+	            </div>
+	            <br>
+	            <div class="form-group">
+	                <a href="">아이디/비밀번호 찾기</a><br>
+	                <a href="">회원가입</a>
+	            </div>
+	            <br>
+	            <button type="submit" class="btn btn-secondary">로그인</button>
+	        </form>
+        <% } else { %>
+	        <!-- 로그인 성공 후 보여질 화면 -->
+	        <div id="user-info">
+	            <b><%= loginUser.getUserName() %>님</b> 환영합니다. <br><br>
+	            <div align="center">
+	                <a href="">마이페이지</a>
+	                <a href="<%= contextPath %>/logout.me">로그아웃</a>
+	            </div>
+	        </div>
+        <% } %>
+        
     </div>
     
     <%@ include file="../common/footer.jsp" %>
