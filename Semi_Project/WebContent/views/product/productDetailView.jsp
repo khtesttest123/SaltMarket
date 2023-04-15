@@ -16,7 +16,8 @@
         <link rel="stylesheet" href="resources/css/productDetail.css">
 </head>
 <body>
-	
+    <%@ include file="../common/header.jsp" %>
+
     <div class="row row11">
         <div class="card mb-3 card1">
             <div class="row g-0">
@@ -107,5 +108,6 @@
         두 제품 모두 소셜네트워크서비스상에서 구매 인증으로 인기를 모았다.<br>
     </p>
     	
+    <%@ include file="../common/footer.jsp" %>
 </body>
 </html>

@@ -1,9 +1,11 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!doctype html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>카테고리 검색 페이지</title>
+        <title>상세 검색 페이지</title>
 
         <!-- 부트스트랩 CDN -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
@@ -72,7 +74,7 @@
                         </svg>
                         <br>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;나의소금
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;판매하기
+                        &nbsp;판매하기
                     </div>
                 </div>
                 <br>
@@ -101,33 +103,24 @@
             </div>
         </div>
 
-        <br><br>
         <!-- 헤더 끝 -->
 
         <!-- 바디 시작 -->
 
+        <br><br>
         <div class="container" id="category1">
             <div class="row">
-                <div class="col-1" id="category1_icon">
-                    <h2 style="width: 200px;"><i class="bi bi-houses"></i> 홈&gt; </h2>
-                </div>
-                <div class="col-1 form-group" id="category1_select">
-                    <select class="form-select" id="exampleSelect1">
-                        <option>자켓</option>
-                        <option>가디건</option>
-                        <option>바지</option>
-                        <option>상의</option>
-                        <option>신발</option>
-                    </select>
+                <div class="col">
+                    <h2>카테고리</h2>
                 </div>
             </div>
         </div>
 
         <br>
-        
+
         <div class="container" id="category2">
             <div class="row row-cols-5 text-center" >
-                <div class="col" onclick="location.href='https:www.naver.com'" >여성가방</div>
+                <div class="col">여성가방</div>
                 <div class="col">남성가방</div>
                 <div class="col">여행용</div>
                 <div class="col">가정용</div>
@@ -136,16 +129,16 @@
                 <div class="col">몰라요</div>
                 <div class="col">몰라요</div>
                 <div class="col">몰라요</div>
-                
             </div>
         </div>
-        
+
         <br><br>
 
         <div class="container" id="category3">
-            <div class="row" id="asc" >
-                <div class="category3_left"  >
-                    <p id="category_name">남성의류</p><p>의 추천상품</p>
+            <div class="row">
+                <div class="category3_left">
+                    <p id="category_name">자켓</p><p>의 검색결과</p>
+                    <p id="category_count">60,010개</p>
                 </div>
                 <div class="category3_right">
                     <a href="">정확도순</a>
@@ -179,7 +172,7 @@
                 </div>
             </div>
         </div>
-        
+
         <br>
 
         <div class="container" id="thumbnail">
@@ -398,6 +391,7 @@
         </div>
         
         <br><br>
+
         <div class="container" >
             <ul class="pagination" > 
                 <li class="page-item disabled">
