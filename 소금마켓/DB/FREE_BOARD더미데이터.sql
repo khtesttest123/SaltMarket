@@ -1,0 +1,609 @@
+--------------------------------------------------
+--------------   자유게시판 더미  ------------------	
+--------------------------------------------------
+-- 1 에서  301  행에 대한 삽입 실패
+--ORA-01722: invalid number
+--행 1
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,'오늘 하루 어땠나요?','안녕하세요! 이번에 자유게시판을 이용하면서, 처음으로 글을 작성해봅니다.',to_date('01/01/2019', 'MM/DD/RRRR'),74,'Y','잡담');
+--행 2
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,'퇴근하고 하고 싶은 것','요즘 우리나라에는 재난 문자가 자주 와서, 정말 불안한 기분입니다.',to_date('01/02/2019', 'MM/DD/RRRR'),29,'Y','질문');
+--행 3
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,'좋아하는 음악 추천해주세요','학생때 가장 좋아했던 과목은 역사였습니다. 역사에 대한 지식이 많이 필요한 분야인 것 같아요.',to_date('01/03/2019', 'MM/DD/RRRR'),15,'Y','정보');
+--행 4
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,'맛있는 음식점 추천해주세요','토익 공부를 하고 있는데, 쉐도잉 연습이 제일 힘들어요. 어떻게 해야 할까요?',to_date('01/04/2019', 'MM/DD/RRRR'),96,'Y','축하');
+--행 5
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,'코로나19 상황에서의 나의 일상','올해 새로 생긴 카페에서 제일 맛있는 음료는 바닐라 라떼였어요. 다들 한번씩 시도해보세요!',to_date('01/05/2019', 'MM/DD/RRRR'),40,'Y','고민/상담');
+--행 6
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,'좋아하는 취미생활 소개해주세요','집에서 볼 수 있는 영화 중에, 지금 이 순간 추천하고 싶은 작품은 ''살인의 추억''입니다.',to_date('01/06/2019', 'MM/DD/RRRR'),41,'Y','잡담');
+--행 7
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,'여행 계획 중인 곳이 있나요?','요즘에는 아이들이 핸드폰 게임에 빠져서, 공부하기가 힘들어진 것 같아요. 부모들은 어떻게 대처해야 할까요?',to_date('01/07/2019', 'MM/DD/RRRR'),52,'Y','질문');
+--행 8
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,'하고 싶은 욕심 목록','우리 동네에는 맛있는 라면집이 많아서, 매주 한번씩 라면 파는 가게를 찾아다녀요.',to_date('01/08/2019', 'MM/DD/RRRR'),43,'Y','정보');
+--행 9
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,'나만의 시간을 즐기는 방법','새해가 되면서, 이번에는 운동을 시작해보려고 합니다. 어떤 운동이 좋을까요?',to_date('01/09/2019', 'MM/DD/RRRR'),80,'Y','축하');
+--행 10
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 자기계발을 위한 책 추천해주세요',' 대학교 졸업 후에는 바로 취업을 하지 못해서, 취업준비생으로 지내고 있어요. 이럴 때 해야 할 일이 있을까요?',to_date('01/10/2019', 'MM/DD/RRRR'),88,'Y','고민/상담');
+--행 11
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 이번 주말에는 뭐 하고 싶으신가요?',' 요즘에는 날씨가 많이 추워서, 방치하고 있던 패딩을 꺼내서 입고 다니고 있어요.',to_date('01/11/2019', 'MM/DD/RRRR'),78,'Y','잡담');
+--행 12
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 좋아하는 영화나 드라마 추천해주세요',' 군대에서는 꼭 손편지를 받아야만 힘들었던 날들이 있었습니다. 그리움이 더해지더라구요.',to_date('01/12/2019', 'MM/DD/RRRR'),63,'Y','질문');
+--행 13
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 최근에 듣고 있는 팟캐스트 추천해주세요',' 제가 제일 좋아하는 가수는 방탄소년단입니다. 정말 멋지고 재밌는 무대를 보여줘요!',to_date('01/13/2019', 'MM/DD/RRRR'),28,'Y','정보');
+--행 14
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 가장 좋아하는 스포츠는 무엇인가요?',' 코로나19 때문에, 집에서 놀기만 하다가 체중이 늘어서 걱정이에요. 어떻게 해야 할까요?',to_date('01/14/2019', 'MM/DD/RRRR'),39,'Y','축하');
+--행 15
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 일주일간 있었던 기쁨, 슬픔, 감동 중에 하나를 골라 이야기해주세요',' 지금까지 봤던 영화 중에, 가장 기억에 남는 작품은 ''쇼생크 탈출''입니다.',to_date('01/15/2019', 'MM/DD/RRRR'),64,'Y','고민/상담');
+--행 16
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 새로운 취미를 시작하고 싶은데 추천해주세요','안녕하세요! 이번에 자유게시판을 이용하면서, 처음으로 글을 작성해봅니다.',to_date('01/16/2019', 'MM/DD/RRRR'),0,'Y','잡담');
+--행 17
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 대학 시절 추억을 떠올려 보면?','요즘 우리나라에는 재난 문자가 자주 와서, 정말 불안한 기분입니다.',to_date('01/17/2019', 'MM/DD/RRRR'),60,'Y','질문');
+--행 18
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 매일 반복되는 일상, 어떻게 바꾸고 싶으신가요?','학생때 가장 좋아했던 과목은 역사였습니다. 역사에 대한 지식이 많이 필요한 분야인 것 같아요.',to_date('01/18/2019', 'MM/DD/RRRR'),82,'Y','정보');
+--행 19
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 고민이 있으면 나누고 싶은데, 이야기할 곳이 없어요.','토익 공부를 하고 있는데, 쉐도잉 연습이 제일 힘들어요. 어떻게 해야 할까요?',to_date('01/19/2019', 'MM/DD/RRRR'),15,'Y','축하');
+--행 20
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 나만의 일기를 쓰는 이유는 무엇인가요?','올해 새로 생긴 카페에서 제일 맛있는 음료는 바닐라 라떼였어요. 다들 한번씩 시도해보세요!',to_date('01/20/2019', 'MM/DD/RRRR'),87,'Y','고민/상담');
+--행 21
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 시험을 준비하며 느낀 것','집에서 볼 수 있는 영화 중에, 지금 이 순간 추천하고 싶은 작품은 ''살인의 추억''입니다.',to_date('01/21/2019', 'MM/DD/RRRR'),79,'Y','잡담');
+--행 22
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 최근에 새로 산 물건 중에서 가장 만족하는 것은?','요즘에는 아이들이 핸드폰 게임에 빠져서, 공부하기가 힘들어진 것 같아요. 부모들은 어떻게 대처해야 할까요?',to_date('01/22/2019', 'MM/DD/RRRR'),84,'Y','질문');
+--행 23
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 지난 여름, 어디를 다녀왔나요?','우리 동네에는 맛있는 라면집이 많아서, 매주 한번씩 라면 파는 가게를 찾아다녀요.',to_date('01/23/2019', 'MM/DD/RRRR'),84,'Y','정보');
+--행 24
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 주말에 시간을 보내는 방법','새해가 되면서, 이번에는 운동을 시작해보려고 합니다. 어떤 운동이 좋을까요?',to_date('01/24/2019', 'MM/DD/RRRR'),5,'Y','축하');
+--행 25
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 친구들과 함께하면 행복한 것',' 대학교 졸업 후에는 바로 취업을 하지 못해서, 취업준비생으로 지내고 있어요. 이럴 때 해야 할 일이 있을까요?',to_date('01/25/2019', 'MM/DD/RRRR'),25,'Y','고민/상담');
+--행 26
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 취미를 통해 느낀 효과',' 요즘에는 날씨가 많이 추워서, 방치하고 있던 패딩을 꺼내서 입고 다니고 있어요.',to_date('01/26/2019', 'MM/DD/RRRR'),29,'Y','잡담');
+--행 27
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 나만의 힐링 방법',' 군대에서는 꼭 손편지를 받아야만 힘들었던 날들이 있었습니다. 그리움이 더해지더라구요.',to_date('01/27/2019', 'MM/DD/RRRR'),21,'Y','잡담');
+--행 28
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 최근에 봤던 영화 중에서 인상 깊은 것은?',' 제가 제일 좋아하는 가수는 방탄소년단입니다. 정말 멋지고 재밌는 무대를 보여줘요!',to_date('01/28/2019', 'MM/DD/RRRR'),13,'Y','질문');
+--행 29
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 살면서 후회하는 일이 있나요?',' 코로나20 때문에, 집에서 놀기만 하다가 체중이 늘어서 걱정이에요. 어떻게 해야 할까요?',to_date('01/29/2019', 'MM/DD/RRRR'),26,'Y','정보');
+--행 30
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 좋아하는 동물은 무엇인가요?',' 지금까지 봤던 영화 중에, 가장 기억에 남는 작품은 ''쇼생크 탈출''입니다.',to_date('01/30/2019', 'MM/DD/RRRR'),66,'Y','축하');
+--행 31
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 남들과 차별화되는 취미 생활','안녕하세요! 이번에 자유게시판을 이용하면서, 처음으로 글을 작성해봅니다.',to_date('01/31/2019', 'MM/DD/RRRR'),46,'Y','고민/상담');
+--행 32
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 지금 읽고 있는 책이 있나요? 그 책에 대한 생각은 어떤가요?','요즘 우리나라에는 재난 문자가 자주 와서, 정말 불안한 기분입니다.',to_date('02/01/2019', 'MM/DD/RRRR'),85,'Y','잡담');
+--행 33
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 최근에 좋아하는 가수/밴드를','학생때 가장 좋아했던 과목은 역사였습니다. 역사에 대한 지식이 많이 필요한 분야인 것 같아요.',to_date('02/02/2019', 'MM/DD/RRRR'),87,'Y','질문');
+--행 34
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,'오늘 하루 어땠나요?','토익 공부를 하고 있는데, 쉐도잉 연습이 제일 힘들어요. 어떻게 해야 할까요?',to_date('02/03/2019', 'MM/DD/RRRR'),99,'Y','정보');
+--행 35
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,'퇴근하고 하고 싶은 것','올해 새로 생긴 카페에서 제일 맛있는 음료는 바닐라 라떼였어요. 다들 한번씩 시도해보세요!',to_date('02/04/2019', 'MM/DD/RRRR'),44,'Y','축하');
+--행 36
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,'좋아하는 음악 추천해주세요','집에서 볼 수 있는 영화 중에, 지금 이 순간 추천하고 싶은 작품은 ''살인의 추억''입니다.',to_date('02/05/2019', 'MM/DD/RRRR'),16,'Y','고민/상담');
+--행 37
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,'맛있는 음식점 추천해주세요','요즘에는 아이들이 핸드폰 게임에 빠져서, 공부하기가 힘들어진 것 같아요. 부모들은 어떻게 대처해야 할까요?',to_date('02/06/2019', 'MM/DD/RRRR'),26,'Y','잡담');
+--행 38
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,'코로나20 상황에서의 나의 일상','우리 동네에는 맛있는 라면집이 많아서, 매주 한번씩 라면 파는 가게를 찾아다녀요.',to_date('02/07/2019', 'MM/DD/RRRR'),97,'Y','질문');
+--행 39
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,'좋아하는 취미생활 소개해주세요','새해가 되면서, 이번에는 운동을 시작해보려고 합니다. 어떤 운동이 좋을까요?',to_date('02/08/2019', 'MM/DD/RRRR'),21,'Y','정보');
+--행 40
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,'여행 계획 중인 곳이 있나요?',' 대학교 졸업 후에는 바로 취업을 하지 못해서, 취업준비생으로 지내고 있어요. 이럴 때 해야 할 일이 있을까요?',to_date('02/09/2019', 'MM/DD/RRRR'),30,'Y','축하');
+--행 41
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,'하고 싶은 욕심 목록',' 요즘에는 날씨가 많이 추워서, 방치하고 있던 패딩을 꺼내서 입고 다니고 있어요.',to_date('02/10/2019', 'MM/DD/RRRR'),58,'Y','고민/상담');
+--행 42
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,'나만의 시간을 즐기는 방법',' 군대에서는 꼭 손편지를 받아야만 힘들었던 날들이 있었습니다. 그리움이 더해지더라구요.',to_date('02/11/2019', 'MM/DD/RRRR'),77,'Y','잡담');
+--행 43
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 자기계발을 위한 책 추천해주세요',' 제가 제일 좋아하는 가수는 방탄소년단입니다. 정말 멋지고 재밌는 무대를 보여줘요!',to_date('02/12/2019', 'MM/DD/RRRR'),80,'Y','질문');
+--행 44
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 이번 주말에는 뭐 하고 싶으신가요?',' 코로나21 때문에, 집에서 놀기만 하다가 체중이 늘어서 걱정이에요. 어떻게 해야 할까요?',to_date('02/13/2019', 'MM/DD/RRRR'),49,'Y','정보');
+--행 45
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 좋아하는 영화나 드라마 추천해주세요',' 지금까지 봤던 영화 중에, 가장 기억에 남는 작품은 ''쇼생크 탈출''입니다.',to_date('02/14/2019', 'MM/DD/RRRR'),96,'Y','축하');
+--행 46
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 최근에 듣고 있는 팟캐스트 추천해주세요','안녕하세요! 이번에 자유게시판을 이용하면서, 처음으로 글을 작성해봅니다.',to_date('02/15/2019', 'MM/DD/RRRR'),52,'Y','고민/상담');
+--행 47
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 가장 좋아하는 스포츠는 무엇인가요?','요즘 우리나라에는 재난 문자가 자주 와서, 정말 불안한 기분입니다.',to_date('02/16/2019', 'MM/DD/RRRR'),37,'Y','잡담');
+--행 48
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 일주일간 있었던 기쁨, 슬픔, 감동 중에 하나를 골라 이야기해주세요','학생때 가장 좋아했던 과목은 역사였습니다. 역사에 대한 지식이 많이 필요한 분야인 것 같아요.',to_date('02/17/2019', 'MM/DD/RRRR'),25,'Y','질문');
+--행 49
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 새로운 취미를 시작하고 싶은데 추천해주세요','토익 공부를 하고 있는데, 쉐도잉 연습이 제일 힘들어요. 어떻게 해야 할까요?',to_date('02/18/2019', 'MM/DD/RRRR'),40,'Y','정보');
+--행 50
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 대학 시절 추억을 떠올려 보면?','올해 새로 생긴 카페에서 제일 맛있는 음료는 바닐라 라떼였어요. 다들 한번씩 시도해보세요!',to_date('02/19/2019', 'MM/DD/RRRR'),14,'Y','축하');
+--행 51
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 매일 반복되는 일상, 어떻게 바꾸고 싶으신가요?','집에서 볼 수 있는 영화 중에, 지금 이 순간 추천하고 싶은 작품은 ''살인의 추억''입니다.',to_date('02/20/2019', 'MM/DD/RRRR'),43,'Y','고민/상담');
+--행 52
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 고민이 있으면 나누고 싶은데, 이야기할 곳이 없어요.','요즘에는 아이들이 핸드폰 게임에 빠져서, 공부하기가 힘들어진 것 같아요. 부모들은 어떻게 대처해야 할까요?',to_date('02/21/2019', 'MM/DD/RRRR'),49,'Y','잡담');
+--행 53
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 나만의 일기를 쓰는 이유는 무엇인가요?','우리 동네에는 맛있는 라면집이 많아서, 매주 한번씩 라면 파는 가게를 찾아다녀요.',to_date('02/22/2019', 'MM/DD/RRRR'),83,'Y','잡담');
+--행 54
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 시험을 준비하며 느낀 것','새해가 되면서, 이번에는 운동을 시작해보려고 합니다. 어떤 운동이 좋을까요?',to_date('02/23/2019', 'MM/DD/RRRR'),33,'Y','질문');
+--행 55
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 최근에 새로 산 물건 중에서 가장 만족하는 것은?',' 대학교 졸업 후에는 바로 취업을 하지 못해서, 취업준비생으로 지내고 있어요. 이럴 때 해야 할 일이 있을까요?',to_date('02/24/2019', 'MM/DD/RRRR'),1,'Y','정보');
+--행 56
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 지난 여름, 어디를 다녀왔나요?',' 요즘에는 날씨가 많이 추워서, 방치하고 있던 패딩을 꺼내서 입고 다니고 있어요.',to_date('02/25/2019', 'MM/DD/RRRR'),6,'Y','축하');
+--행 57
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 주말에 시간을 보내는 방법',' 군대에서는 꼭 손편지를 받아야만 힘들었던 날들이 있었습니다. 그리움이 더해지더라구요.',to_date('02/26/2019', 'MM/DD/RRRR'),70,'Y','고민/상담');
+--행 58
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 친구들과 함께하면 행복한 것',' 제가 제일 좋아하는 가수는 방탄소년단입니다. 정말 멋지고 재밌는 무대를 보여줘요!',to_date('02/27/2019', 'MM/DD/RRRR'),30,'Y','잡담');
+--행 59
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 취미를 통해 느낀 효과',' 코로나22 때문에, 집에서 놀기만 하다가 체중이 늘어서 걱정이에요. 어떻게 해야 할까요?',to_date('02/28/2019', 'MM/DD/RRRR'),22,'Y','질문');
+--행 60
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 나만의 힐링 방법',' 지금까지 봤던 영화 중에, 가장 기억에 남는 작품은 ''쇼생크 탈출''입니다.',to_date('03/01/2019', 'MM/DD/RRRR'),81,'Y','정보');
+--행 61
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 최근에 봤던 영화 중에서 인상 깊은 것은?','안녕하세요! 이번에 자유게시판을 이용하면서, 처음으로 글을 작성해봅니다.',to_date('03/02/2019', 'MM/DD/RRRR'),30,'Y','축하');
+--행 62
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 살면서 후회하는 일이 있나요?','요즘 우리나라에는 재난 문자가 자주 와서, 정말 불안한 기분입니다.',to_date('03/03/2019', 'MM/DD/RRRR'),3,'Y','고민/상담');
+--행 63
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 좋아하는 동물은 무엇인가요?','학생때 가장 좋아했던 과목은 역사였습니다. 역사에 대한 지식이 많이 필요한 분야인 것 같아요.',to_date('03/04/2019', 'MM/DD/RRRR'),47,'Y','잡담');
+--행 64
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 남들과 차별화되는 취미 생활','토익 공부를 하고 있는데, 쉐도잉 연습이 제일 힘들어요. 어떻게 해야 할까요?',to_date('03/05/2019', 'MM/DD/RRRR'),52,'Y','질문');
+--행 65
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 지금 읽고 있는 책이 있나요? 그 책에 대한 생각은 어떤가요?','올해 새로 생긴 카페에서 제일 맛있는 음료는 바닐라 라떼였어요. 다들 한번씩 시도해보세요!',to_date('03/06/2019', 'MM/DD/RRRR'),17,'Y','정보');
+--행 66
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 최근에 좋아하는 가수/밴드를','집에서 볼 수 있는 영화 중에, 지금 이 순간 추천하고 싶은 작품은 ''살인의 추억''입니다.',to_date('03/07/2019', 'MM/DD/RRRR'),26,'Y','축하');
+--행 67
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,'오늘 하루 어땠나요?','요즘에는 아이들이 핸드폰 게임에 빠져서, 공부하기가 힘들어진 것 같아요. 부모들은 어떻게 대처해야 할까요?',to_date('03/08/2019', 'MM/DD/RRRR'),58,'Y','고민/상담');
+--행 68
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,'퇴근하고 하고 싶은 것','우리 동네에는 맛있는 라면집이 많아서, 매주 한번씩 라면 파는 가게를 찾아다녀요.',to_date('03/09/2019', 'MM/DD/RRRR'),98,'Y','잡담');
+--행 69
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,'좋아하는 음악 추천해주세요','새해가 되면서, 이번에는 운동을 시작해보려고 합니다. 어떤 운동이 좋을까요?',to_date('03/10/2019', 'MM/DD/RRRR'),31,'Y','질문');
+--행 70
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,'맛있는 음식점 추천해주세요',' 대학교 졸업 후에는 바로 취업을 하지 못해서, 취업준비생으로 지내고 있어요. 이럴 때 해야 할 일이 있을까요?',to_date('03/11/2019', 'MM/DD/RRRR'),25,'Y','정보');
+--행 71
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,'코로나21 상황에서의 나의 일상',' 요즘에는 날씨가 많이 추워서, 방치하고 있던 패딩을 꺼내서 입고 다니고 있어요.',to_date('03/12/2019', 'MM/DD/RRRR'),48,'Y','축하');
+--행 72
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,'좋아하는 취미생활 소개해주세요',' 군대에서는 꼭 손편지를 받아야만 힘들었던 날들이 있었습니다. 그리움이 더해지더라구요.',to_date('03/13/2019', 'MM/DD/RRRR'),9,'Y','고민/상담');
+--행 73
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,'여행 계획 중인 곳이 있나요?',' 제가 제일 좋아하는 가수는 방탄소년단입니다. 정말 멋지고 재밌는 무대를 보여줘요!',to_date('03/14/2019', 'MM/DD/RRRR'),71,'Y','잡담');
+--행 74
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,'하고 싶은 욕심 목록',' 코로나23 때문에, 집에서 놀기만 하다가 체중이 늘어서 걱정이에요. 어떻게 해야 할까요?',to_date('03/15/2019', 'MM/DD/RRRR'),62,'Y','질문');
+--행 75
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,'나만의 시간을 즐기는 방법',' 지금까지 봤던 영화 중에, 가장 기억에 남는 작품은 ''쇼생크 탈출''입니다.',to_date('03/16/2019', 'MM/DD/RRRR'),28,'Y','정보');
+--행 76
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 자기계발을 위한 책 추천해주세요','안녕하세요! 이번에 자유게시판을 이용하면서, 처음으로 글을 작성해봅니다.',to_date('03/17/2019', 'MM/DD/RRRR'),92,'Y','축하');
+--행 77
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 이번 주말에는 뭐 하고 싶으신가요?','요즘 우리나라에는 재난 문자가 자주 와서, 정말 불안한 기분입니다.',to_date('03/18/2019', 'MM/DD/RRRR'),42,'Y','고민/상담');
+--행 78
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 좋아하는 영화나 드라마 추천해주세요','학생때 가장 좋아했던 과목은 역사였습니다. 역사에 대한 지식이 많이 필요한 분야인 것 같아요.',to_date('03/19/2019', 'MM/DD/RRRR'),27,'Y','잡담');
+--행 79
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 최근에 듣고 있는 팟캐스트 추천해주세요','토익 공부를 하고 있는데, 쉐도잉 연습이 제일 힘들어요. 어떻게 해야 할까요?',to_date('03/20/2019', 'MM/DD/RRRR'),48,'Y','잡담');
+--행 80
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 가장 좋아하는 스포츠는 무엇인가요?','올해 새로 생긴 카페에서 제일 맛있는 음료는 바닐라 라떼였어요. 다들 한번씩 시도해보세요!',to_date('03/21/2019', 'MM/DD/RRRR'),9,'Y','질문');
+--행 81
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 일주일간 있었던 기쁨, 슬픔, 감동 중에 하나를 골라 이야기해주세요','집에서 볼 수 있는 영화 중에, 지금 이 순간 추천하고 싶은 작품은 ''살인의 추억''입니다.',to_date('03/22/2019', 'MM/DD/RRRR'),25,'Y','정보');
+--행 82
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 새로운 취미를 시작하고 싶은데 추천해주세요','요즘에는 아이들이 핸드폰 게임에 빠져서, 공부하기가 힘들어진 것 같아요. 부모들은 어떻게 대처해야 할까요?',to_date('03/23/2019', 'MM/DD/RRRR'),19,'Y','축하');
+--행 83
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 대학 시절 추억을 떠올려 보면?','우리 동네에는 맛있는 라면집이 많아서, 매주 한번씩 라면 파는 가게를 찾아다녀요.',to_date('03/24/2019', 'MM/DD/RRRR'),34,'Y','고민/상담');
+--행 84
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 매일 반복되는 일상, 어떻게 바꾸고 싶으신가요?','새해가 되면서, 이번에는 운동을 시작해보려고 합니다. 어떤 운동이 좋을까요?',to_date('03/25/2019', 'MM/DD/RRRR'),11,'Y','잡담');
+--행 85
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 고민이 있으면 나누고 싶은데, 이야기할 곳이 없어요.',' 대학교 졸업 후에는 바로 취업을 하지 못해서, 취업준비생으로 지내고 있어요. 이럴 때 해야 할 일이 있을까요?',to_date('03/26/2019', 'MM/DD/RRRR'),89,'Y','질문');
+--행 86
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 나만의 일기를 쓰는 이유는 무엇인가요?',' 요즘에는 날씨가 많이 추워서, 방치하고 있던 패딩을 꺼내서 입고 다니고 있어요.',to_date('03/27/2019', 'MM/DD/RRRR'),71,'Y','정보');
+--행 87
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 시험을 준비하며 느낀 것',' 군대에서는 꼭 손편지를 받아야만 힘들었던 날들이 있었습니다. 그리움이 더해지더라구요.',to_date('03/28/2019', 'MM/DD/RRRR'),42,'Y','축하');
+--행 88
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 최근에 새로 산 물건 중에서 가장 만족하는 것은?',' 제가 제일 좋아하는 가수는 방탄소년단입니다. 정말 멋지고 재밌는 무대를 보여줘요!',to_date('03/29/2019', 'MM/DD/RRRR'),17,'Y','고민/상담');
+--행 89
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 지난 여름, 어디를 다녀왔나요?',' 코로나24 때문에, 집에서 놀기만 하다가 체중이 늘어서 걱정이에요. 어떻게 해야 할까요?',to_date('03/30/2019', 'MM/DD/RRRR'),38,'Y','잡담');
+--행 90
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 주말에 시간을 보내는 방법',' 지금까지 봤던 영화 중에, 가장 기억에 남는 작품은 ''쇼생크 탈출''입니다.',to_date('03/31/2019', 'MM/DD/RRRR'),70,'Y','질문');
+--행 91
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 친구들과 함께하면 행복한 것','안녕하세요! 이번에 자유게시판을 이용하면서, 처음으로 글을 작성해봅니다.',to_date('04/01/2019', 'MM/DD/RRRR'),30,'Y','정보');
+--행 92
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 취미를 통해 느낀 효과','요즘 우리나라에는 재난 문자가 자주 와서, 정말 불안한 기분입니다.',to_date('04/02/2019', 'MM/DD/RRRR'),1,'Y','축하');
+--행 93
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 나만의 힐링 방법','학생때 가장 좋아했던 과목은 역사였습니다. 역사에 대한 지식이 많이 필요한 분야인 것 같아요.',to_date('04/03/2019', 'MM/DD/RRRR'),67,'Y','고민/상담');
+--행 94
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 최근에 봤던 영화 중에서 인상 깊은 것은?','토익 공부를 하고 있는데, 쉐도잉 연습이 제일 힘들어요. 어떻게 해야 할까요?',to_date('04/04/2019', 'MM/DD/RRRR'),22,'Y','잡담');
+--행 95
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 살면서 후회하는 일이 있나요?','올해 새로 생긴 카페에서 제일 맛있는 음료는 바닐라 라떼였어요. 다들 한번씩 시도해보세요!',to_date('04/05/2019', 'MM/DD/RRRR'),69,'Y','질문');
+--행 96
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 좋아하는 동물은 무엇인가요?','집에서 볼 수 있는 영화 중에, 지금 이 순간 추천하고 싶은 작품은 ''살인의 추억''입니다.',to_date('04/06/2019', 'MM/DD/RRRR'),97,'Y','정보');
+--행 97
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 남들과 차별화되는 취미 생활','요즘에는 아이들이 핸드폰 게임에 빠져서, 공부하기가 힘들어진 것 같아요. 부모들은 어떻게 대처해야 할까요?',to_date('04/07/2019', 'MM/DD/RRRR'),33,'Y','축하');
+--행 98
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 지금 읽고 있는 책이 있나요? 그 책에 대한 생각은 어떤가요?','우리 동네에는 맛있는 라면집이 많아서, 매주 한번씩 라면 파는 가게를 찾아다녀요.',to_date('04/08/2019', 'MM/DD/RRRR'),47,'Y','고민/상담');
+--행 99
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 최근에 좋아하는 가수/밴드를','새해가 되면서, 이번에는 운동을 시작해보려고 합니다. 어떤 운동이 좋을까요?',to_date('04/09/2019', 'MM/DD/RRRR'),58,'Y','잡담');
+--행 100
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,'오늘 하루 어땠나요?',' 대학교 졸업 후에는 바로 취업을 하지 못해서, 취업준비생으로 지내고 있어요. 이럴 때 해야 할 일이 있을까요?',to_date('04/10/2019', 'MM/DD/RRRR'),84,'Y','질문');
+--행 101
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,'퇴근하고 하고 싶은 것',' 요즘에는 날씨가 많이 추워서, 방치하고 있던 패딩을 꺼내서 입고 다니고 있어요.',to_date('04/11/2019', 'MM/DD/RRRR'),58,'Y','정보');
+--행 102
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,'좋아하는 음악 추천해주세요',' 군대에서는 꼭 손편지를 받아야만 힘들었던 날들이 있었습니다. 그리움이 더해지더라구요.',to_date('04/12/2019', 'MM/DD/RRRR'),70,'Y','축하');
+--행 103
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,'맛있는 음식점 추천해주세요',' 제가 제일 좋아하는 가수는 방탄소년단입니다. 정말 멋지고 재밌는 무대를 보여줘요!',to_date('04/13/2019', 'MM/DD/RRRR'),87,'Y','고민/상담');
+--행 104
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,'코로나22 상황에서의 나의 일상',' 코로나25 때문에, 집에서 놀기만 하다가 체중이 늘어서 걱정이에요. 어떻게 해야 할까요?',to_date('04/14/2019', 'MM/DD/RRRR'),23,'Y','잡담');
+--행 105
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,'좋아하는 취미생활 소개해주세요',' 지금까지 봤던 영화 중에, 가장 기억에 남는 작품은 ''쇼생크 탈출''입니다.',to_date('04/15/2019', 'MM/DD/RRRR'),72,'Y','잡담');
+--행 106
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,'여행 계획 중인 곳이 있나요?','안녕하세요! 이번에 자유게시판을 이용하면서, 처음으로 글을 작성해봅니다.',to_date('04/16/2019', 'MM/DD/RRRR'),39,'Y','질문');
+--행 107
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,'하고 싶은 욕심 목록','요즘 우리나라에는 재난 문자가 자주 와서, 정말 불안한 기분입니다.',to_date('04/17/2019', 'MM/DD/RRRR'),86,'Y','정보');
+--행 108
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,'오늘 하루 어땠나요?','안녕하세요! 이번에 자유게시판을 이용하면서, 처음으로 글을 작성해봅니다.',to_date('04/18/2019', 'MM/DD/RRRR'),74,'Y','고민/상담');
+--행 109
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,'퇴근하고 하고 싶은 것','요즘 우리나라에는 재난 문자가 자주 와서, 정말 불안한 기분입니다.',to_date('04/19/2019', 'MM/DD/RRRR'),59,'Y','잡담');
+--행 110
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,'좋아하는 음악 추천해주세요','학생때 가장 좋아했던 과목은 역사였습니다. 역사에 대한 지식이 많이 필요한 분야인 것 같아요.',to_date('04/20/2019', 'MM/DD/RRRR'),95,'Y','잡담');
+--행 111
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,'맛있는 음식점 추천해주세요','토익 공부를 하고 있는데, 쉐도잉 연습이 제일 힘들어요. 어떻게 해야 할까요?',to_date('04/21/2019', 'MM/DD/RRRR'),36,'Y','질문');
+--행 112
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,'코로나20 상황에서의 나의 일상','올해 새로 생긴 카페에서 제일 맛있는 음료는 바닐라 라떼였어요. 다들 한번씩 시도해보세요!',to_date('04/22/2019', 'MM/DD/RRRR'),69,'Y','정보');
+--행 113
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,'좋아하는 취미생활 소개해주세요','집에서 볼 수 있는 영화 중에, 지금 이 순간 추천하고 싶은 작품은 ''살인의 추억''입니다.',to_date('04/23/2019', 'MM/DD/RRRR'),23,'Y','고민/상담');
+--행 114
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,'여행 계획 중인 곳이 있나요?','요즘에는 아이들이 핸드폰 게임에 빠져서, 공부하기가 힘들어진 것 같아요. 부모들은 어떻게 대처해야 할까요?',to_date('04/24/2019', 'MM/DD/RRRR'),28,'Y','잡담');
+--행 115
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,'하고 싶은 욕심 목록','우리 동네에는 맛있는 라면집이 많아서, 매주 한번씩 라면 파는 가게를 찾아다녀요.',to_date('04/25/2019', 'MM/DD/RRRR'),86,'Y','잡담');
+--행 116
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,'나만의 시간을 즐기는 방법','새해가 되면서, 이번에는 운동을 시작해보려고 합니다. 어떤 운동이 좋을까요?',to_date('04/26/2019', 'MM/DD/RRRR'),87,'Y','질문');
+--행 117
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 자기계발을 위한 책 추천해주세요',' 대학교 졸업 후에는 바로 취업을 하지 못해서, 취업준비생으로 지내고 있어요. 이럴 때 해야 할 일이 있을까요?',to_date('04/27/2019', 'MM/DD/RRRR'),98,'Y','정보');
+--행 118
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 이번 주말에는 뭐 하고 싶으신가요?',' 요즘에는 날씨가 많이 추워서, 방치하고 있던 패딩을 꺼내서 입고 다니고 있어요.',to_date('04/28/2019', 'MM/DD/RRRR'),82,'Y','고민/상담');
+--행 119
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 좋아하는 영화나 드라마 추천해주세요',' 군대에서는 꼭 손편지를 받아야만 힘들었던 날들이 있었습니다. 그리움이 더해지더라구요.',to_date('04/29/2019', 'MM/DD/RRRR'),99,'Y','잡담');
+--행 120
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 최근에 듣고 있는 팟캐스트 추천해주세요',' 제가 제일 좋아하는 가수는 방탄소년단입니다. 정말 멋지고 재밌는 무대를 보여줘요!',to_date('04/30/2019', 'MM/DD/RRRR'),39,'Y','잡담');
+--행 121
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 가장 좋아하는 스포츠는 무엇인가요?',' 코로나20 때문에, 집에서 놀기만 하다가 체중이 늘어서 걱정이에요. 어떻게 해야 할까요?',to_date('05/01/2019', 'MM/DD/RRRR'),41,'Y','질문');
+--행 122
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 일주일간 있었던 기쁨, 슬픔, 감동 중에 하나를 골라 이야기해주세요',' 지금까지 봤던 영화 중에, 가장 기억에 남는 작품은 ''쇼생크 탈출''입니다.',to_date('05/02/2019', 'MM/DD/RRRR'),54,'Y','정보');
+--행 123
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 새로운 취미를 시작하고 싶은데 추천해주세요','안녕하세요! 이번에 자유게시판을 이용하면서, 처음으로 글을 작성해봅니다.',to_date('05/03/2019', 'MM/DD/RRRR'),19,'Y','고민/상담');
+--행 124
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 대학 시절 추억을 떠올려 보면?','요즘 우리나라에는 재난 문자가 자주 와서, 정말 불안한 기분입니다.',to_date('05/04/2019', 'MM/DD/RRRR'),10,'Y','잡담');
+--행 125
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 매일 반복되는 일상, 어떻게 바꾸고 싶으신가요?','학생때 가장 좋아했던 과목은 역사였습니다. 역사에 대한 지식이 많이 필요한 분야인 것 같아요.',to_date('05/05/2019', 'MM/DD/RRRR'),49,'Y','잡담');
+--행 126
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 고민이 있으면 나누고 싶은데, 이야기할 곳이 없어요.','토익 공부를 하고 있는데, 쉐도잉 연습이 제일 힘들어요. 어떻게 해야 할까요?',to_date('05/06/2019', 'MM/DD/RRRR'),12,'Y','질문');
+--행 127
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 나만의 일기를 쓰는 이유는 무엇인가요?','올해 새로 생긴 카페에서 제일 맛있는 음료는 바닐라 라떼였어요. 다들 한번씩 시도해보세요!',to_date('05/07/2019', 'MM/DD/RRRR'),97,'Y','정보');
+--행 128
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 시험을 준비하며 느낀 것','집에서 볼 수 있는 영화 중에, 지금 이 순간 추천하고 싶은 작품은 ''살인의 추억''입니다.',to_date('05/08/2019', 'MM/DD/RRRR'),22,'Y','고민/상담');
+--행 129
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 최근에 새로 산 물건 중에서 가장 만족하는 것은?','요즘에는 아이들이 핸드폰 게임에 빠져서, 공부하기가 힘들어진 것 같아요. 부모들은 어떻게 대처해야 할까요?',to_date('05/09/2019', 'MM/DD/RRRR'),27,'Y','잡담');
+--행 130
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 지난 여름, 어디를 다녀왔나요?','우리 동네에는 맛있는 라면집이 많아서, 매주 한번씩 라면 파는 가게를 찾아다녀요.',to_date('05/10/2019', 'MM/DD/RRRR'),49,'Y','잡담');
+--행 131
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 주말에 시간을 보내는 방법','새해가 되면서, 이번에는 운동을 시작해보려고 합니다. 어떤 운동이 좋을까요?',to_date('05/11/2019', 'MM/DD/RRRR'),23,'Y','질문');
+--행 132
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 친구들과 함께하면 행복한 것',' 대학교 졸업 후에는 바로 취업을 하지 못해서, 취업준비생으로 지내고 있어요. 이럴 때 해야 할 일이 있을까요?',to_date('05/12/2019', 'MM/DD/RRRR'),36,'Y','정보');
+--행 133
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 취미를 통해 느낀 효과',' 요즘에는 날씨가 많이 추워서, 방치하고 있던 패딩을 꺼내서 입고 다니고 있어요.',to_date('05/13/2019', 'MM/DD/RRRR'),44,'Y','고민/상담');
+--행 134
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 나만의 힐링 방법',' 군대에서는 꼭 손편지를 받아야만 힘들었던 날들이 있었습니다. 그리움이 더해지더라구요.',to_date('05/14/2019', 'MM/DD/RRRR'),44,'Y','잡담');
+--행 135
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 최근에 봤던 영화 중에서 인상 깊은 것은?',' 제가 제일 좋아하는 가수는 방탄소년단입니다. 정말 멋지고 재밌는 무대를 보여줘요!',to_date('05/15/2019', 'MM/DD/RRRR'),66,'Y','잡담');
+--행 136
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 살면서 후회하는 일이 있나요?',' 코로나21 때문에, 집에서 놀기만 하다가 체중이 늘어서 걱정이에요. 어떻게 해야 할까요?',to_date('05/16/2019', 'MM/DD/RRRR'),27,'Y','질문');
+--행 137
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 좋아하는 동물은 무엇인가요?',' 지금까지 봤던 영화 중에, 가장 기억에 남는 작품은 ''쇼생크 탈출''입니다.',to_date('05/17/2019', 'MM/DD/RRRR'),95,'Y','정보');
+--행 138
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 남들과 차별화되는 취미 생활','안녕하세요! 이번에 자유게시판을 이용하면서, 처음으로 글을 작성해봅니다.',to_date('05/18/2019', 'MM/DD/RRRR'),46,'Y','고민/상담');
+--행 139
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 지금 읽고 있는 책이 있나요? 그 책에 대한 생각은 어떤가요?','요즘 우리나라에는 재난 문자가 자주 와서, 정말 불안한 기분입니다.',to_date('05/19/2019', 'MM/DD/RRRR'),57,'Y','잡담');
+--행 140
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 최근에 좋아하는 가수/밴드를','학생때 가장 좋아했던 과목은 역사였습니다. 역사에 대한 지식이 많이 필요한 분야인 것 같아요.',to_date('05/20/2019', 'MM/DD/RRRR'),88,'Y','잡담');
+--행 141
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,'오늘 하루 어땠나요?','토익 공부를 하고 있는데, 쉐도잉 연습이 제일 힘들어요. 어떻게 해야 할까요?',to_date('05/21/2019', 'MM/DD/RRRR'),75,'Y','질문');
+--행 142
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,'퇴근하고 하고 싶은 것','올해 새로 생긴 카페에서 제일 맛있는 음료는 바닐라 라떼였어요. 다들 한번씩 시도해보세요!',to_date('05/22/2019', 'MM/DD/RRRR'),50,'Y','정보');
+--행 143
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,'좋아하는 음악 추천해주세요','집에서 볼 수 있는 영화 중에, 지금 이 순간 추천하고 싶은 작품은 ''살인의 추억''입니다.',to_date('05/23/2019', 'MM/DD/RRRR'),22,'Y','고민/상담');
+--행 144
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,'맛있는 음식점 추천해주세요','요즘에는 아이들이 핸드폰 게임에 빠져서, 공부하기가 힘들어진 것 같아요. 부모들은 어떻게 대처해야 할까요?',to_date('05/24/2019', 'MM/DD/RRRR'),5,'Y','잡담');
+--행 145
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,'코로나21 상황에서의 나의 일상','우리 동네에는 맛있는 라면집이 많아서, 매주 한번씩 라면 파는 가게를 찾아다녀요.',to_date('05/25/2019', 'MM/DD/RRRR'),53,'Y','잡담');
+--행 146
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,'좋아하는 취미생활 소개해주세요','새해가 되면서, 이번에는 운동을 시작해보려고 합니다. 어떤 운동이 좋을까요?',to_date('05/26/2019', 'MM/DD/RRRR'),19,'Y','질문');
+--행 147
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,'여행 계획 중인 곳이 있나요?',' 대학교 졸업 후에는 바로 취업을 하지 못해서, 취업준비생으로 지내고 있어요. 이럴 때 해야 할 일이 있을까요?',to_date('05/27/2019', 'MM/DD/RRRR'),29,'Y','정보');
+--행 148
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,'하고 싶은 욕심 목록',' 요즘에는 날씨가 많이 추워서, 방치하고 있던 패딩을 꺼내서 입고 다니고 있어요.',to_date('05/28/2019', 'MM/DD/RRRR'),3,'Y','고민/상담');
+--행 149
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,'나만의 시간을 즐기는 방법',' 군대에서는 꼭 손편지를 받아야만 힘들었던 날들이 있었습니다. 그리움이 더해지더라구요.',to_date('05/29/2019', 'MM/DD/RRRR'),9,'Y','잡담');
+--행 150
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 자기계발을 위한 책 추천해주세요',' 제가 제일 좋아하는 가수는 방탄소년단입니다. 정말 멋지고 재밌는 무대를 보여줘요!',to_date('05/30/2019', 'MM/DD/RRRR'),92,'Y','잡담');
+--행 151
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 이번 주말에는 뭐 하고 싶으신가요?',' 코로나22 때문에, 집에서 놀기만 하다가 체중이 늘어서 걱정이에요. 어떻게 해야 할까요?',to_date('05/31/2019', 'MM/DD/RRRR'),38,'Y','질문');
+--행 152
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 좋아하는 영화나 드라마 추천해주세요',' 지금까지 봤던 영화 중에, 가장 기억에 남는 작품은 ''쇼생크 탈출''입니다.',to_date('06/01/2019', 'MM/DD/RRRR'),86,'Y','정보');
+--행 153
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 최근에 듣고 있는 팟캐스트 추천해주세요','안녕하세요! 이번에 자유게시판을 이용하면서, 처음으로 글을 작성해봅니다.',to_date('06/02/2019', 'MM/DD/RRRR'),74,'Y','고민/상담');
+--행 154
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 가장 좋아하는 스포츠는 무엇인가요?','요즘 우리나라에는 재난 문자가 자주 와서, 정말 불안한 기분입니다.',to_date('06/03/2019', 'MM/DD/RRRR'),99,'Y','잡담');
+--행 155
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 일주일간 있었던 기쁨, 슬픔, 감동 중에 하나를 골라 이야기해주세요','학생때 가장 좋아했던 과목은 역사였습니다. 역사에 대한 지식이 많이 필요한 분야인 것 같아요.',to_date('06/04/2019', 'MM/DD/RRRR'),63,'Y','잡담');
+--행 156
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 새로운 취미를 시작하고 싶은데 추천해주세요','토익 공부를 하고 있는데, 쉐도잉 연습이 제일 힘들어요. 어떻게 해야 할까요?',to_date('06/05/2019', 'MM/DD/RRRR'),76,'Y','질문');
+--행 157
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 대학 시절 추억을 떠올려 보면?','올해 새로 생긴 카페에서 제일 맛있는 음료는 바닐라 라떼였어요. 다들 한번씩 시도해보세요!',to_date('06/06/2019', 'MM/DD/RRRR'),26,'Y','정보');
+--행 158
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 매일 반복되는 일상, 어떻게 바꾸고 싶으신가요?','집에서 볼 수 있는 영화 중에, 지금 이 순간 추천하고 싶은 작품은 ''살인의 추억''입니다.',to_date('06/07/2019', 'MM/DD/RRRR'),10,'Y','고민/상담');
+--행 159
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 고민이 있으면 나누고 싶은데, 이야기할 곳이 없어요.','요즘에는 아이들이 핸드폰 게임에 빠져서, 공부하기가 힘들어진 것 같아요. 부모들은 어떻게 대처해야 할까요?',to_date('06/08/2019', 'MM/DD/RRRR'),35,'Y','잡담');
+--행 160
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 나만의 일기를 쓰는 이유는 무엇인가요?','우리 동네에는 맛있는 라면집이 많아서, 매주 한번씩 라면 파는 가게를 찾아다녀요.',to_date('06/09/2019', 'MM/DD/RRRR'),89,'Y','잡담');
+--행 161
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 시험을 준비하며 느낀 것','새해가 되면서, 이번에는 운동을 시작해보려고 합니다. 어떤 운동이 좋을까요?',to_date('06/10/2019', 'MM/DD/RRRR'),5,'Y','질문');
+--행 162
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 최근에 새로 산 물건 중에서 가장 만족하는 것은?',' 대학교 졸업 후에는 바로 취업을 하지 못해서, 취업준비생으로 지내고 있어요. 이럴 때 해야 할 일이 있을까요?',to_date('06/11/2019', 'MM/DD/RRRR'),82,'Y','정보');
+--행 163
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 지난 여름, 어디를 다녀왔나요?',' 요즘에는 날씨가 많이 추워서, 방치하고 있던 패딩을 꺼내서 입고 다니고 있어요.',to_date('06/12/2019', 'MM/DD/RRRR'),47,'Y','고민/상담');
+--행 164
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 주말에 시간을 보내는 방법',' 군대에서는 꼭 손편지를 받아야만 힘들었던 날들이 있었습니다. 그리움이 더해지더라구요.',to_date('06/13/2019', 'MM/DD/RRRR'),13,'Y','잡담');
+--행 165
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 친구들과 함께하면 행복한 것',' 제가 제일 좋아하는 가수는 방탄소년단입니다. 정말 멋지고 재밌는 무대를 보여줘요!',to_date('06/14/2019', 'MM/DD/RRRR'),52,'Y','잡담');
+--행 166
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 취미를 통해 느낀 효과',' 코로나23 때문에, 집에서 놀기만 하다가 체중이 늘어서 걱정이에요. 어떻게 해야 할까요?',to_date('06/15/2019', 'MM/DD/RRRR'),55,'Y','질문');
+--행 167
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 나만의 힐링 방법',' 지금까지 봤던 영화 중에, 가장 기억에 남는 작품은 ''쇼생크 탈출''입니다.',to_date('06/16/2019', 'MM/DD/RRRR'),78,'Y','정보');
+--행 168
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 최근에 봤던 영화 중에서 인상 깊은 것은?','안녕하세요! 이번에 자유게시판을 이용하면서, 처음으로 글을 작성해봅니다.',to_date('06/17/2019', 'MM/DD/RRRR'),49,'Y','고민/상담');
+--행 169
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 살면서 후회하는 일이 있나요?','요즘 우리나라에는 재난 문자가 자주 와서, 정말 불안한 기분입니다.',to_date('06/18/2019', 'MM/DD/RRRR'),3,'Y','잡담');
+--행 170
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 좋아하는 동물은 무엇인가요?','학생때 가장 좋아했던 과목은 역사였습니다. 역사에 대한 지식이 많이 필요한 분야인 것 같아요.',to_date('06/19/2019', 'MM/DD/RRRR'),16,'Y','잡담');
+--행 171
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 남들과 차별화되는 취미 생활','토익 공부를 하고 있는데, 쉐도잉 연습이 제일 힘들어요. 어떻게 해야 할까요?',to_date('06/20/2019', 'MM/DD/RRRR'),12,'Y','질문');
+--행 172
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 지금 읽고 있는 책이 있나요? 그 책에 대한 생각은 어떤가요?','올해 새로 생긴 카페에서 제일 맛있는 음료는 바닐라 라떼였어요. 다들 한번씩 시도해보세요!',to_date('06/21/2019', 'MM/DD/RRRR'),12,'Y','정보');
+--행 173
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 최근에 좋아하는 가수/밴드를','집에서 볼 수 있는 영화 중에, 지금 이 순간 추천하고 싶은 작품은 ''살인의 추억''입니다.',to_date('06/22/2019', 'MM/DD/RRRR'),22,'Y','고민/상담');
+--행 174
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,'오늘 하루 어땠나요?','요즘에는 아이들이 핸드폰 게임에 빠져서, 공부하기가 힘들어진 것 같아요. 부모들은 어떻게 대처해야 할까요?',to_date('06/23/2019', 'MM/DD/RRRR'),40,'Y','잡담');
+--행 175
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,'퇴근하고 하고 싶은 것','우리 동네에는 맛있는 라면집이 많아서, 매주 한번씩 라면 파는 가게를 찾아다녀요.',to_date('06/24/2019', 'MM/DD/RRRR'),12,'Y','잡담');
+--행 176
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,'좋아하는 음악 추천해주세요','새해가 되면서, 이번에는 운동을 시작해보려고 합니다. 어떤 운동이 좋을까요?',to_date('06/25/2019', 'MM/DD/RRRR'),6,'Y','질문');
+--행 177
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,'맛있는 음식점 추천해주세요',' 대학교 졸업 후에는 바로 취업을 하지 못해서, 취업준비생으로 지내고 있어요. 이럴 때 해야 할 일이 있을까요?',to_date('06/26/2019', 'MM/DD/RRRR'),11,'Y','정보');
+--행 178
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,'코로나22 상황에서의 나의 일상',' 요즘에는 날씨가 많이 추워서, 방치하고 있던 패딩을 꺼내서 입고 다니고 있어요.',to_date('06/27/2019', 'MM/DD/RRRR'),69,'Y','고민/상담');
+--행 179
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,'좋아하는 취미생활 소개해주세요',' 군대에서는 꼭 손편지를 받아야만 힘들었던 날들이 있었습니다. 그리움이 더해지더라구요.',to_date('06/28/2019', 'MM/DD/RRRR'),44,'Y','잡담');
+--행 180
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,'여행 계획 중인 곳이 있나요?',' 제가 제일 좋아하는 가수는 방탄소년단입니다. 정말 멋지고 재밌는 무대를 보여줘요!',to_date('06/29/2019', 'MM/DD/RRRR'),76,'Y','잡담');
+--행 181
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,'하고 싶은 욕심 목록',' 코로나24 때문에, 집에서 놀기만 하다가 체중이 늘어서 걱정이에요. 어떻게 해야 할까요?',to_date('06/30/2019', 'MM/DD/RRRR'),20,'Y','질문');
+--행 182
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,'나만의 시간을 즐기는 방법',' 지금까지 봤던 영화 중에, 가장 기억에 남는 작품은 ''쇼생크 탈출''입니다.',to_date('07/01/2019', 'MM/DD/RRRR'),24,'Y','정보');
+--행 183
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 자기계발을 위한 책 추천해주세요','안녕하세요! 이번에 자유게시판을 이용하면서, 처음으로 글을 작성해봅니다.',to_date('07/02/2019', 'MM/DD/RRRR'),95,'Y','고민/상담');
+--행 184
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 이번 주말에는 뭐 하고 싶으신가요?','요즘 우리나라에는 재난 문자가 자주 와서, 정말 불안한 기분입니다.',to_date('07/03/2019', 'MM/DD/RRRR'),84,'Y','잡담');
+--행 185
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 좋아하는 영화나 드라마 추천해주세요','학생때 가장 좋아했던 과목은 역사였습니다. 역사에 대한 지식이 많이 필요한 분야인 것 같아요.',to_date('07/04/2019', 'MM/DD/RRRR'),48,'Y','잡담');
+--행 186
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 최근에 듣고 있는 팟캐스트 추천해주세요','토익 공부를 하고 있는데, 쉐도잉 연습이 제일 힘들어요. 어떻게 해야 할까요?',to_date('07/05/2019', 'MM/DD/RRRR'),43,'Y','질문');
+--행 187
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 가장 좋아하는 스포츠는 무엇인가요?','올해 새로 생긴 카페에서 제일 맛있는 음료는 바닐라 라떼였어요. 다들 한번씩 시도해보세요!',to_date('07/06/2019', 'MM/DD/RRRR'),6,'Y','정보');
+--행 188
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 일주일간 있었던 기쁨, 슬픔, 감동 중에 하나를 골라 이야기해주세요','집에서 볼 수 있는 영화 중에, 지금 이 순간 추천하고 싶은 작품은 ''살인의 추억''입니다.',to_date('07/07/2019', 'MM/DD/RRRR'),85,'Y','고민/상담');
+--행 189
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 새로운 취미를 시작하고 싶은데 추천해주세요','요즘에는 아이들이 핸드폰 게임에 빠져서, 공부하기가 힘들어진 것 같아요. 부모들은 어떻게 대처해야 할까요?',to_date('07/08/2019', 'MM/DD/RRRR'),83,'Y','잡담');
+--행 190
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 대학 시절 추억을 떠올려 보면?','우리 동네에는 맛있는 라면집이 많아서, 매주 한번씩 라면 파는 가게를 찾아다녀요.',to_date('07/09/2019', 'MM/DD/RRRR'),50,'Y','잡담');
+--행 191
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 매일 반복되는 일상, 어떻게 바꾸고 싶으신가요?','새해가 되면서, 이번에는 운동을 시작해보려고 합니다. 어떤 운동이 좋을까요?',to_date('07/10/2019', 'MM/DD/RRRR'),67,'Y','질문');
+--행 192
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 고민이 있으면 나누고 싶은데, 이야기할 곳이 없어요.',' 대학교 졸업 후에는 바로 취업을 하지 못해서, 취업준비생으로 지내고 있어요. 이럴 때 해야 할 일이 있을까요?',to_date('07/11/2019', 'MM/DD/RRRR'),37,'Y','정보');
+--행 193
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 나만의 일기를 쓰는 이유는 무엇인가요?',' 요즘에는 날씨가 많이 추워서, 방치하고 있던 패딩을 꺼내서 입고 다니고 있어요.',to_date('07/12/2019', 'MM/DD/RRRR'),6,'Y','고민/상담');
+--행 194
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 시험을 준비하며 느낀 것',' 군대에서는 꼭 손편지를 받아야만 힘들었던 날들이 있었습니다. 그리움이 더해지더라구요.',to_date('07/13/2019', 'MM/DD/RRRR'),25,'Y','잡담');
+--행 195
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 최근에 새로 산 물건 중에서 가장 만족하는 것은?',' 제가 제일 좋아하는 가수는 방탄소년단입니다. 정말 멋지고 재밌는 무대를 보여줘요!',to_date('07/14/2019', 'MM/DD/RRRR'),96,'Y','잡담');
+--행 196
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 지난 여름, 어디를 다녀왔나요?',' 코로나25 때문에, 집에서 놀기만 하다가 체중이 늘어서 걱정이에요. 어떻게 해야 할까요?',to_date('07/15/2019', 'MM/DD/RRRR'),10,'Y','질문');
+--행 197
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 주말에 시간을 보내는 방법',' 지금까지 봤던 영화 중에, 가장 기억에 남는 작품은 ''쇼생크 탈출''입니다.',to_date('07/16/2019', 'MM/DD/RRRR'),89,'Y','정보');
+--행 198
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 친구들과 함께하면 행복한 것','안녕하세요! 이번에 자유게시판을 이용하면서, 처음으로 글을 작성해봅니다.',to_date('07/17/2019', 'MM/DD/RRRR'),35,'Y','고민/상담');
+--행 199
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 취미를 통해 느낀 효과','요즘 우리나라에는 재난 문자가 자주 와서, 정말 불안한 기분입니다.',to_date('07/18/2019', 'MM/DD/RRRR'),51,'Y','잡담');
+--행 200
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 나만의 힐링 방법','학생때 가장 좋아했던 과목은 역사였습니다. 역사에 대한 지식이 많이 필요한 분야인 것 같아요.',to_date('07/19/2019', 'MM/DD/RRRR'),93,'Y','잡담');
+--행 201
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 최근에 봤던 영화 중에서 인상 깊은 것은?','토익 공부를 하고 있는데, 쉐도잉 연습이 제일 힘들어요. 어떻게 해야 할까요?',to_date('07/20/2019', 'MM/DD/RRRR'),75,'Y','질문');
+--행 202
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 살면서 후회하는 일이 있나요?','올해 새로 생긴 카페에서 제일 맛있는 음료는 바닐라 라떼였어요. 다들 한번씩 시도해보세요!',to_date('07/21/2019', 'MM/DD/RRRR'),83,'Y','정보');
+--행 203
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 좋아하는 동물은 무엇인가요?','집에서 볼 수 있는 영화 중에, 지금 이 순간 추천하고 싶은 작품은 ''살인의 추억''입니다.',to_date('07/22/2019', 'MM/DD/RRRR'),92,'Y','고민/상담');
+--행 204
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 남들과 차별화되는 취미 생활','요즘에는 아이들이 핸드폰 게임에 빠져서, 공부하기가 힘들어진 것 같아요. 부모들은 어떻게 대처해야 할까요?',to_date('07/23/2019', 'MM/DD/RRRR'),2,'Y','잡담');
+--행 205
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 지금 읽고 있는 책이 있나요? 그 책에 대한 생각은 어떤가요?','우리 동네에는 맛있는 라면집이 많아서, 매주 한번씩 라면 파는 가게를 찾아다녀요.',to_date('07/24/2019', 'MM/DD/RRRR'),57,'Y','잡담');
+--행 206
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 최근에 좋아하는 가수/밴드를','새해가 되면서, 이번에는 운동을 시작해보려고 합니다. 어떤 운동이 좋을까요?',to_date('07/25/2019', 'MM/DD/RRRR'),61,'Y','질문');
+--행 207
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,'오늘 하루 어땠나요?',' 대학교 졸업 후에는 바로 취업을 하지 못해서, 취업준비생으로 지내고 있어요. 이럴 때 해야 할 일이 있을까요?',to_date('07/26/2019', 'MM/DD/RRRR'),99,'Y','정보');
+--행 208
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,'퇴근하고 하고 싶은 것',' 요즘에는 날씨가 많이 추워서, 방치하고 있던 패딩을 꺼내서 입고 다니고 있어요.',to_date('07/27/2019', 'MM/DD/RRRR'),45,'Y','고민/상담');
+--행 209
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,'좋아하는 음악 추천해주세요',' 군대에서는 꼭 손편지를 받아야만 힘들었던 날들이 있었습니다. 그리움이 더해지더라구요.',to_date('07/28/2019', 'MM/DD/RRRR'),24,'Y','잡담');
+--행 210
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,'맛있는 음식점 추천해주세요',' 제가 제일 좋아하는 가수는 방탄소년단입니다. 정말 멋지고 재밌는 무대를 보여줘요!',to_date('07/29/2019', 'MM/DD/RRRR'),40,'Y','잡담');
+--행 211
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,'코로나23 상황에서의 나의 일상',' 코로나26 때문에, 집에서 놀기만 하다가 체중이 늘어서 걱정이에요. 어떻게 해야 할까요?',to_date('07/30/2019', 'MM/DD/RRRR'),17,'Y','질문');
+--행 212
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,'좋아하는 취미생활 소개해주세요',' 지금까지 봤던 영화 중에, 가장 기억에 남는 작품은 ''쇼생크 탈출''입니다.',to_date('07/31/2019', 'MM/DD/RRRR'),59,'Y','정보');
+--행 213
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,'여행 계획 중인 곳이 있나요?','안녕하세요! 이번에 자유게시판을 이용하면서, 처음으로 글을 작성해봅니다.',to_date('08/01/2019', 'MM/DD/RRRR'),10,'Y','고민/상담');
+--행 214
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,'하고 싶은 욕심 목록','요즘 우리나라에는 재난 문자가 자주 와서, 정말 불안한 기분입니다.',to_date('08/02/2019', 'MM/DD/RRRR'),38,'Y','잡담');
+--행 215
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,'오늘 하루 어땠나요?','안녕하세요! 이번에 자유게시판을 이용하면서, 처음으로 글을 작성해봅니다.',to_date('08/03/2019', 'MM/DD/RRRR'),60,'Y','잡담');
+--행 216
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,'퇴근하고 하고 싶은 것','요즘 우리나라에는 재난 문자가 자주 와서, 정말 불안한 기분입니다.',to_date('08/04/2019', 'MM/DD/RRRR'),28,'Y','질문');
+--행 217
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,'좋아하는 음악 추천해주세요','학생때 가장 좋아했던 과목은 역사였습니다. 역사에 대한 지식이 많이 필요한 분야인 것 같아요.',to_date('08/05/2019', 'MM/DD/RRRR'),28,'Y','정보');
+--행 218
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,'맛있는 음식점 추천해주세요','토익 공부를 하고 있는데, 쉐도잉 연습이 제일 힘들어요. 어떻게 해야 할까요?',to_date('08/06/2019', 'MM/DD/RRRR'),95,'Y','고민/상담');
+--행 219
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,'코로나21 상황에서의 나의 일상','올해 새로 생긴 카페에서 제일 맛있는 음료는 바닐라 라떼였어요. 다들 한번씩 시도해보세요!',to_date('08/07/2019', 'MM/DD/RRRR'),69,'Y','잡담');
+--행 220
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,'좋아하는 취미생활 소개해주세요','집에서 볼 수 있는 영화 중에, 지금 이 순간 추천하고 싶은 작품은 ''살인의 추억''입니다.',to_date('08/08/2019', 'MM/DD/RRRR'),77,'Y','잡담');
+--행 221
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,'여행 계획 중인 곳이 있나요?','요즘에는 아이들이 핸드폰 게임에 빠져서, 공부하기가 힘들어진 것 같아요. 부모들은 어떻게 대처해야 할까요?',to_date('08/09/2019', 'MM/DD/RRRR'),73,'Y','질문');
+--행 222
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,'하고 싶은 욕심 목록','우리 동네에는 맛있는 라면집이 많아서, 매주 한번씩 라면 파는 가게를 찾아다녀요.',to_date('08/10/2019', 'MM/DD/RRRR'),6,'Y','정보');
+--행 223
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,'나만의 시간을 즐기는 방법','새해가 되면서, 이번에는 운동을 시작해보려고 합니다. 어떤 운동이 좋을까요?',to_date('08/11/2019', 'MM/DD/RRRR'),88,'Y','고민/상담');
+--행 224
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 자기계발을 위한 책 추천해주세요',' 대학교 졸업 후에는 바로 취업을 하지 못해서, 취업준비생으로 지내고 있어요. 이럴 때 해야 할 일이 있을까요?',to_date('08/12/2019', 'MM/DD/RRRR'),85,'Y','잡담');
+--행 225
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 이번 주말에는 뭐 하고 싶으신가요?',' 요즘에는 날씨가 많이 추워서, 방치하고 있던 패딩을 꺼내서 입고 다니고 있어요.',to_date('08/13/2019', 'MM/DD/RRRR'),4,'Y','잡담');
+--행 226
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 좋아하는 영화나 드라마 추천해주세요',' 군대에서는 꼭 손편지를 받아야만 힘들었던 날들이 있었습니다. 그리움이 더해지더라구요.',to_date('08/14/2019', 'MM/DD/RRRR'),49,'Y','질문');
+--행 227
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 최근에 듣고 있는 팟캐스트 추천해주세요',' 제가 제일 좋아하는 가수는 방탄소년단입니다. 정말 멋지고 재밌는 무대를 보여줘요!',to_date('08/15/2019', 'MM/DD/RRRR'),31,'Y','정보');
+--행 228
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 가장 좋아하는 스포츠는 무엇인가요?',' 코로나21 때문에, 집에서 놀기만 하다가 체중이 늘어서 걱정이에요. 어떻게 해야 할까요?',to_date('08/16/2019', 'MM/DD/RRRR'),90,'Y','고민/상담');
+--행 229
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 일주일간 있었던 기쁨, 슬픔, 감동 중에 하나를 골라 이야기해주세요',' 지금까지 봤던 영화 중에, 가장 기억에 남는 작품은 ''쇼생크 탈출''입니다.',to_date('08/17/2019', 'MM/DD/RRRR'),71,'Y','잡담');
+--행 230
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 새로운 취미를 시작하고 싶은데 추천해주세요','안녕하세요! 이번에 자유게시판을 이용하면서, 처음으로 글을 작성해봅니다.',to_date('08/18/2019', 'MM/DD/RRRR'),85,'Y','잡담');
+--행 231
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 대학 시절 추억을 떠올려 보면?','요즘 우리나라에는 재난 문자가 자주 와서, 정말 불안한 기분입니다.',to_date('08/19/2019', 'MM/DD/RRRR'),36,'Y','질문');
+--행 232
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 매일 반복되는 일상, 어떻게 바꾸고 싶으신가요?','학생때 가장 좋아했던 과목은 역사였습니다. 역사에 대한 지식이 많이 필요한 분야인 것 같아요.',to_date('08/20/2019', 'MM/DD/RRRR'),17,'Y','정보');
+--행 233
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 고민이 있으면 나누고 싶은데, 이야기할 곳이 없어요.','토익 공부를 하고 있는데, 쉐도잉 연습이 제일 힘들어요. 어떻게 해야 할까요?',to_date('08/21/2019', 'MM/DD/RRRR'),62,'Y','고민/상담');
+--행 234
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 나만의 일기를 쓰는 이유는 무엇인가요?','올해 새로 생긴 카페에서 제일 맛있는 음료는 바닐라 라떼였어요. 다들 한번씩 시도해보세요!',to_date('08/22/2019', 'MM/DD/RRRR'),88,'Y','잡담');
+--행 235
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 시험을 준비하며 느낀 것','집에서 볼 수 있는 영화 중에, 지금 이 순간 추천하고 싶은 작품은 ''살인의 추억''입니다.',to_date('08/23/2019', 'MM/DD/RRRR'),2,'Y','잡담');
+--행 236
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 최근에 새로 산 물건 중에서 가장 만족하는 것은?','요즘에는 아이들이 핸드폰 게임에 빠져서, 공부하기가 힘들어진 것 같아요. 부모들은 어떻게 대처해야 할까요?',to_date('08/24/2019', 'MM/DD/RRRR'),81,'Y','질문');
+--행 237
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 지난 여름, 어디를 다녀왔나요?','우리 동네에는 맛있는 라면집이 많아서, 매주 한번씩 라면 파는 가게를 찾아다녀요.',to_date('08/25/2019', 'MM/DD/RRRR'),99,'Y','정보');
+--행 238
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 주말에 시간을 보내는 방법','새해가 되면서, 이번에는 운동을 시작해보려고 합니다. 어떤 운동이 좋을까요?',to_date('08/26/2019', 'MM/DD/RRRR'),79,'Y','고민/상담');
+--행 239
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 친구들과 함께하면 행복한 것',' 대학교 졸업 후에는 바로 취업을 하지 못해서, 취업준비생으로 지내고 있어요. 이럴 때 해야 할 일이 있을까요?',to_date('08/27/2019', 'MM/DD/RRRR'),30,'Y','잡담');
+--행 240
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 취미를 통해 느낀 효과',' 요즘에는 날씨가 많이 추워서, 방치하고 있던 패딩을 꺼내서 입고 다니고 있어요.',to_date('08/28/2019', 'MM/DD/RRRR'),24,'Y','잡담');
+--행 241
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 나만의 힐링 방법',' 군대에서는 꼭 손편지를 받아야만 힘들었던 날들이 있었습니다. 그리움이 더해지더라구요.',to_date('08/29/2019', 'MM/DD/RRRR'),88,'Y','질문');
+--행 242
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 최근에 봤던 영화 중에서 인상 깊은 것은?',' 제가 제일 좋아하는 가수는 방탄소년단입니다. 정말 멋지고 재밌는 무대를 보여줘요!',to_date('08/30/2019', 'MM/DD/RRRR'),3,'Y','정보');
+--행 243
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 살면서 후회하는 일이 있나요?',' 코로나22 때문에, 집에서 놀기만 하다가 체중이 늘어서 걱정이에요. 어떻게 해야 할까요?',to_date('08/31/2019', 'MM/DD/RRRR'),80,'Y','고민/상담');
+--행 244
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 좋아하는 동물은 무엇인가요?',' 지금까지 봤던 영화 중에, 가장 기억에 남는 작품은 ''쇼생크 탈출''입니다.',to_date('09/01/2019', 'MM/DD/RRRR'),53,'Y','잡담');
+--행 245
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 남들과 차별화되는 취미 생활','안녕하세요! 이번에 자유게시판을 이용하면서, 처음으로 글을 작성해봅니다.',to_date('09/02/2019', 'MM/DD/RRRR'),19,'Y','잡담');
+--행 246
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 지금 읽고 있는 책이 있나요? 그 책에 대한 생각은 어떤가요?','요즘 우리나라에는 재난 문자가 자주 와서, 정말 불안한 기분입니다.',to_date('09/03/2019', 'MM/DD/RRRR'),39,'Y','질문');
+--행 247
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 최근에 좋아하는 가수/밴드를','학생때 가장 좋아했던 과목은 역사였습니다. 역사에 대한 지식이 많이 필요한 분야인 것 같아요.',to_date('09/04/2019', 'MM/DD/RRRR'),90,'Y','정보');
+--행 248
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,'오늘 하루 어땠나요?','토익 공부를 하고 있는데, 쉐도잉 연습이 제일 힘들어요. 어떻게 해야 할까요?',to_date('09/05/2019', 'MM/DD/RRRR'),0,'Y','고민/상담');
+--행 249
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,'퇴근하고 하고 싶은 것','올해 새로 생긴 카페에서 제일 맛있는 음료는 바닐라 라떼였어요. 다들 한번씩 시도해보세요!',to_date('09/06/2019', 'MM/DD/RRRR'),23,'Y','잡담');
+--행 250
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,'좋아하는 음악 추천해주세요','집에서 볼 수 있는 영화 중에, 지금 이 순간 추천하고 싶은 작품은 ''살인의 추억''입니다.',to_date('09/07/2019', 'MM/DD/RRRR'),90,'Y','잡담');
+--행 251
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,'맛있는 음식점 추천해주세요','요즘에는 아이들이 핸드폰 게임에 빠져서, 공부하기가 힘들어진 것 같아요. 부모들은 어떻게 대처해야 할까요?',to_date('09/08/2019', 'MM/DD/RRRR'),16,'Y','질문');
+--행 252
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,'코로나22 상황에서의 나의 일상','우리 동네에는 맛있는 라면집이 많아서, 매주 한번씩 라면 파는 가게를 찾아다녀요.',to_date('09/09/2019', 'MM/DD/RRRR'),37,'Y','정보');
+--행 253
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,'좋아하는 취미생활 소개해주세요','새해가 되면서, 이번에는 운동을 시작해보려고 합니다. 어떤 운동이 좋을까요?',to_date('09/10/2019', 'MM/DD/RRRR'),67,'Y','고민/상담');
+--행 254
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,'여행 계획 중인 곳이 있나요?',' 대학교 졸업 후에는 바로 취업을 하지 못해서, 취업준비생으로 지내고 있어요. 이럴 때 해야 할 일이 있을까요?',to_date('09/11/2019', 'MM/DD/RRRR'),56,'Y','잡담');
+--행 255
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,'하고 싶은 욕심 목록',' 요즘에는 날씨가 많이 추워서, 방치하고 있던 패딩을 꺼내서 입고 다니고 있어요.',to_date('09/12/2019', 'MM/DD/RRRR'),94,'Y','잡담');
+--행 256
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,'나만의 시간을 즐기는 방법',' 군대에서는 꼭 손편지를 받아야만 힘들었던 날들이 있었습니다. 그리움이 더해지더라구요.',to_date('09/13/2019', 'MM/DD/RRRR'),68,'Y','질문');
+--행 257
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 자기계발을 위한 책 추천해주세요',' 제가 제일 좋아하는 가수는 방탄소년단입니다. 정말 멋지고 재밌는 무대를 보여줘요!',to_date('09/14/2019', 'MM/DD/RRRR'),79,'Y','정보');
+--행 258
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 이번 주말에는 뭐 하고 싶으신가요?',' 코로나23 때문에, 집에서 놀기만 하다가 체중이 늘어서 걱정이에요. 어떻게 해야 할까요?',to_date('09/15/2019', 'MM/DD/RRRR'),11,'Y','고민/상담');
+--행 259
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 좋아하는 영화나 드라마 추천해주세요',' 지금까지 봤던 영화 중에, 가장 기억에 남는 작품은 ''쇼생크 탈출''입니다.',to_date('09/16/2019', 'MM/DD/RRRR'),98,'Y','잡담');
+--행 260
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 최근에 듣고 있는 팟캐스트 추천해주세요','안녕하세요! 이번에 자유게시판을 이용하면서, 처음으로 글을 작성해봅니다.',to_date('09/17/2019', 'MM/DD/RRRR'),41,'Y','잡담');
+--행 261
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 가장 좋아하는 스포츠는 무엇인가요?','요즘 우리나라에는 재난 문자가 자주 와서, 정말 불안한 기분입니다.',to_date('09/18/2019', 'MM/DD/RRRR'),60,'Y','질문');
+--행 262
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 일주일간 있었던 기쁨, 슬픔, 감동 중에 하나를 골라 이야기해주세요','학생때 가장 좋아했던 과목은 역사였습니다. 역사에 대한 지식이 많이 필요한 분야인 것 같아요.',to_date('09/19/2019', 'MM/DD/RRRR'),17,'Y','정보');
+--행 263
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 새로운 취미를 시작하고 싶은데 추천해주세요','토익 공부를 하고 있는데, 쉐도잉 연습이 제일 힘들어요. 어떻게 해야 할까요?',to_date('09/20/2019', 'MM/DD/RRRR'),25,'Y','고민/상담');
+--행 264
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 대학 시절 추억을 떠올려 보면?','올해 새로 생긴 카페에서 제일 맛있는 음료는 바닐라 라떼였어요. 다들 한번씩 시도해보세요!',to_date('09/21/2019', 'MM/DD/RRRR'),47,'Y','잡담');
+--행 265
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 매일 반복되는 일상, 어떻게 바꾸고 싶으신가요?','집에서 볼 수 있는 영화 중에, 지금 이 순간 추천하고 싶은 작품은 ''살인의 추억''입니다.',to_date('09/22/2019', 'MM/DD/RRRR'),8,'Y','잡담');
+--행 266
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 고민이 있으면 나누고 싶은데, 이야기할 곳이 없어요.','요즘에는 아이들이 핸드폰 게임에 빠져서, 공부하기가 힘들어진 것 같아요. 부모들은 어떻게 대처해야 할까요?',to_date('09/23/2019', 'MM/DD/RRRR'),9,'Y','질문');
+--행 267
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 나만의 일기를 쓰는 이유는 무엇인가요?','우리 동네에는 맛있는 라면집이 많아서, 매주 한번씩 라면 파는 가게를 찾아다녀요.',to_date('09/24/2019', 'MM/DD/RRRR'),28,'Y','정보');
+--행 268
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 시험을 준비하며 느낀 것','새해가 되면서, 이번에는 운동을 시작해보려고 합니다. 어떤 운동이 좋을까요?',to_date('09/25/2019', 'MM/DD/RRRR'),33,'Y','고민/상담');
+--행 269
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 최근에 새로 산 물건 중에서 가장 만족하는 것은?',' 대학교 졸업 후에는 바로 취업을 하지 못해서, 취업준비생으로 지내고 있어요. 이럴 때 해야 할 일이 있을까요?',to_date('09/26/2019', 'MM/DD/RRRR'),96,'Y','잡담');
+--행 270
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 지난 여름, 어디를 다녀왔나요?',' 요즘에는 날씨가 많이 추워서, 방치하고 있던 패딩을 꺼내서 입고 다니고 있어요.',to_date('09/27/2019', 'MM/DD/RRRR'),70,'Y','잡담');
+--행 271
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 주말에 시간을 보내는 방법',' 군대에서는 꼭 손편지를 받아야만 힘들었던 날들이 있었습니다. 그리움이 더해지더라구요.',to_date('09/28/2019', 'MM/DD/RRRR'),87,'Y','질문');
+--행 272
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 친구들과 함께하면 행복한 것',' 제가 제일 좋아하는 가수는 방탄소년단입니다. 정말 멋지고 재밌는 무대를 보여줘요!',to_date('09/29/2019', 'MM/DD/RRRR'),57,'Y','정보');
+--행 273
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 취미를 통해 느낀 효과',' 코로나24 때문에, 집에서 놀기만 하다가 체중이 늘어서 걱정이에요. 어떻게 해야 할까요?',to_date('09/30/2019', 'MM/DD/RRRR'),57,'Y','고민/상담');
+--행 274
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 나만의 힐링 방법',' 지금까지 봤던 영화 중에, 가장 기억에 남는 작품은 ''쇼생크 탈출''입니다.',to_date('10/01/2019', 'MM/DD/RRRR'),23,'Y','잡담');
+--행 275
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 최근에 봤던 영화 중에서 인상 깊은 것은?','안녕하세요! 이번에 자유게시판을 이용하면서, 처음으로 글을 작성해봅니다.',to_date('10/02/2019', 'MM/DD/RRRR'),76,'Y','잡담');
+--행 276
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 살면서 후회하는 일이 있나요?','요즘 우리나라에는 재난 문자가 자주 와서, 정말 불안한 기분입니다.',to_date('10/03/2019', 'MM/DD/RRRR'),37,'Y','질문');
+--행 277
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 좋아하는 동물은 무엇인가요?','학생때 가장 좋아했던 과목은 역사였습니다. 역사에 대한 지식이 많이 필요한 분야인 것 같아요.',to_date('10/04/2019', 'MM/DD/RRRR'),99,'Y','정보');
+--행 278
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 남들과 차별화되는 취미 생활','토익 공부를 하고 있는데, 쉐도잉 연습이 제일 힘들어요. 어떻게 해야 할까요?',to_date('10/05/2019', 'MM/DD/RRRR'),75,'Y','고민/상담');
+--행 279
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 지금 읽고 있는 책이 있나요? 그 책에 대한 생각은 어떤가요?','올해 새로 생긴 카페에서 제일 맛있는 음료는 바닐라 라떼였어요. 다들 한번씩 시도해보세요!',to_date('10/06/2019', 'MM/DD/RRRR'),8,'Y','잡담');
+--행 280
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 최근에 좋아하는 가수/밴드를','집에서 볼 수 있는 영화 중에, 지금 이 순간 추천하고 싶은 작품은 ''살인의 추억''입니다.',to_date('10/07/2019', 'MM/DD/RRRR'),20,'Y','잡담');
+--행 281
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,'오늘 하루 어땠나요?','요즘에는 아이들이 핸드폰 게임에 빠져서, 공부하기가 힘들어진 것 같아요. 부모들은 어떻게 대처해야 할까요?',to_date('10/08/2019', 'MM/DD/RRRR'),75,'Y','질문');
+--행 282
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,'퇴근하고 하고 싶은 것','우리 동네에는 맛있는 라면집이 많아서, 매주 한번씩 라면 파는 가게를 찾아다녀요.',to_date('10/09/2019', 'MM/DD/RRRR'),64,'Y','정보');
+--행 283
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,'좋아하는 음악 추천해주세요','새해가 되면서, 이번에는 운동을 시작해보려고 합니다. 어떤 운동이 좋을까요?',to_date('10/10/2019', 'MM/DD/RRRR'),72,'Y','고민/상담');
+--행 284
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,'맛있는 음식점 추천해주세요',' 대학교 졸업 후에는 바로 취업을 하지 못해서, 취업준비생으로 지내고 있어요. 이럴 때 해야 할 일이 있을까요?',to_date('10/11/2019', 'MM/DD/RRRR'),41,'Y','잡담');
+--행 285
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,'코로나23 상황에서의 나의 일상',' 요즘에는 날씨가 많이 추워서, 방치하고 있던 패딩을 꺼내서 입고 다니고 있어요.',to_date('10/12/2019', 'MM/DD/RRRR'),56,'Y','잡담');
+--행 286
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,'좋아하는 취미생활 소개해주세요',' 군대에서는 꼭 손편지를 받아야만 힘들었던 날들이 있었습니다. 그리움이 더해지더라구요.',to_date('10/13/2019', 'MM/DD/RRRR'),83,'Y','질문');
+--행 287
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,'여행 계획 중인 곳이 있나요?',' 제가 제일 좋아하는 가수는 방탄소년단입니다. 정말 멋지고 재밌는 무대를 보여줘요!',to_date('10/14/2019', 'MM/DD/RRRR'),80,'Y','정보');
+--행 288
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,'하고 싶은 욕심 목록',' 코로나25 때문에, 집에서 놀기만 하다가 체중이 늘어서 걱정이에요. 어떻게 해야 할까요?',to_date('10/15/2019', 'MM/DD/RRRR'),99,'Y','고민/상담');
+--행 289
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,'나만의 시간을 즐기는 방법',' 지금까지 봤던 영화 중에, 가장 기억에 남는 작품은 ''쇼생크 탈출''입니다.',to_date('10/16/2019', 'MM/DD/RRRR'),81,'Y','잡담');
+--행 290
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 자기계발을 위한 책 추천해주세요','안녕하세요! 이번에 자유게시판을 이용하면서, 처음으로 글을 작성해봅니다.',to_date('10/17/2019', 'MM/DD/RRRR'),37,'Y','잡담');
+--행 291
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 이번 주말에는 뭐 하고 싶으신가요?','요즘 우리나라에는 재난 문자가 자주 와서, 정말 불안한 기분입니다.',to_date('10/18/2019', 'MM/DD/RRRR'),28,'Y','질문');
+--행 292
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 좋아하는 영화나 드라마 추천해주세요','학생때 가장 좋아했던 과목은 역사였습니다. 역사에 대한 지식이 많이 필요한 분야인 것 같아요.',to_date('10/19/2019', 'MM/DD/RRRR'),63,'Y','정보');
+--행 293
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 최근에 듣고 있는 팟캐스트 추천해주세요','토익 공부를 하고 있는데, 쉐도잉 연습이 제일 힘들어요. 어떻게 해야 할까요?',to_date('10/20/2019', 'MM/DD/RRRR'),4,'Y','고민/상담');
+--행 294
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 가장 좋아하는 스포츠는 무엇인가요?','올해 새로 생긴 카페에서 제일 맛있는 음료는 바닐라 라떼였어요. 다들 한번씩 시도해보세요!',to_date('10/21/2019', 'MM/DD/RRRR'),29,'Y','잡담');
+--행 295
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 일주일간 있었던 기쁨, 슬픔, 감동 중에 하나를 골라 이야기해주세요','집에서 볼 수 있는 영화 중에, 지금 이 순간 추천하고 싶은 작품은 ''살인의 추억''입니다.',to_date('10/22/2019', 'MM/DD/RRRR'),17,'Y','잡담');
+--행 296
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 새로운 취미를 시작하고 싶은데 추천해주세요','요즘에는 아이들이 핸드폰 게임에 빠져서, 공부하기가 힘들어진 것 같아요. 부모들은 어떻게 대처해야 할까요?',to_date('10/23/2019', 'MM/DD/RRRR'),2,'Y','질문');
+--행 297
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 대학 시절 추억을 떠올려 보면?','우리 동네에는 맛있는 라면집이 많아서, 매주 한번씩 라면 파는 가게를 찾아다녀요.',to_date('10/24/2019', 'MM/DD/RRRR'),60,'Y','정보');
+--행 298
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 매일 반복되는 일상, 어떻게 바꾸고 싶으신가요?','새해가 되면서, 이번에는 운동을 시작해보려고 합니다. 어떤 운동이 좋을까요?',to_date('10/25/2019', 'MM/DD/RRRR'),49,'Y','고민/상담');
+--행 299
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 고민이 있으면 나누고 싶은데, 이야기할 곳이 없어요.',' 대학교 졸업 후에는 바로 취업을 하지 못해서, 취업준비생으로 지내고 있어요. 이럴 때 해야 할 일이 있을까요?',to_date('10/26/2019', 'MM/DD/RRRR'),77,'Y','잡담');
+--행 300
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,' 나만의 일기를 쓰는 이유는 무엇인가요?',' 요즘에는 날씨가 많이 추워서, 방치하고 있던 패딩을 꺼내서 입고 다니고 있어요.',to_date('10/27/2019', 'MM/DD/RRRR'),74,'Y','잡담');
+--행 301
+INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,' 시험을 준비하며 느낀 것',' 군대에서는 꼭 손편지를 받아야만 힘들었던 날들이 있었습니다. 그리움이 더해지더라구요.',to_date('10/28/2019', 'MM/DD/RRRR'),76,'Y','질문');
+
+COMMIT;
