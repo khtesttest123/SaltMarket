@@ -3,12 +3,6 @@
 --------------------------------------------------
 -- 1 에서  301  행에 대한 삽입 실패
 --ORA-01722: invalid number
---행 1
-INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,'오늘 하루 어땠나요?','안녕하세요! 이번에 자유게시판을 이용하면서, 처음으로 글을 작성해봅니다.',to_date('01/01/2019', 'MM/DD/RRRR'),74,'Y','잡담');
---행 2
-INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,'퇴근하고 하고 싶은 것','요즘 우리나라에는 재난 문자가 자주 와서, 정말 불안한 기분입니다.',to_date('01/02/2019', 'MM/DD/RRRR'),29,'Y','질문');
---행 3
-INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,1,'좋아하는 음악 추천해주세요','학생때 가장 좋아했던 과목은 역사였습니다. 역사에 대한 지식이 많이 필요한 분야인 것 같아요.',to_date('01/03/2019', 'MM/DD/RRRR'),15,'Y','정보');
 --행 4
 INSERT INTO FREE_BOARD (FREE_BOARD_NO, USER_NO, BOARD_TITLE, BOARD_CONTENT, CREATED_DATE, BOARD_VIEWS, DELETE_STATUS, CATEGORY) VALUES (SEQ_FREE_BOARD.NEXTVAL,2,'맛있는 음식점 추천해주세요','토익 공부를 하고 있는데, 쉐도잉 연습이 제일 힘들어요. 어떻게 해야 할까요?',to_date('01/04/2019', 'MM/DD/RRRR'),96,'Y','축하');
 --행 5
