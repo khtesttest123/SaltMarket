@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
     <link rel=“stylesheet” href=“css/bootstrap.min.css”>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css%22%3E">
-    <link rel="stylesheet" href="resources/css/common.css">
+    <link rel="stylesheet" href="../../resources/css/common.css">
 
     <!--font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,7 +33,7 @@
         <div class="container">
                 
             <div class="row">
-                <div class="col"><img src="resources/image/logo.png" width="140" heigh="140"></div>
+                <div class="col"><img src="../../resources/image/logo.png" width="140" heigh="140"></div>
                 <div class="col">
                     <div class="input-group mb-3">
                         <h1 class="h1h1">소금마켓</h1>
