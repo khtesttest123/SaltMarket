@@ -21,19 +21,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Document</title>
 
+<!-- jQuery 온라인 방식 -->
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-<!-- 온라인 방식 -->
-
 
 <!-- 외부방식 board.css -->
 <link rel="stylesheet"
 	href="<%= request.getContextPath() %>/resources/css/board.css">
 
-
 <!-- 폰트어썸 아이콘 적용 -->
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 <style>
 .btn {
 	background-color: #BFE9F9 !important;
@@ -42,8 +41,6 @@
 }
 .btn:hover {
 	background-color: #6ad4fd !important;
-	color: black !important;
-	border: none !important;
 }
 #current-button:disabled {
 	opacity: 1 !important;
@@ -124,19 +121,22 @@ hr {
 
 			<div id="listhead">
 				<div class="category">
-					<button class="btn btn-outline-primary btn-sm"
-						onclick="location.href='<%= contextPath %>/freeboardlist.bo?category=전체'">전체</button>
-					<button class="btn btn-outline-primary btn-sm"
-						onclick="location.href='<%= contextPath %>/freeboardlist.bo?category=잡담'">잡담</button>
-					<button class="btn btn-outline-primary btn-sm"
-						onclick="location.href='<%= contextPath %>/freeboardlist.bo?category=질문'">질문</button>
-					<button class="btn btn-outline-primary btn-sm"
-						onclick="location.href='<%= contextPath %>/freeboardlist.bo?category=정보'">정보</button>
-					<button class="btn btn-outline-primary btn-sm"
-						onclick="location.href='<%= contextPath %>/freeboardlist.bo?category=축하'">축하</button>
-					<button class="btn btn-outline-primary btn-sm"
-						onclick="location.href='<%= contextPath %>/freeboardlist.bo?category=고민/상담'">고민/상담</button>
+					<button class="btn btn-outline-primary btn-sm active" onclick="redirectToCategory(this, '전체')">전체</button>
+					<button class="btn btn-outline-primary btn-sm" onclick="redirectToCategory(this, '잡담')">잡담</button>
+					<button class="btn btn-outline-primary btn-sm" onclick="redirectToCategory(this, '질문')">질문</button>
+					<button class="btn btn-outline-primary btn-sm" onclick="redirectToCategory(this, '정보')">정보</button>
+					<button class="btn btn-outline-primary btn-sm" onclick="redirectToCategory(this, '축하')">축하</button>
+					<button class="btn btn-outline-primary btn-sm" onclick="redirectToCategory(this, '고민/상담')">고민/상담</button>
 				</div>
+				  
+				<script>
+					function redirectToCategory(button, category) {
+						location.href = '<%= contextPath %>/freeboardlist.bo?currentPage=1&category=' + encodeURIComponent(category);
+						// 클릭한 버튼의 색상 변경
+						button.style.backgroundColor = '#6ad4fd';
+					}
+				</script>
+				  
 
 				<div class="search-container">
 					<input type="text" placeholder="검색어를 입력하세요" name="search">
@@ -264,7 +264,6 @@ function goToPage(url) {
   sessionStorage.setItem('scrollPos', scrollPos);
   location.href = url;
 }
-
 </script>
 </body>
 
