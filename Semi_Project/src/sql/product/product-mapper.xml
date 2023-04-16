@@ -27,4 +27,35 @@
 		        )
 		 WHERE RNUM BETWEEN ? AND ?
 	</entry>
+	<entry key="selectCategoryList">
+		SELECT * 
+		  FROM CATEGORY
+	</entry>
+	<entry key="increaseCount">
+		UPDATE PRODUCT
+		   SET COUNT = COUNT + 1
+		 WHERE PRODUCT_NO = ?
+		   AND PRODUCT_STATUS = 'Y'
+	</entry>
+	<entry key="selectProduct">
+		SELECT PRODUCT_NO
+		     , CATEGORY_NAME
+		     , PRODUCT_NAME
+		     , DESCRIPTION
+		     , USER_NO
+		     , CREATED_AT
+		  FROM PRODUCT P
+		  LEFT JOIN CATEGORY C ON (P.CATEGORY_NO = C.CATEGORY_NO)
+		  JOIN MEMBER M ON (P.USER_NO = M.USER_NO)
+		 WHERE PRODUCT_NO = ?
+		   AND P.STATUS = 'Y'
+	</entry>
+	<entry key="selectImgFile">
+		SELECT FILE_NO
+		     , ORIGIN_NAME
+		     , CHANGE_FILE_NAME
+		     , FILE_PATH
+		  FROM IMG_FILE
+		 WHERE PRODUCT_NO = ?
+	</entry>
 </properties>

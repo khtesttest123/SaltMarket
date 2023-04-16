@@ -1,9 +1,14 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page import="com.saltmarket.product.model.vo.*, com.saltmarket.common.model.vo.ImgFile" %>
+<%
+	Product p = (Product)request.getAttribute("p");
+	ImgFile i = (ImgFile)request.getAttribute("i");
+%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>상품상세페이지</title>
@@ -25,35 +30,35 @@
 	                    <dl class="row prow1">
 	                        <div class="prow2">
 	                            <dt class="col-sm-3 pname1">상품명</dt>
-	                            <dd class="col-sm-9 pcontent1">호박 고구마 우유</dd>
+	                            <dd class="col-sm-9 pcontent1"><%= p.getProductName() %></dd>
 	                        </div>
 	                        <div class="prow2">
-	                        <dt class="col-sm-3 pname1">상품상태</dt>
-	                        <dd class="col-sm-9 pcontent1">상</dd>
+		                        <dt class="col-sm-3 pname1">상품 상태</dt>
+		                        <dd class="col-sm-9 pcontent1">상</dd>
 	                        </div>
 	                        <div class="prow2">
-	                        <dt class="col-sm-3 pname1">배송비</dt>
-	                        <dd class="col-sm-9 pcontent1">3,000원</dd>
+		                        <dt class="col-sm-3 pname1">배송비</dt>
+		                        <dd class="col-sm-9 pcontent1"><%= p.getPrice() %></dd>
 	                        </div>
 	                        <div class="prow2">
-	                        <dt class="col-sm-3 text-truncate pname1">거래지역</dt>
-	                        <dd class="col-sm-9 pcontent1">서울</dd>
+		                        <dt class="col-sm-3 text-truncate pname1">거래지역</dt>
+		                        <dd class="col-sm-9 pcontent1">서울</dd>
 	                        </div>
 	                        <div class="prow2">
-	                        <dt class="col-sm-3 pname1">판매자 프로필 조회</dt>
-	                        <dd class="col-sm-9 pcontent1"><a href="">조회하기</a></dd>
+		                        <dt class="col-sm-3 pname1">판매자 프로필 조회</dt>
+		                        <dd class="col-sm-9 pcontent1"><a href="">조회하기</a></dd>
 	                        </div>
 	                        <div class="prow2">
-	                        <dt class="col-sm-3 pname1">신고하기</dt>
-	                        <dd class="col-sm-9 pcontent1">
+		                        <dt class="col-sm-3 pname1">신고하기</dt>
+		                        <dd class="col-sm-9 pcontent1">
 	                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hammer svgIcon" viewBox="0 0 16 16">
 	                                <path d="M9.972 2.508a.5.5 0 0 0-.16-.556l-.178-.129a5.009 5.009 0 0 0-2.076-.783C6.215.862 4.504 1.229 2.84 3.133H1.786a.5.5 0 0 0-.354.147L.146 4.567a.5.5 0 0 0 0 .706l2.571 2.579a.5.5 0 0 0 .708 0l1.286-1.29a.5.5 0 0 0 .146-.353V5.57l8.387 8.873A.5.5 0 0 0 14 14.5l1.5-1.5a.5.5 0 0 0 .017-.689l-9.129-8.63c.747-.456 1.772-.839 3.112-.839a.5.5 0 0 0 .472-.334z"/>
 	                            </svg>
 	                        </dd>
 	                        </div>
 	                        <div class="prow2">
-	                        <dt class="col-sm-3 pname1">찜</dt>
-	                        <dd class="col-sm-9 pcontent1">
+		                        <dt class="col-sm-3 pname1">찜</dt>
+		                        <dd class="col-sm-9 pcontent1">
 	                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-suit-heart-fill svgIcon" viewBox="0 0 16 16">
 	                                <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"/>
 	                            </svg>
@@ -82,6 +87,7 @@
 
     <h3 align="center">상품정보</h3>
     <p align="center">
+    <%= p.getDescription() %>
         빙그레 이번 겨울을 맞아 바나나맛우유의 새로운 버전을 내놨다. <br>
         2016년부터 겨울마다 새로운 바나나맛우유 에디션을 선보이고 있는 연장선에서다. <br>
         빙그레는 겨울 에디션마다 겨울 감성이 느껴지는 색채와 귀여운 얼굴 모양이 들어간 <br>

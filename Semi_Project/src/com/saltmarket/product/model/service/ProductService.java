@@ -1,16 +1,15 @@
 package com.saltmarket.product.model.service;
 
-import static com.saltmarket.common.JDBCTemplate.close;
-import static com.saltmarket.common.JDBCTemplate.getConnection;
+import static com.saltmarket.common.JDBCTemplate.*;
 
 import java.sql.Connection;
 import java.util.ArrayList;
 
-import com.saltmarket.common.model.vo.ImgFile;
 import com.saltmarket.common.model.vo.PageInfo;
 import com.saltmarket.product.model.dao.ProductDao;
 import com.saltmarket.product.model.vo.Category;
 import com.saltmarket.product.model.vo.Product;
+import com.saltmarket.common.model.vo.ImgFile;
 
 public class ProductService {
 
@@ -66,9 +65,9 @@ public class ProductService {
 	}
 	
 	// 이미지 파일 조회
-	public Image selectImage(int productNo) {
+	public ImgFile selectImage(int productNo) {
 		Connection conn = getConnection();
-		Image i = new ProductDao().selectImage(conn, productNo);
+		ImgFile i = new ProductDao().selectImgFile(conn, productNo);
 		
 		close(conn);
 		

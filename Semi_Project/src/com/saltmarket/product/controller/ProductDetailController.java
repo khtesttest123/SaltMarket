@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.saltmarket.product.model.service.ProductService;
 import com.saltmarket.product.model.vo.Product;
-import com.saltmarket.common.model.vo.Image;
+import com.saltmarket.common.model.vo.ImgFile;
 
 /**
  * Servlet implementation class ProductDetailController
@@ -41,11 +41,11 @@ public class ProductDetailController extends HttpServlet {
 			Product p = pService.selectProduct(productNo);
 			
 			// 첨부파일 조회
-			Image i = pService.selectImage(productNo);
+			ImgFile i = pService.selectImage(productNo);
 			
 			// 응답데이터 담기
 			request.setAttribute("p", p);
-			request.setAttribute("if", if);
+			request.setAttribute("if", i);
 			
 			// 게시글 상세조회 페이지로 포워딩
 			request.getRequestDispatcher("views/product/productDetailView.jsp").forward(request, response);
