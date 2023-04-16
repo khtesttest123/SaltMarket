@@ -40,13 +40,20 @@ public class Freeboard {
 		this.category = category;
 	}
 
+	// Best 조회용 생성자
+	public Freeboard(int freeboardNo, String boardTitle, int boardViews) {
+		super();
+		this.freeboardNo = freeboardNo;
+		this.boardTitle = boardTitle;
+		this.boardViews = boardViews;
+	}
+
 	public int getFreeboardNo() {
 		return freeboardNo;
 	}
 
 	public void setFreeboardNo(int freeboardNo) {
-		this.freeboardNo = freeboardNo;
-	}
+		this.freeboardNo = freeboardNo;	}
 
 	public String getUserName() {
 		return userName;

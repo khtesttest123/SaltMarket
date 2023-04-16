@@ -9,6 +9,23 @@
         	AND (CATEGORY = ? OR ? = '전체')
 	</entry>
 	
+	<entry key="selectTitleSearchListCount">
+		SELECT COUNT(*) COUNT
+           FROM FREE_BOARD
+        WHERE DELETE_STATUS = 'Y'
+        	AND (CATEGORY = ? OR ? = '전체')
+        	AND BOARD_TITLE LIKE ?
+	</entry>
+	
+	<entry key="selectNameSearchListCount">
+		SELECT COUNT(*) COUNT
+           FROM FREE_BOARD F
+           JOIN USER_INFO U ON (U.USER_NO = F.USER_NO)
+        WHERE DELETE_STATUS = 'Y'
+        	AND (CATEGORY = ? OR ? = '전체')
+        	AND USER_NAME LIKE ?
+	</entry>
+	
 	<entry key="selectList">
 		SELECT *
 		FROM
@@ -29,6 +46,70 @@
 		     ) A
 		 )
 		 WHERE RNUM BETWEEN ? AND ?
+	</entry>
+	
+	<entry key="selectTitleSearchList">
+			SELECT *
+		FROM
+		(
+		    SELECT ROWNUM RNUM
+		        , A.*
+		    FROM (SELECT FREE_BOARD_NO
+		         , CATEGORY
+		         , BOARD_TITLE
+		         , USER_NAME
+		         , BOARD_VIEWS
+		         , CREATED_DATE
+		      FROM FREE_BOARD F
+		      JOIN USER_INFO U ON (U.USER_NO = F.USER_NO)
+		     WHERE DELETE_STATUS = 'Y'
+		     	  AND (CATEGORY = ? OR ? = '전체')
+                  AND BOARD_TITLE LIKE ?
+		     ORDER BY CREATED_DATE DESC
+		     ) A
+		 )
+		 WHERE RNUM BETWEEN ? AND ?
+	</entry>
+	
+	<entry key="selectNameSearchList">
+			SELECT *
+		FROM
+		(
+		    SELECT ROWNUM RNUM
+		        , A.*
+		    FROM (SELECT FREE_BOARD_NO
+		         , CATEGORY
+		         , BOARD_TITLE
+		         , USER_NAME
+		         , BOARD_VIEWS
+		         , CREATED_DATE
+		      FROM FREE_BOARD F
+		      JOIN USER_INFO U ON (U.USER_NO = F.USER_NO)
+		     WHERE DELETE_STATUS = 'Y'
+		     	  AND (CATEGORY = ? OR ? = '전체')
+                  AND USER_NAME LIKE ?
+		     ORDER BY CREATED_DATE DESC
+		     ) A
+		 )
+		 WHERE RNUM BETWEEN ? AND ?
+	</entry>
+	
+	<entry key="selectBestList">
+				SELECT *
+			FROM(
+			    SELECT ROWNUM RNUM, R.*
+			    FROM (
+			        SELECT FREE_BOARD_NO
+			             , BOARD_TITLE
+			             , BOARD_VIEWS
+			          FROM FREE_BOARD
+			         WHERE DELETE_STATUS = 'Y'
+			          AND (CATEGORY = ? OR ? = '전체')
+			          AND CREATED_DATE >= SYSDATE - 7
+			      ORDER BY BOARD_VIEWS DESC
+			    ) R
+			)
+				WHERE RNUM BETWEEN 1 AND 10
 	</entry>
 	
 </properties>
