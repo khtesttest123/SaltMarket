@@ -121,16 +121,16 @@ hr {
 
 			<div id="listhead">
 				<div class="category">
-					<button class="btn btn-outline-primary btn-sm active" onclick="redirectToCategory(this, '전체')">전체</button>
-					<button class="btn btn-outline-primary btn-sm" onclick="redirectToCategory(this, '잡담')">잡담</button>
-					<button class="btn btn-outline-primary btn-sm" onclick="redirectToCategory(this, '질문')">질문</button>
-					<button class="btn btn-outline-primary btn-sm" onclick="redirectToCategory(this, '정보')">정보</button>
-					<button class="btn btn-outline-primary btn-sm" onclick="redirectToCategory(this, '축하')">축하</button>
-					<button class="btn btn-outline-primary btn-sm" onclick="redirectToCategory(this, '고민/상담')">고민/상담</button>
+					<button class="btn btn-sm active" onclick="redirectToCategory('전체')">전체</button>
+					<button class="btn btn-sm" onclick="redirectToCategory('잡담')">잡담</button>
+					<button class="btn btn-sm" onclick="redirectToCategory('질문')">질문</button>
+					<button class="btn btn-sm" onclick="redirectToCategory('정보')">정보</button>
+					<button class="btn btn-sm" onclick="redirectToCategory('축하')">축하</button>
+					<button class="btn btn-sm" onclick="redirectToCategory('고민/상담')">고민/상담</button>
 				</div>
 				  
 				<script>
-					function redirectToCategory(button, category) {
+					function redirectToCategory(category) {
 						location.href = '<%= contextPath %>/freeboardlist.bo?currentPage=1&category=' + encodeURIComponent(category);
 						// 클릭한 버튼의 색상 변경
 						button.style.backgroundColor = '#6ad4fd';
@@ -178,62 +178,73 @@ hr {
 
 				<%-- 이전 페이지섹션으로 이동  --%>
 				<% if(currentPage == 1) { %>
-				<button type="button" class="btn btn-outline-primary btn-sm"
+				<button type="button" class="btn btn-sm"
 					disabled>&lt;&lt;</button>
-				<button type="button" class="btn btn-outline-primary btn-sm"
+				<button type="button" class="btn btn-sm"
 					disabled>&lt;</button>
 				<% } else if(currentPageSection == 1) { %>
-				<button type="button" class="btn btn-outline-primary btn-sm"
-					onclick="location.href = '<%= contextPath %>/freeboardlist.bo?currentPage=1';">
+				<button type="button" class="btn btn-sm"
+					onclick="redirectToPage(1)">
 					&lt;&lt;</button>
-				<button type="button" class="btn btn-outline-primary btn-sm"
-					onclick="location.href = '<%= contextPath %>/freeboardlist.bo?currentPage=<%= currentPage - 1 %>';">
+				<button type="button" class="btn btn-sm"
+					onclick="redirectToPage(<%= currentPage - 1 %>)">
 					&lt;</button>
 				<% } else { %>
-				<button type="button" class="btn btn-outline-primary btn-sm"
-					onclick="location.href = '<%= contextPath %>/freeboardlist.bo?currentPage=<%= (currentPageSection - 2) * 10 + 1 %>';">
+				<button type="button" class="btn btn-sm"
+					onclick="redirectToPage(<%= (currentPageSection - 2) * 10 + 1 %>)">
 					&lt;&lt;</button>
-				<button type="button" class="btn btn-outline-primary btn-sm"
-					onclick="location.href = '<%= contextPath %>/freeboardlist.bo?currentPage=<%= currentPage - 1 %>';">
+				<button type="button" class="btn btn-sm"
+					onclick="redirectToPage(<%= currentPage - 1 %>)">
 					&lt;</button>
 				<% } %>
 
 				<%-- 페이징처리  --%>
 				<% for(int p = startPage; p <= endPage; p++) { %>
 				<% if(p != currentPage) { %>
-				<button type="button" class="btn btn-outline-primary btn-sm"
-					onclick="location.href = '<%= contextPath %>/freeboardlist.bo?currentPage=<%= p %>';">
+				<button type="button" class="btn btn-sm"
+					onclick="redirectToPage(<%= p %>)">
 					<%= p %>
 				</button>
 				<% } else { %>
 				<button id="current-button" type="button"
-					class="btn btn-outline-primary btn-sm" disabled><%= p %></button>
+					class="btn btn-sm" disabled><%= p %></button>
 				<% } %>
 				<% } %>
 
 				<%-- 다음 페이지섹션으로 이동  --%>
 				<% if(currentPageSection < maxPageSection ) { %>
-				<button type="button" class="btn btn-outline-primary btn-sm"
-					onclick="location.href = '<%= contextPath %>/freeboardlist.bo?currentPage=<%= currentPage + 1 %>';">
+				<button type="button" class="btn btn-sm"
+					onclick="redirectToPage(<%= currentPage + 1 %>)">
 					&gt;</button>
-				<button type="button" class="btn btn-outline-primary btn-sm"
-					onclick="location.href = '<%= contextPath %>/freeboardlist.bo?currentPage=<%= currentPageSection * pageLimit + 1 %>';">
+				<button type="button" class="btn btn-sm"
+					onclick="redirectToPage(<%= currentPageSection * pageLimit + 1 %>)">
 					&gt;&gt;</button>
 				<% } else if(currentPage == maxPage) { %>
-				<button type="button" class="btn btn-outline-primary btn-sm"
+				<button type="button" class="btn btn-sm"
 					disabled>&gt;</button>
-				<button type="button" class="btn btn-outline-primary btn-sm"
+				<button type="button" class="btn btn-sm"
 					disabled>&gt;&gt;</button>
 				<% } else { %>
-				<button type="button" class="btn btn-outline-primary btn-sm"
-					onclick="location.href = '<%= contextPath %>/freeboardlist.bo?currentPage=<%= currentPage + 1 %>';">
+				<button type="button" class="btn btn-sm"
+					onclick="redirectToPage(<%= currentPage + 1 %>)">
 					&gt;</button>
-				<button type="button" class="btn btn-outline-primary btn-sm"
-					onclick="location.href = '<%= contextPath %>/freeboardlist.bo?currentPage=<%= maxPage %>';">
+				<button type="button" class="btn btn-sm"
+					onclick="redirectToPage(<%= maxPage %>)">
 					&gt;&gt;</button>
 				<% } %>
-
 			</div>
+			
+			<script>
+				function redirectToPage(page) {
+					const urlParams = new URLSearchParams(window.location.search);
+					const category = urlParams.get('category');
+					location.href = '<%= contextPath %>/freeboardlist.bo?category=' + encodeURIComponent(category) + '&currentPage=' + page;
+					// 클릭한 버튼의 색상 변경
+					button.style.backgroundColor = '#6ad4fd';
+				}
+			</script>
+			
+			
 		</div>
 
 		<div id="right"></div>

@@ -12,22 +12,22 @@ import com.saltmarket.freeboard.model.vo.Freeboard;
 
 public class FreeboardService {
 	
-	public int selectListCount() {
+	public int selectListCount(String category) {
 		
 		Connection conn = getConnection();
 		
-		int listCount = new FreeboardDao().selectListCount(conn);
+		int listCount = new FreeboardDao().selectListCount(conn, category);
 		
 		close(conn);
 		
 		return listCount;
 	}
 	
-	public ArrayList<Freeboard> selectList(PageInfo pi) {
+	public ArrayList<Freeboard> selectList(PageInfo pi, String category) {
 		
 		Connection conn = getConnection();
 		
-		ArrayList<Freeboard> list = new FreeboardDao().selectList(conn, pi);
+		ArrayList<Freeboard> list = new FreeboardDao().selectList(conn, pi, category);
 		
 		close(conn);
 		

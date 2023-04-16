@@ -6,6 +6,7 @@
 		SELECT COUNT(*) COUNT
            FROM FREE_BOARD
         WHERE DELETE_STATUS = 'Y'
+        	AND (CATEGORY = ? OR ? = '전체')
 	</entry>
 	
 	<entry key="selectList">
@@ -23,6 +24,7 @@
 		      FROM FREE_BOARD F
 		      JOIN USER_INFO U ON (U.USER_NO = F.USER_NO)
 		     WHERE DELETE_STATUS = 'Y'
+		     	  AND (CATEGORY = ? OR ? = '전체')
 		     ORDER BY CREATED_DATE DESC
 		     ) A
 		 )
