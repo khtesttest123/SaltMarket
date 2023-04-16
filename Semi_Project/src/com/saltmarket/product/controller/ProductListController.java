@@ -43,8 +43,8 @@ public class ProductListController extends HttpServlet {
 		
 		listCount = new ProductService().selectListCount();
 		currentPage = Integer.parseInt(request.getParameter("currentPage"));
-		pageLimit = 5;
-		postLimit = 20;
+		pageLimit = 10;
+		postLimit = 10;
 		
 		maxPage = (int)Math.ceil((double)listCount / postLimit);
 		startPage = (currentPage - 1) / pageLimit * pageLimit + 1;
@@ -63,7 +63,7 @@ public class ProductListController extends HttpServlet {
 		
 		System.out.println("list: " + list.get(0));
 		
-		request.getRequestDispatcher("views/product/productListView.jsp").forward(request, response);
+		request.getRequestDispatcher("views/product/productCategoryListView.jsp").forward(request, response);
 	}
 
 	/**

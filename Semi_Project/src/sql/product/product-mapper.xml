@@ -19,8 +19,8 @@
 		                 , P.USER_NO
 		                 , P.REGION_NO
 		              FROM PRODUCT P
-		              JOIN CATEGORY C ON P.CATEGORY_NO = C.CATEGORY_NO
-		              JOIN USER_INFO U ON P.USER_NO = U.USER_NO
+		              JOIN CATEGORY C ON (P.CATEGORY_NO = C.CATEGORY_NO)
+		              JOIN USER_INFO U ON (P.USER_NO = U.USER_NO)
 		             WHERE P.PRODUCT_STATUS = 'Y'
 		             ORDER BY CREATED_AT DESC
 		            ) A

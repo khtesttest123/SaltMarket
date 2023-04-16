@@ -6,8 +6,10 @@ import static com.saltmarket.common.JDBCTemplate.getConnection;
 import java.sql.Connection;
 import java.util.ArrayList;
 
+import com.saltmarket.common.model.vo.ImgFile;
 import com.saltmarket.common.model.vo.PageInfo;
 import com.saltmarket.product.model.dao.ProductDao;
+import com.saltmarket.product.model.vo.Category;
 import com.saltmarket.product.model.vo.Product;
 
 public class ProductService {
@@ -19,11 +21,57 @@ public class ProductService {
 		
 		return listCount;
 	}
+	
 	public ArrayList<Product> selectList(PageInfo pi){
 		Connection conn = getConnection();
 		ArrayList<Product> list = new ProductDao().selectList(conn, pi);
 		close(conn);
 		
 		return list;
+	}
+	
+	public ArrayList<Category> selectCategoryList(){
+		Connection conn = getConnection();
+		
+		ArrayList<Category> list = new ProductDao().selectCategoryList(conn);
+		
+		close(conn);
+		
+		return list;
+	}
+	
+	// 조회수 증가
+	public int increaseCount(int productNo) {
+		Connection conn = getConnection();
+		int result = new ProductDao().increaseCount(conn, productNo);
+		
+		if(result > 0) {
+			commit(conn);
+		} else {
+			rollback(conn);
+		}
+		close(conn);
+		
+		return result;
+	}
+	
+	// 상품 상세보기
+	public Product selectProduct(int productNo) {
+		Connection conn = getConnection();
+		Product p = new ProductDao().selectProduct(conn, productNo);
+
+		close(conn);
+		
+		return p;
+	}
+	
+	// 이미지 파일 조회
+	public Image selectImage(int productNo) {
+		Connection conn = getConnection();
+		Image i = new ProductDao().selectImage(conn, productNo);
+		
+		close(conn);
+		
+		return i;
 	}
 }
