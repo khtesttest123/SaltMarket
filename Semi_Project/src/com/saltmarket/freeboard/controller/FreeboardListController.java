@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.saltmarket.common.model.vo.PageInfo;
+import com.saltmarket.common.model.vo.SearchInfo;
 import com.saltmarket.freeboard.model.service.FreeboardService;
 import com.saltmarket.freeboard.model.vo.Freeboard;
 
@@ -32,25 +33,21 @@ public class FreeboardListController extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		int listCount;
-		int currentPage;
-		int pageLimit;
-		int boardLimit;
+		int currentPage = Integer.parseInt(request.getParameter("currentPage"));
+		String category = request.getParameter("category");
+		String kind = request.getParameter("kind");
+		String keyword = request.getParameter("keyword");
 		
-		int maxPage;
-		int startPage;
-		int endPage;
-		String category;
-		
-		category = request.getParameter("category");
-		listCount = new FreeboardService().selectListCount(category);
-		currentPage = Integer.parseInt(request.getParameter("currentPage"));
-		
-		pageLimit = 10;
-		boardLimit = 15;
-		maxPage = (int)Math.ceil((double)listCount / boardLimit);
-		startPage = (currentPage - 1) / pageLimit * pageLimit + 1;
-		endPage = startPage + pageLimit - 1;
+		 if(kind == null || keyword == null) {
+			 kind = "null"; keyword = "null";
+		 } 
+		SearchInfo si = new SearchInfo(category, kind, keyword);
+		int listCount = new FreeboardService().selectListCount(si);
+		int pageLimit = 10;
+		int boardLimit = 15;
+		int maxPage = (int)Math.ceil((double)listCount / boardLimit);
+		int startPage = (currentPage - 1) / pageLimit * pageLimit + 1;
+		int endPage = startPage + pageLimit - 1;
 		
 		 if(endPage > maxPage) {
 			 endPage = maxPage;
@@ -59,15 +56,16 @@ public class FreeboardListController extends HttpServlet {
 		 PageInfo pi = new PageInfo(listCount, currentPage, pageLimit, 
 				  boardLimit, maxPage, startPage, endPage);
 		 
-		 ArrayList<Freeboard> list = new FreeboardService().selectList(pi, category);
+		 ArrayList<Freeboard> list = new FreeboardService().selectList(pi, si);
 		 ArrayList<Freeboard> bestList = new FreeboardService().selectBestList(category);
 		 
+		 request.setAttribute("si", si);
 		 request.setAttribute("pi", pi);
 		 request.setAttribute("list", list);
 		 request.setAttribute("bestList", bestList);
 		 
 		 request.getRequestDispatcher("views/board/boardListView.jsp").forward(request, response);
-		 
+		 System.out.println(pi);
 	}
 
 	/**

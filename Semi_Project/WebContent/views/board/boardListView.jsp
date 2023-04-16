@@ -1,8 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"
-	import="com.saltmarket.common.model.vo.PageInfo, java.util.ArrayList, com.saltmarket.freeboard.model.vo.Freeboard"%>
+	import="com.saltmarket.common.model.vo.PageInfo, com.saltmarket.common.model.vo.SearchInfo, java.util.ArrayList, com.saltmarket.freeboard.model.vo.Freeboard"%>
 <% 
-	PageInfo pi=(PageInfo)request.getAttribute("pi");
+	PageInfo pi = (PageInfo)request.getAttribute("pi");
+	SearchInfo si = (SearchInfo)request.getAttribute("si");
 	ArrayList<Freeboard> list = (ArrayList<Freeboard>)request.getAttribute("list");
 	ArrayList<Freeboard> bestList = (ArrayList<Freeboard>)request.getAttribute("bestList");
 
@@ -13,7 +14,8 @@
             int pageLimit = pi.getPageLimit();
             int currentPageSection = ((currentPage - 1) / pageLimit) + 1;
             int maxPageSection = ((maxPage - 1) / pageLimit) + 1;
-            
+            System.out.println(currentPageSection);
+            System.out.println(maxPageSection);
 			// 현재 활성화된 카테고리버튼의 정보를 세션에 저장
 			String activeCategory = request.getParameter("category");
 			session.setAttribute("activeCategory", activeCategory);
@@ -74,7 +76,7 @@ hr {
 
 		<div id="center">
 
-			<h1 id="centertitle"><%= activeCategory %> 주간 BEST</h1>
+			<h1 id="centertitle"><a href="<%= contextPath %>/freeboardlist.bo?currentPage=1&category=전체"><%= activeCategory %> 주간 BEST</a></h1>
 
 			<% if(bestList.size() > 0) { %>
 			<div id="bestdiv">
@@ -128,15 +130,26 @@ hr {
 				  
 				<script>
 					function redirectToCategory(category) {
-						location.href = '<%= contextPath %>/freeboardlist.bo?currentPage=1&category=' + encodeURIComponent(category);
+						const urlParams = new URLSearchParams(window.location.search);
+						const keyword = encodeURIComponent(urlParams.get('keyword'));
+						const kind = encodeURIComponent(urlParams.get('kind'));
+						
+						location.href = '<%= contextPath %>/freeboardlist.bo?currentPage=1&category='
+								+ encodeURIComponent(category) + '&kind=' + kind + '&keyword=' + keyword;
 					}
 				</script>
 				  
-
-				<div class="search-container">
-					<input type="text" placeholder="검색어를 입력하세요" name="search">
-					<button type="submit" class="btn btn-primary btn-sm">검색</button>
-				</div>
+				<form action="<%= contextPath %>/freeboardlist.bo" method="get" class="search-container" accept-charset="UTF-8">
+					<input type="hidden" name="category" value="<%= activeCategory %>">
+  					<input type="hidden" name="currentPage" value="1">
+					<select name="kind">
+						<option value="title" <% if(si.getKind().equals("title")) { %>selected<% } %>>제목</option>
+						<option value="name" <% if(si.getKind().equals("name")) { %>selected<% } %>>닉네임</option>
+					</select>
+					<input type="text" placeholder="검색어를 입력하세요" name="keyword" 
+					value="<% if(!si.getKeyword().equals("null")) { %><%= si.getKeyword() %><% } %>">
+					<button type="submit" class="btn btn-sm">검색</button>
+				</form>	
 			</div>
 			<table align="center" class="list-area">
 				<thead>
@@ -172,7 +185,7 @@ hr {
 			<div class="paging-area">
 
 				<%-- 이전 페이지섹션으로 이동  --%>
-				<% if(currentPage == 1) { %>
+				<% if(currentPage <= 1) { %>
 					<button type="button" class="btn btn-sm" disabled>&lt;&lt;</button>
 					<button type="button" class="btn btn-sm" disabled>&lt;</button>
 				<% } else if(currentPageSection == 1) { %>
@@ -196,7 +209,7 @@ hr {
 				<% if(currentPageSection < maxPageSection ) { %>
 					<button type="button" class="btn btn-sm" onclick="redirectToPage(<%= currentPage + 1 %>)">&gt;</button>
 					<button type="button" class="btn btn-sm" onclick="redirectToPage(<%= currentPageSection * pageLimit + 1 %>)">&gt;&gt;</button>
-				<% } else if(currentPage == maxPage) { %>
+				<% } else if(currentPage >= maxPage) { %>
 					<button type="button" class="btn btn-sm" disabled>&gt;</button>
 					<button type="button" class="btn btn-sm" disabled>&gt;&gt;</button>
 				<% } else { %>
@@ -208,8 +221,11 @@ hr {
 			<script>
 				function redirectToPage(page) {
 					const urlParams = new URLSearchParams(window.location.search);
-					const category = urlParams.get('category');
-					location.href = '<%= contextPath %>/freeboardlist.bo?category=' + encodeURIComponent(category) + '&currentPage=' + page;
+					const category = encodeURIComponent(urlParams.get('category'));
+					const keyword = encodeURIComponent(urlParams.get('keyword'));
+					const kind = encodeURIComponent(urlParams.get('kind'));
+
+					location.href = '<%= contextPath %>/freeboardlist.bo?category=' + category + '&currentPage=' + page + '&kind=' + kind + '&keyword=' + keyword;
 				}
 			</script>
 			
