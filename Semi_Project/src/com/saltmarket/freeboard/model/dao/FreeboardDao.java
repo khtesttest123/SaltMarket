@@ -29,7 +29,7 @@ public class FreeboardDao {
 	}
 	
 
-	public int selectListCount(Connection conn) {
+	public int selectListCount(Connection conn, String category) {
 		
 		int listCount = 0;
 		PreparedStatement pstmt = null;
@@ -39,6 +39,8 @@ public class FreeboardDao {
 		
 		try {
 			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, category);
+			pstmt.setString(2, category);
 			rset = pstmt.executeQuery();
 			
 			if(rset.next()) {
@@ -53,7 +55,7 @@ public class FreeboardDao {
 		return listCount;
 	}
 	
-	public ArrayList<Freeboard> selectList(Connection conn, PageInfo pi) {
+	public ArrayList<Freeboard> selectList(Connection conn, PageInfo pi, String category) {
 		
 		ArrayList<Freeboard> list = new ArrayList<>();
 		PreparedStatement pstmt = null;
@@ -67,8 +69,10 @@ public class FreeboardDao {
 			int startRow = (pi.getCurrentPage() -1) * pi.getBoardLimit() + 1;
 			int endRow = pi.getCurrentPage() * pi.getBoardLimit();
 			
-			pstmt.setInt(1, startRow);
-			pstmt.setInt(2, endRow);
+			pstmt.setString(1, category);
+			pstmt.setString(2, category);
+			pstmt.setInt(3, startRow);
+			pstmt.setInt(4, endRow);
 			rset = pstmt.executeQuery();
 			
 			while(rset.next()) {
