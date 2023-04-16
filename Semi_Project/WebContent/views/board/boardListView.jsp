@@ -34,6 +34,9 @@
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 <style>
+.btn.active {
+  background-color: #6ad4fd !important;
+}
 .btn {
 	background-color: #BFE9F9 !important;
 	color: black !important;
@@ -67,7 +70,7 @@ hr {
 
 		<div id="center">
 
-			<h1 id="centertitle">오늘의 BEST</h1>
+			<h1 id="centertitle">주간 BEST</h1>
 
 			<div id="bestdiv">
 				<table align="center" class="bestlist-area bestlist-area1">
@@ -118,22 +121,25 @@ hr {
 			</div>
 
 			<br>
+			<%
+				// 현재 활성화된 버튼의 정보를 세션에 저장
+				String activeCategory = request.getParameter("category");
+				session.setAttribute("activeCategory", activeCategory);
+			%>
 
 			<div id="listhead">
 				<div class="category">
-					<button class="btn btn-sm active" onclick="redirectToCategory('전체')">전체</button>
-					<button class="btn btn-sm" onclick="redirectToCategory('잡담')">잡담</button>
-					<button class="btn btn-sm" onclick="redirectToCategory('질문')">질문</button>
-					<button class="btn btn-sm" onclick="redirectToCategory('정보')">정보</button>
-					<button class="btn btn-sm" onclick="redirectToCategory('축하')">축하</button>
-					<button class="btn btn-sm" onclick="redirectToCategory('고민/상담')">고민/상담</button>
+					<button class="btn btn-sm <% if ("전체".equals(activeCategory)) { %>active<% } %>" onclick="redirectToCategory('전체')">전체</button>
+					<button class="btn btn-sm <% if ("잡담".equals(activeCategory)) { %>active<% } %>" onclick="redirectToCategory('잡담')">잡담</button>
+					<button class="btn btn-sm <% if ("질문".equals(activeCategory)) { %>active<% } %>" onclick="redirectToCategory('질문')">질문</button>
+					<button class="btn btn-sm <% if ("정보".equals(activeCategory)) { %>active<% } %>" onclick="redirectToCategory('정보')">정보</button>
+					<button class="btn btn-sm <% if ("축하".equals(activeCategory)) { %>active<% } %>" onclick="redirectToCategory('축하')">축하</button>
+					<button class="btn btn-sm <% if ("고민/상담".equals(activeCategory)) { %>active<% } %>" onclick="redirectToCategory('고민/상담')">고민/상담</button>
 				</div>
 				  
 				<script>
 					function redirectToCategory(category) {
 						location.href = '<%= contextPath %>/freeboardlist.bo?currentPage=1&category=' + encodeURIComponent(category);
-						// 클릭한 버튼의 색상 변경
-						button.style.backgroundColor = '#6ad4fd';
 					}
 				</script>
 				  
@@ -178,59 +184,35 @@ hr {
 
 				<%-- 이전 페이지섹션으로 이동  --%>
 				<% if(currentPage == 1) { %>
-				<button type="button" class="btn btn-sm"
-					disabled>&lt;&lt;</button>
-				<button type="button" class="btn btn-sm"
-					disabled>&lt;</button>
+					<button type="button" class="btn btn-sm" disabled>&lt;&lt;</button>
+					<button type="button" class="btn btn-sm" disabled>&lt;</button>
 				<% } else if(currentPageSection == 1) { %>
-				<button type="button" class="btn btn-sm"
-					onclick="redirectToPage(1)">
-					&lt;&lt;</button>
-				<button type="button" class="btn btn-sm"
-					onclick="redirectToPage(<%= currentPage - 1 %>)">
-					&lt;</button>
+					<button type="button" class="btn btn-sm" onclick="redirectToPage(1)">&lt;&lt;</button>
+					<button type="button" class="btn btn-sm" onclick="redirectToPage(<%= currentPage - 1 %>)">&lt;</button>
 				<% } else { %>
-				<button type="button" class="btn btn-sm"
-					onclick="redirectToPage(<%= (currentPageSection - 2) * 10 + 1 %>)">
-					&lt;&lt;</button>
-				<button type="button" class="btn btn-sm"
-					onclick="redirectToPage(<%= currentPage - 1 %>)">
-					&lt;</button>
+					<button type="button" class="btn btn-sm" onclick="redirectToPage(<%= (currentPageSection - 2) * 10 + 1 %>)">&lt;&lt;</button>
+					<button type="button" class="btn btn-sm" onclick="redirectToPage(<%= currentPage - 1 %>)">&lt;</button>
 				<% } %>
 
 				<%-- 페이징처리  --%>
 				<% for(int p = startPage; p <= endPage; p++) { %>
-				<% if(p != currentPage) { %>
-				<button type="button" class="btn btn-sm"
-					onclick="redirectToPage(<%= p %>)">
-					<%= p %>
-				</button>
-				<% } else { %>
-				<button id="current-button" type="button"
-					class="btn btn-sm" disabled><%= p %></button>
-				<% } %>
+					<% if(p != currentPage) { %>
+						<button type="button" class="btn btn-sm" onclick="redirectToPage(<%= p %>)"><%= p %></button>
+					<% } else { %>
+						<button id="current-button" type="button" class="btn btn-sm" disabled><%= p %></button>
+					<% } %>
 				<% } %>
 
 				<%-- 다음 페이지섹션으로 이동  --%>
 				<% if(currentPageSection < maxPageSection ) { %>
-				<button type="button" class="btn btn-sm"
-					onclick="redirectToPage(<%= currentPage + 1 %>)">
-					&gt;</button>
-				<button type="button" class="btn btn-sm"
-					onclick="redirectToPage(<%= currentPageSection * pageLimit + 1 %>)">
-					&gt;&gt;</button>
+					<button type="button" class="btn btn-sm" onclick="redirectToPage(<%= currentPage + 1 %>)">&gt;</button>
+					<button type="button" class="btn btn-sm" onclick="redirectToPage(<%= currentPageSection * pageLimit + 1 %>)">&gt;&gt;</button>
 				<% } else if(currentPage == maxPage) { %>
-				<button type="button" class="btn btn-sm"
-					disabled>&gt;</button>
-				<button type="button" class="btn btn-sm"
-					disabled>&gt;&gt;</button>
+					<button type="button" class="btn btn-sm" disabled>&gt;</button>
+					<button type="button" class="btn btn-sm" disabled>&gt;&gt;</button>
 				<% } else { %>
-				<button type="button" class="btn btn-sm"
-					onclick="redirectToPage(<%= currentPage + 1 %>)">
-					&gt;</button>
-				<button type="button" class="btn btn-sm"
-					onclick="redirectToPage(<%= maxPage %>)">
-					&gt;&gt;</button>
+					<button type="button" class="btn btn-sm" onclick="redirectToPage(<%= currentPage + 1 %>)">&gt;</button>
+					<button type="button" class="btn btn-sm" onclick="redirectToPage(<%= maxPage %>)">&gt;&gt;</button>
 				<% } %>
 			</div>
 			
@@ -239,8 +221,6 @@ hr {
 					const urlParams = new URLSearchParams(window.location.search);
 					const category = urlParams.get('category');
 					location.href = '<%= contextPath %>/freeboardlist.bo?category=' + encodeURIComponent(category) + '&currentPage=' + page;
-					// 클릭한 버튼의 색상 변경
-					button.style.backgroundColor = '#6ad4fd';
 				}
 			</script>
 			
@@ -258,6 +238,7 @@ hr {
 	
 
 <script>
+// --- 페이지 이동시 현재 페이지 스크롤 기억 ---
     window.onload = function() {
   var scrollPos = sessionStorage.getItem('scrollPos');
   if (scrollPos !== null) {
