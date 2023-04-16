@@ -31,4 +31,22 @@
 		 WHERE RNUM BETWEEN ? AND ?
 	</entry>
 	
+	<entry key="selectBestList">
+				SELECT *
+			FROM(
+			    SELECT ROWNUM RNUM, R.*
+			    FROM (
+			        SELECT FREE_BOARD_NO
+			             , BOARD_TITLE
+			             , BOARD_VIEWS
+			          FROM FREE_BOARD
+			         WHERE DELETE_STATUS = 'Y'
+			          AND (CATEGORY = ? OR ? = '전체')
+			          AND CREATED_DATE >= SYSDATE - 7
+			      ORDER BY BOARD_VIEWS DESC
+			    ) R
+			)
+				WHERE RNUM BETWEEN 1 AND 10
+	</entry>
+	
 </properties>

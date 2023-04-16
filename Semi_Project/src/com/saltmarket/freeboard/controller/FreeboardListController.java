@@ -60,9 +60,11 @@ public class FreeboardListController extends HttpServlet {
 				  boardLimit, maxPage, startPage, endPage);
 		 
 		 ArrayList<Freeboard> list = new FreeboardService().selectList(pi, category);
+		 ArrayList<Freeboard> bestList = new FreeboardService().selectBestList(category);
 		 
 		 request.setAttribute("pi", pi);
 		 request.setAttribute("list", list);
+		 request.setAttribute("bestList", bestList);
 		 
 		 request.getRequestDispatcher("views/board/boardListView.jsp").forward(request, response);
 		 

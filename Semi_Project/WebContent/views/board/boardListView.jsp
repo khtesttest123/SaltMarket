@@ -4,6 +4,7 @@
 <% 
 	PageInfo pi=(PageInfo)request.getAttribute("pi");
 	ArrayList<Freeboard> list = (ArrayList<Freeboard>)request.getAttribute("list");
+	ArrayList<Freeboard> bestList = (ArrayList<Freeboard>)request.getAttribute("bestList");
 
             int currentPage = pi.getCurrentPage();
             int startPage = pi.getStartPage();
@@ -12,6 +13,10 @@
             int pageLimit = pi.getPageLimit();
             int currentPageSection = ((currentPage - 1) / pageLimit) + 1;
             int maxPageSection = ((maxPage - 1) / pageLimit) + 1;
+            
+			// 현재 활성화된 카테고리버튼의 정보를 세션에 저장
+			String activeCategory = request.getParameter("category");
+			session.setAttribute("activeCategory", activeCategory);
             %>
 <!DOCTYPE html>
 <html lang="en">
@@ -64,68 +69,52 @@ hr {
 
 
 
-
 	<div id="outer">
 		<div id="left"></div>
 
 		<div id="center">
 
-			<h1 id="centertitle">주간 BEST</h1>
+			<h1 id="centertitle"><%= activeCategory %> 주간 BEST</h1>
 
+			<% if(bestList.size() > 0) { %>
 			<div id="bestdiv">
-				<table align="center" class="bestlist-area bestlist-area1">
-					<tr>
-						<td>1</td>
-						<td>[무료나눔]포켓몬카드 교환</td>
-					</tr>
-					<tr>
-						<td>2</td>
-						<td>[무료나눔]바닥고무매트</td>
-					</tr>
-					<tr>
-						<td>3</td>
-						<td>힐링스포츠 턱걸이 운동기구 나</td>
-					</tr>
-					<tr>
-						<td>4</td>
-						<td>싱크대 가저가실분 계신가요 부천</td>
-					</tr>
-					<tr>
-						<td>5</td>
-						<td>라탄의자 무료 나눔해요 사진</td>
-					</tr>
-				</table>
-
+				<% int count = 0; %>
+				<% if(bestList.size() > 5) { %>
+					<table align="center" class="bestlist-area bestlist-area1">
+										<% for(int i = 0; i < 5; i++) { %>
+										<tr>
+											<td><%= i + 1 %></td>
+											<td><%= bestList.get(i).getBoardTitle() %></td>
+											<td><i class="fas fa-eye" style="color: #000000;"></i> <%= bestList.get(i).getBoardViews() %></td>
+										</tr>
+											<% count++; %>
+										<% } %>
+					</table>
+				<% } %>
 				<table align="center" class="bestlist-area bestlist-area2">
+				<% for(int i = count; i < bestList.size(); i++) { %>
 					<tr>
-						<td>6</td>
-						<td>카니발시트/벤츠 시트 14개 무료나눔 합니다000000000000000000</td>
+						<td><%= i + 1 %></td>
+						<td><%= bestList.get(i).getBoardTitle() %></td>
+						<td><i class="fas fa-eye" style="color: #000000;"></i> <%= bestList.get(i).getBoardViews() %></td>
 					</tr>
-					<tr>
-						<td>7</td>
-						<td>비누 원형몰드 무료나눔 합니다 사진</td>
-					</tr>
-					<tr>
-						<td>8</td>
-						<td>안마기 무료나눔 (대전입니다) 사진</td>
-					</tr>
-					<tr>
-						<td>9</td>
-						<td>벙커침대 무료나눔 사진</td>
-					</tr>
-					<tr>
-						<td>10</td>
-						<td>교자상과 다리미판 필요하신분(강남자곡동)</td>
-					</tr>
+				<% } %>
 				</table>
+				<% if(count == 0) { %>
+				<table align="center" class="bestlist-area bestlist-area2">
+						<% for(int i = 5; i < 10; i++) { %>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						<% } %>
+						</table>
+				<% } %>
 			</div>
+			<% } %>
 
 			<br>
-			<%
-				// 현재 활성화된 버튼의 정보를 세션에 저장
-				String activeCategory = request.getParameter("category");
-				session.setAttribute("activeCategory", activeCategory);
-			%>
 
 			<div id="listhead">
 				<div class="category">

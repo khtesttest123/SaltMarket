@@ -76,7 +76,6 @@ public class FreeboardDao {
 			rset = pstmt.executeQuery();
 			
 			while(rset.next()) {
-				
 				list.add(new Freeboard(rset.getInt("FREE_BOARD_NO")
 												  , rset.getString("USER_NAME")
 												  , rset.getString("BOARD_TITLE")
@@ -85,7 +84,6 @@ public class FreeboardDao {
 												  , rset.getString("CATEGORY")
 												  ));
 			}
-			
 		} catch (SQLException e) {
 			e.printStackTrace();
 		} finally {
@@ -93,6 +91,35 @@ public class FreeboardDao {
 			JDBCTemplate.close(pstmt);
 		}
 		return list;
+	}
+	
+	public ArrayList<Freeboard> selectBestList(Connection conn, String category) {
+		
+		ArrayList<Freeboard> bestList = new ArrayList<>();
+		PreparedStatement pstmt = null;
+		ResultSet rset = null;
+		
+		String sql = prop.getProperty("selectBestList");
+		
+		try {
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, category);
+			pstmt.setString(2, category);
+			rset = pstmt.executeQuery();
+			
+			while(rset.next()) {
+				bestList.add(new Freeboard(rset.getInt("FREE_BOARD_NO")
+												  , rset.getString("BOARD_TITLE")
+												  , rset.getInt("BOARD_VIEWS")
+												  ));
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			JDBCTemplate.close(rset);
+			JDBCTemplate.close(pstmt);
+		}
+		return bestList;
 	}
 	
 	

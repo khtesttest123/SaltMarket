@@ -15,23 +15,26 @@ public class FreeboardService {
 	public int selectListCount(String category) {
 		
 		Connection conn = getConnection();
-		
 		int listCount = new FreeboardDao().selectListCount(conn, category);
-		
 		close(conn);
-		
 		return listCount;
 	}
 	
 	public ArrayList<Freeboard> selectList(PageInfo pi, String category) {
 		
 		Connection conn = getConnection();
-		
 		ArrayList<Freeboard> list = new FreeboardDao().selectList(conn, pi, category);
-		
 		close(conn);
-		
 		return list;
 	}
+	
+	public ArrayList<Freeboard> selectBestList(String category) {
+		
+		Connection conn = getConnection();
+		ArrayList<Freeboard> bestList = new FreeboardDao().selectBestList(conn, category);
+		close(conn);
+		return bestList;
+	}
+	
 
 }
