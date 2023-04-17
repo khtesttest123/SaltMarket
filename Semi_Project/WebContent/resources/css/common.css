@@ -39,10 +39,10 @@
 .goods_search{display: flex;}
 .svg1{display: none;}
 .wrap22{font-family: 'Gowun Dodum', sans-serif;}
-.sellDiv{margin-left:0px;}
-.svg2{margin-left:300px; color:#BFE9F9}
 .h1h1{padding-left:130px;}
-.svg3{margin-left:40px; color:#BFE9F9}
+.svg3{
+    margin-right: 25px;
+    margin-left:40px; color:#BFE9F9}
 .nav1{background-color: #BFE9F9 !important;}
 .nav2{padding-right: 70px !important;}
 .navbar{
@@ -51,8 +51,26 @@
 .bg-light{
     background-color: #BFE9F9 !important;
 }
-/* 스타일 안먹혀서 인라인으로 부여 */
-.spanH1{margin: left 280px !important;}
+.svg2{
+    margin-left: 283px;
+    color:#BFE9F9;}
+
+.spanH1{
+    margin-left: 267px !important;
+    text-decoration: none;
+    color: black;
+}
+.spanH2{
+    margin-left: 24px;
+    text-decoration: none;
+    color: black;
+}
+.salt1{
+    display: flex !important;
+    margin-top: 30px !important;
+}
+.salt1 a{text-decoration: none!important;}
+
 .dropdown-toggle::after {
     display: none !important;
 }

@@ -12,6 +12,17 @@ public class ImgFile {
 	private int freeBoardNo;		//	FREE_BOARD_NO	NUMBER
 	private int shareBoardNo;		//	SHARE_BOARD_NO	NUMBER
 	
+	// 파일 경로용 변수 생성
+	private String filePath;
+	
+	public String getFilePath() {
+		return filePath;
+	}
+
+	public void setFilePath(String filePath) {
+		this.filePath = filePath;
+	}
+
 	public ImgFile() {}
 
 	public ImgFile(int fileNo, String changeFileName, Date createdAt, String deleteStatus, String fileLevel,
