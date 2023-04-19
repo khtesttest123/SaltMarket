@@ -10,7 +10,7 @@
             height: 100%;
         }
 
-        #title, #category, #area, #price, #content, #amount, #image, #sell-submit {
+        #title, #sell-category, #area, #sellPrice, #content, #amount, #image, #sell-submit {
             border-top : solid 1px rgb(180, 180, 180);
         }
 
@@ -36,43 +36,43 @@
            display:flex;
            align-items:center; 
         }
-        #title>.row>.col-9>input {
+        #title>.row>.col-9>#productName {
             width : 400px;
             height : 40px;
         }
 
 
-        #category {
-            height : 100px;
+        #sell-category {
+            height : 150px;
         }
-        #category>.row {
+        #sell-category>.row {
             height : 100%;
         }
-        #category>.row>.col {
+        #sell-category>.row>.col {
            margin : 0 auto;
            overflow: hidden;
            display:flex;
            align-items:center; 
            justify-content: center;
         }
-        #category>.row>.col>h2 {
+        #sell-category>.row>.col>h2 {
            margin : 0 0 0 0;
         }
-        #category>.row>.col-9 {
+        #sell-category>.row>.col-9 {
            margin : 0 auto;
            overflow: hidden;
            display:flex;
            align-items:center; 
         }
-        #category>.row>.col-9>select {
+        #sell-category>.row>.col-9>select {
             width : 400px;
             height : 40px;
         }
 
 
         #area {
-            height : 150px;
-        }
+            height : 100px;
+            }
         #area>.row {
             height : 100%;
         }
@@ -92,13 +92,14 @@
            display:flex;
            align-items:center; 
         }
-        #area>.row>.col-9>table {
-            height: 100%;
-            width: 600px;
+        #region {
+            width: 400px;
         }
-        #address {
-            width: 450px;
+        #sell-category>.row>.col-9>select {
+            width : 400px;
+            height : 40px;
         }
+        
         .btn {
             background-color: rgb(191, 233, 249);
             color : white;
@@ -110,33 +111,33 @@
             font-size: 20px;
         }
 
-        #price {
+        #sellPrice {
             height : 100px;
         }
-        #price>.row {
+        #sellPrice>.row {
             height : 100%;
         }
-        #price>.row>.col {
+        #sellPrice>.row>.col {
            margin : 0 auto;
            overflow: hidden;
            display:flex;
            align-items:center; 
            justify-content: center;
         }
-        #price>.row>.col>h2 {
+        #sellPrice>.row>.col>h2 {
            margin : 0 0 0 0;
         }
-        #price>.row>.col-9 {
+        #sellPrice>.row>.col-9 {
            margin : 0 auto;
            overflow: hidden;
            display:flex;
            align-items:center; 
         }
-        #price>.row>.col-9>table {
+        #sellPrice>.row>.col-9>table {
             height: 100%;
             width: 600px;
         }
-        #price>.row>.col-9>h4 {
+        #sellPrice>.row>.col-9>h4 {
             margin : 0 0 0 0;
         }
 
@@ -189,36 +190,6 @@
            overflow: hidden;
            display:flex;
            align-items:center; 
-        }
-
-        #amount {
-            height : 100px;
-        }
-        #amount>.row {
-            height : 100%;
-        }
-        #amount>.row>.col {
-           margin : 0 auto;
-           overflow: hidden;
-           display:flex;
-           align-items:center; 
-           justify-content: center;
-        }
-        #amount>.row>.col>h2 {
-           margin : 0 0 0 0;
-        }
-        #amount>.row>.col-9 {
-           margin : 0 auto;
-           overflow: hidden;
-           display:flex;
-           align-items:center; 
-        }
-        #amount>.row>.col-9>input {
-            width : 200px;
-            height : 40px;
-        }
-        #amount>.row>.col-9>h4 {
-            margin : 0 0 0 0;
         }
 
 
